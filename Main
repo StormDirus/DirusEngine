@@ -1,0 +1,6 @@
+modtable = {}
+modtable.ValueLib = require(script.ValueLib)
+modtable.InstanceLib = require(script.InstanceLib)
+modtable.PlayerLib = require(script.PlayerLib)
+modtable.CharacterLib = require(script.CharacterLib)
+return modtable
