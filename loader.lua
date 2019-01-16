@@ -1,4 +1,4 @@
-file = workspace.Files
+file = Workspace.Files
 if not file then error("'Files' is not in workspace.") end
 function pathsearch(pathstamp,pathfile)
 	for i,v in pairs(pathfile:GetChildren()) do
