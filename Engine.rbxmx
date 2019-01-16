@@ -1,0 +1,867 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Folder" referent="RBXB4BA397E979C4CEEAADCE1375E0C896B">
+		<Properties>
+			<string name="Name">Files</string>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+		<Item class="Configuration" referent="RBX5E97D201B788402695B7AC52115BD97F">
+			<Properties>
+				<string name="Name">StarterPlayer</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Configuration" referent="RBXD30973320CC44A90AAF57E498F66A13C">
+				<Properties>
+					<string name="Name">StarterPlayerScripts</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="LocalScript" referent="RBX4F7869046D0F454CAA09125B93EDA3E6">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlrProbe</string>
+						<string name="ScriptGuid">{F53F6194-03BC-4B49-B8C4-E25B059BDFD0}</string>
+						<ProtectedString name="Source"><![CDATA[plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+camera = workspace.CurrentCamera
+idle = 0
+uis = game:GetService("UserInputService")
+uis.InputBegan:Connect(function(input, gpe)
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).KeyDown:FireServer(input.KeyCode)
+end)
+uis.InputEnded:Connect(function(input, gpe)
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).KeyUp:FireServer(input.KeyCode)
+end)
+mouse.Button1Down:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b1d:FireServer() end)
+mouse.Button1Up:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b1u:FireServer() end)
+mouse.Button2Down:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b2d:FireServer() end)
+mouse.Button2Up:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b2d:FireServer() end)
+mouse.Move:Connect(function() idle = 1 end)
+mouse.Idle:Connect(function() idle = 0 end)
+plr.Chatted:Connect(function(msg) game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Chat:FireServer(msg) end)
+tabinput = {}
+while wait(1/30) do
+	tabinput = {Accelerometer = uis.AccelerometerEnabled,Gamepad = uis.GamepadEnabled,Gyroscope = uis.GyroscopeEnabled,Keyboard = uis.KeyboardEnabled,Modal = uis.ModalEnabled,Mouse = uis.MouseEnabled,Touch = uis.TouchEnabled,VR = uis.VREnabled}
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).type:FireServer(tabinput)
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Mouse:FireServer(mouse.hit, mouse.target, mouse.origin)
+	if idle == 1 then
+		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).mMove:FireServer()
+	else
+		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).mIdle:FireServer()
+	end
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Camera:FireServer(camera.CFrame)
+end
+]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Configuration" referent="RBX849D4B545A8947569197049F68E247A1">
+			<Properties>
+				<string name="Name">ReplicatedStorage</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Folder" referent="RBX2C76FCC632F14C48AD6EC0CA6027BA71">
+				<Properties>
+					<string name="Name">Events</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Folder" referent="RBX7E151EC5B027417797903A9F14B7983F">
+					<Properties>
+						<string name="Name">Players</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Folder" referent="RBX7F15ECA00DF0439E8940908A5844A388">
+				<Properties>
+					<string name="Name">PlayerFold</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Folder" referent="RBX591D332218704CB9A4873336A6CD6598">
+					<Properties>
+						<string name="Name">Folder</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="RemoteEvent" referent="RBX94475E8B4C5C4E44AC62503C48413AB8">
+						<Properties>
+							<string name="Name">Camera</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXF247184D09074DBE8B642055C6B7E00F">
+						<Properties>
+							<string name="Name">Chat</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXF1A943E44B3E4E6380CFBDA1858206A4">
+						<Properties>
+							<string name="Name">KeyDown</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX600C69E896B24B97A1CCA37C233F13A3">
+						<Properties>
+							<string name="Name">KeyUp</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX33B541C15B184886BFD09A59EB8BF9F7">
+						<Properties>
+							<string name="Name">Mouse</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXB9D34D30880241DEB22DD33C27FB09D5">
+						<Properties>
+							<string name="Name">b1d</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX7654AE945DF34D79AEA3E83715AA56C0">
+						<Properties>
+							<string name="Name">b1u</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX1C0C377C84F74193B39497D28146526F">
+						<Properties>
+							<string name="Name">b2d</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX4B17E55F21C74973BEA28AACC99D0BF6">
+						<Properties>
+							<string name="Name">b2u</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX3C6EF626E79A45C9B5ACF2EDE0F0C05A">
+						<Properties>
+							<string name="Name">mIdle</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXB85B87C3D2B94BBE9ED2789B438526C4">
+						<Properties>
+							<string name="Name">mMove</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBXA03B959611364B14B3673BB203A6C781">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Input</string>
+							<string name="ScriptGuid">{CED6702E-E55F-49F0-9801-58A64177F3A2}</string>
+							<ProtectedString name="Source"><![CDATA[modtable = {}
+local cc = script.Parent
+plr = game.Players[script.Parent.Name]
+Mouse = {}
+Mouse.hit = CFrame.new()
+Mouse.target = nil
+Mouse.origin = CFrame.new()
+cc.Mouse.OnServerEvent:Connect(function(p, m1, m2, m3)
+	if p ~= plr then return end
+	modtable.MouseCframe = m1
+	modtable.MouseTarget = m2
+	modtable.MouseOrigin = m3
+end)
+local mkd = Instance.new("BindableEvent", cc)
+local mku = Instance.new("BindableEvent", cc)
+cc.KeyDown.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mkd:Fire(k) end)
+cc.KeyUp.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mku:Fire(k) end)
+modtable.KeyDown = mkd.Event
+modtable.KeyUp = mku.Event
+modtable.Button1Down = cc.b1d.OnServerEvent
+modtable.Button1Up = cc.b1u.OnServerEvent
+modtable.Button2Down = cc.b2d.OnServerEvent
+modtable.Button2Up = cc.b2u.OnServerEvent
+Camera = {}
+modtable.CameraCframe = CFrame.new()
+local mm = Instance.new("BindableEvent", cc)
+local mi = Instance.new("BindableEvent", cc)
+cc.Camera.OnServerEvent:Connect(function(p,val) if p ~= plr then return end modtable.CameraCframe = val end)
+local ms = true
+cc.mMove.OnServerEvent:Connect(function(p) if p ~= plr then return end ms = 1 end)
+cc.mIdle.OnServerEvent:Connect(function(p) if p ~= plr then return end ms = 0 end)
+local function mousem() 
+	if ms == 1 then
+		mm:Fire()
+	elseif ms == 0 then
+		mi:Fire()
+	end
+end
+game:GetService('RunService').Heartbeat:Connect(mousem)
+modtable.MouseMove = mm.Event
+modtable.MouseIdle = mi.Event
+local chat = Instance.new("BindableEvent", script)
+cc.Chat.OnServerEvent:Connect(function(p, msg) if p ~= plr then return end chat:Fire(msg) end)
+modtable.Chatted = chat.Event
+modtable.Type = nil
+cc.type.OnServerEvent:Connect(function(p,type1)
+	if p ~= plr then return end
+	modtable.Type = type1
+	for i,v in ipairs(type1) do
+			print(v)
+	end
+end)
+
+
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXCEDD4E07D4F6412EB48AA485FFF5DEF9">
+						<Properties>
+							<string name="Name">type</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Configuration" referent="RBXFCF6A61F72124D1CB94296AB8EB8AF7D">
+			<Properties>
+				<string name="Name">ServerScriptService</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX53430632FDB645C78E1C1685C27F27FA">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">DirusEngine</string>
+					<string name="ScriptGuid">{A46BF7E0-1112-430D-A72C-514990BF50CE}</string>
+					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
+	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
+	fold.Name = plr.Name
+	fold.Parent = game.ReplicatedStorage.Events.Players
+end)
+engine = require(script.Main)
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="ModuleScript" referent="RBXA948DA8900834A9BAA76F9D1D16CAA69">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Main</string>
+						<string name="ScriptGuid">{A68A7167-2B88-40B8-ABFD-4888C7C8FB93}</string>
+						<ProtectedString name="Source"><![CDATA[modtable = {}
+modtable.ValueLib = require(script.ValueLib)
+modtable.InstanceLib = require(script.InstanceLib)
+modtable.PlayerLib = require(script.PlayerLib)
+modtable.CharacterLib = require(script.CharacterLib)
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+
+]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="ModuleScript" referent="RBX240B4E64308440548DD83ACE0F6680BD">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">PlayerLib</string>
+							<string name="ScriptGuid">{2917E405-7D80-4609-A959-928222788C76}</string>
+							<ProtectedString name="Source"><![CDATA[modtable = {}
+game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
+	modtable[obj.Name] = {}
+	modtable[obj.Name].Input = require(obj.Input)
+	game.Players.PlayerRemoving:Connect(function(plr)
+		if not obj then return end
+		if plr.Name == obj.Name then
+			obj:Remove()
+		end
+	end)
+end)
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBX81E16361467449BCBC03BCF1CFB5846C">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">InstanceLib</string>
+							<string name="ScriptGuid">{3D052976-4BD4-48BF-8A1C-01863C36A84B}</string>
+							<ProtectedString name="Source"><![CDATA[local modtable = {}
+valuelib = require(script.Parent.ValueLib)
+function modtable:GetAncestors(obj)
+	if obj.Parent then
+		local a = obj.Parent
+		local b = {}
+		repeat
+			table.insert(b,a)
+			a = a.Parent
+		until a == nil
+		return b
+	end
+end
+function modtable:FindFirstChildWithFunc(obj,func)
+	for i,v in ipairs(obj:GetChildren()) do
+		if func(v) == true then
+			return v
+		end
+	end
+end
+function modtable:FindFirstDescendantWithFunc(obj,func)
+	for i,v in ipairs(obj:GetDescendants()) do
+		if func(v) == true then
+			return v
+		end
+	end
+end
+function modtable:FindFirstAncestorWithFunc(obj,func)
+	for i,v in ipairs(modtable:GetAncestors(obj)) do
+		if func(v) == true then
+			return v
+		end
+	end
+end
+function modtable:GetChildrenWithFunc(obj,func)
+	local tab = {}
+	for i,v in ipairs(obj:GetChildren()) do
+		if func(v) == true then
+			table.insert(tab,v)
+		end
+	end
+	return tab
+end
+function modtable:GetDescendantsWithFunc(obj,func)
+	local tab = {}
+	for i,v in ipairs(obj:GetDescendants()) do
+		if func(v) == true then
+			table.insert(tab,v)
+		end
+	end
+	return tab
+end
+function modtable:GetAncestorsWithFunc(obj,func)
+	local tab = {}
+	for i,v in ipairs(modtable:GetAncestors()) do
+		if func(v) == true then
+			table.insert(tab,v)
+		end
+	end
+	return tab
+end
+function modtable:WaitForDescendantWithFunc(obj,func,time1)
+	for i,v in ipairs(obj:GetDescendants()) do
+		if func(v) == true then
+			return v
+		end
+	end
+	local eve = Instance.new("BindableEvent")
+	local func1 = obj.DescendantAdded:Connect(function(obj2)
+		for i,v in ipairs(obj:GetDescendants()) do
+			if func(v) == true then
+				eve:Fire(v)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	return val
+end
+function modtable:WaitForChildWithFunc(obj,func,time1)
+	for i,v in ipairs(obj:GetChildren()) do
+		if func(v) == true then
+			return v
+		end
+	end
+	local eve = Instance.new("BindableEvent")
+	local func1 = obj.ChildAdded:Connect(function(obj2)
+		for i,v in ipairs(obj:GetDescendants()) do
+			if func(v) == true then
+				eve:Fire(v)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	return val
+end
+function modtable:WaitForAncestorWithFunc(obj,func,time1)
+	for i,v in ipairs(obj:GetDescendants()) do
+		if func(v) == true then
+			return v
+		end
+	end
+	local eve = Instance.new("BindableEvent")
+	local func1 = obj.AncestryChanged():Connect(function(obj2)
+		for i,v in ipairs(modtable:GetAncestors(obj)) do
+			if func(v) == true then
+				eve:Fire(v)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	return val
+end
+function modtable:GetInstancesWithFunc(obj,func)
+	local tab = {}
+	for i,v in ipairs(valuelib:GetIndex()) do
+		if func(v) == true then
+			table.insert(tab,v)
+		end
+	end
+	return tab
+end
+function modtable.Create(objclass,parent,param1,param2)
+	local obj = Instance.new(objclass,parent)
+	for i,v in ipairs(param1) do
+		obj[v] = param2[i]
+	end
+	return obj
+end
+
+
+
+
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBX5A440CC74BA74FA6A1F4EED366F84FE7">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">ValueLib</string>
+							<string name="ScriptGuid">{1508B35D-2779-4EF5-8FA5-4CDB6DE881AF}</string>
+							<ProtectedString name="Source"><![CDATA[modtable = {}
+Index = {}
+Index[1] = game
+local indexnum = 1
+for i,v in ipairs(game:GetDescendants()) do
+	indexnum = indexnum + 1
+	Index[indexnum] = v
+end
+game.DescendantAdded:Connect(function(obj)
+	indexnum = indexnum + 1
+	Index[indexnum] = obj
+end)
+function modtable:GetUserDataId(obj)
+	for i,v in ipairs(Index) do
+		if v == obj then
+			return i
+		end
+	end
+end
+function modtable:GetIndex()
+	return Index
+end
+function modtable:GetUserDataFromId(num)
+	if Index[num] then
+		return Index[num]
+	end
+end
+function modtable:CreateFilteredTableClone(tab,func)
+	local tab2 = {}
+	for i,v in ipairs(tab) do
+		if func(v) == true then
+			table.insert(tab2,v)
+		end
+	end
+	return tab2
+end
+function modtable.TableContains(tab,func)
+	for i,v in ipairs(tab) do
+		if func(v) == true then
+			return i
+		end
+	end
+end
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBXC3D6AB5C215D4299B388F6FE12417D65">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">CharacterLib</string>
+							<string name="ScriptGuid">{0944B5FD-6670-4C6E-BA01-8E9A45C0EDEB}</string>
+							<ProtectedString name="Source"><![CDATA[modtable = {}
+inst = require(script.Parent.InstanceLib)
+pathfinddebounce = {}
+pathfindingcache = {}
+animcache = {}
+animcache.hums = {}
+index = require(script.Parent.ValueLib)
+function modtable:GetPlayerFromObj(obj)
+	if not game.Players:GetPlayerFromCharacter(obj) then
+		local obj2 = inst:FindFirstAncestorWithFunc(obj,function(obj1) if game.Players:GetPlayerFromCharacter(obj1) then return true end end)
+		if obj2 then
+			local val = game.Players:GetPlayerFromCharacter(obj2)
+			return val
+		end
+	else
+		local val = game.Players:GetPlayerFromCharacter(obj)
+		return val
+	end
+end
+function modtable:GetHumanoidFromPlayer(plr)
+	local char = plr.Character
+	if char then
+		local hum = inst:FindFirstDescendantWithFunc(char,function(obj1) if obj1:IsA("Humanoid") then return true end end)
+		if hum then return hum end
+	end
+end
+	function modtable:StartPathFind(hum, despoint)
+		local indexnum = index:GetUserDataId(hum)
+		if not pathfinddebounce[indexnum] then
+			pathfinddebounce[indexnum] = 0
+		end
+		if pathfinddebounce[indexnum] == 1 then return end
+		if pathfindingcache[indexnum] then
+			pathfindingcache[indexnum].isdone = 1
+			repeat game:GetService("RunService").Heartbeat:wait() until pathfindingcache[indexnum] == nil
+			pathfindingcache[indexnum] = {}
+			pathfindingcache[indexnum].isdone = 0
+		else
+			pathfindingcache[indexnum] = {}
+			pathfindingcache[indexnum].isdone = 0
+		end
+		pathfinddebounce[indexnum] = 1
+		if pcall(function() return despoint.Position end) then
+			despoint = despoint.Position
+		end
+		local PathfindingService = game:GetService("PathfindingService")
+    	local connect = {}
+    	 
+		local path = PathfindingService:CreatePath()
+    	local waypoints
+    	local currentWaypointIndex
+    	
+		local function waypointcheck(num1, num2)
+			if CFrame.new(hum.RootPart.Position,num1).LookVector == CFrame.new(num1,num2).LookVector then
+				return 1
+			else
+				return 0
+			end
+		end
+    	
+		local function followPath()
+			path = PathfindingService:CreatePath()
+    		path:ComputeAsync(hum.RootPart.Position, despoint)
+    		waypoints = {}
+    		if path.Status == Enum.PathStatus.Success then
+    			waypoints = path:GetWaypoints()
+    			currentWaypointIndex = 1
+				repeat
+				currentWaypointIndex = currentWaypointIndex + 1
+				if not waypoints[currentWaypointIndex + 2] then
+					break
+				end
+			until waypointcheck(waypoints[currentWaypointIndex].Position,waypoints[currentWaypointIndex + 1].Position) == 0
+    			hum:MoveTo(waypoints[currentWaypointIndex].Position)
+				if waypoints[currentWaypointIndex].Action == Enum.PathWaypointAction.Jump then
+					hum.Jump = true
+				end
+				pathfinddebounce[indexnum] = 0
+    		else
+    			hum:MoveTo(hum.RootPart.Position)
+				pathfinddebounce[indexnum] = 0
+    		end
+   	 end
+   	  
+    	 
+    	connect["onPathBlocked"] = path.Blocked:Connect(followPath)
+    	 
+    	connect["onWaypointReached"] = hum.MoveToFinished:Connect(followPath)
+     	local function check()
+			if pathfindingcache[indexnum].isdone == 1 then
+				pathfinddebounce[indexnum] = 0
+				connect["onPathBlocked"]:disconnect()
+				connect["onWaypointReached"]:disconnect()
+				pathfindingcache[indexnum] = nil
+				connect["check"]:disconnect()
+			end
+		end
+		connect["check"] = game:GetService("RunService").Heartbeat:Connect(check)
+    	followPath()
+	end
+game:GetService("RunService").Heartbeat:Connect(function()
+	for i,hum in ipairs(inst:GetDescendantsWithFunc(workspace,function(funcobj) if funcobj:IsA("Humanoid") or funcobj:IsA("AnimationController") then return true end end)) do
+		local indexnum = index:GetUserDataId(hum)
+		if animcache.hums[indexnum] then
+			animcache.hums[indexnum].anims = hum:GetPlayingAnimationTracks()
+		else
+			animcache.hums[indexnum] = {}
+		end
+	end
+end)
+function modtable:CanPathFind(hum, despoint)
+	if pcall(function() return despoint.Position end) then
+		despoint = despoint.Position
+	end
+	local PathfindingService = game:GetService("PathfindingService")
+	local path = PathfindingService:CreatePath()
+    path:ComputeAsync(hum.RootPart.Position, despoint)
+	return path.Status
+end
+function modtable:StopPathFind(hum)
+	local indexnum = index:GetUserDataId(hum)
+	if pathfindingcache[indexnum] then
+		pathfindingcache[indexnum].isdone = 1
+		repeat game:GetService("RunService").Heartbeat:wait() until pathfindingcache[indexnum] == nil
+	end
+end
+function modtable:PlayAnim(hum,anim,speed,looped,weight,fade)
+	if hum then
+		if hum:IsA("Humanoid") or hum:IsA("AnimationController") then
+		else
+			local obj2 = inst.FindFirstDescendantWithFunc(hum,function(obj1) if obj1:IsA("Humanoid") or obj1:IsA("AnimationController") then return true end end)
+			if obj2 then
+				hum = obj2
+			else
+				if hum:FindFirstChild("HumanoidRootPart") then
+					hum = Instance.new("Humanoid",hum)
+				else
+					hum = Instance.new("AnimationController",hum)
+				end
+			end
+		end
+		
+	else
+		error("Missing paramater.")
+	end
+	local anim2
+	if string.find(tostring(anim),"rbxassetid://") or string.find(tostring(anim),"http://www.roblox.com/asset/?id=") then
+		anim = inst.Create("Animation",game,{"AnimationId"},{anim})
+		anim2 = hum:LoadAnimation(anim)
+	elseif pcall(function() return anim.AnimationId end) then
+		anim = anim.AnimationId
+		anim = inst.Create("Animation",nil,{"AnimationId"},{tostring(anim)})
+		anim2 = hum:LoadAnimation(anim)
+	else
+		anim2 = hum:LoadAnimation("rbxassetid://" ..(tostring(anim)))
+	end
+	if not anim2 then return end
+	anim2.Looped = looped
+	anim2:Play(fade,weight,speed)
+	return anim2
+end
+function modtable:NewAnim(hum)
+	local anim2
+	if string.find(tostring(anim),"rbxassetid://") or string.find(tostring(anim),"http://www.roblox.com/asset/?id=") then
+		anim = inst.Create("Animation",game,{"AnimationId"},{anim})
+		anim2 = hum:LoadAnimation(anim)
+	elseif pcall(function() return anim.AnimationId end) then
+		anim = anim.AnimationId
+		anim = inst.Create("Animation",nil,{"AnimationId"},{tostring(anim)})
+		anim2 = hum:LoadAnimation(anim)
+	else
+		anim2 = hum:LoadAnimation("rbxassetid://" ..(tostring(anim)))
+	end
+	if not anim2 then return end
+	return anim2
+	end
+function modtable:EditAnim(anim,speed,weight,fade,looped)
+	if speed then
+		anim:AdjustSpeed(speed)
+	end
+	if weight then
+		anim:AdjustWeight(weight,fade)
+	end
+	if looped ~= nil then
+		anim.Looped = looped
+	end
+end
+return modtable
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>
