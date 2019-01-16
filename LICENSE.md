@@ -21,4 +21,5 @@ http://www.latex-project.org/lppl.txt
 and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
 This work has the LPPL maintenance status 'maintained'.
 The Current Maintainer of this work is StormDirus.
-This work consists of the files held in the Repository.
+This work consists of the files held in the Repository
+and anything with this specific license.
