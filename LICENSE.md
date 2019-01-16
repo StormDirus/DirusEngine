@@ -1,6 +1,4 @@
-DEFINITIONS
-===========
-
+# DEFINITIONS
 The term, "StormDirus" can be defined in two ways:
     1. The account holder of the Github account, that can be found at this URL:
     https://github.com/StormDirus
@@ -13,9 +11,7 @@ https://github.com/StormDirus/DirusEngine
 
 
 
-LICENSE AGREEMENT
-=================
-
+# LICENSE AGREEMENT
 Copyright (c) 2019 StormDirus
 This work may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3
