@@ -2,32 +2,47 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBXB4BA397E979C4CEEAADCE1375E0C896B">
+	<Item class="Folder" referent="RBXE9954F37C7A646B9A9182B9510573DDC">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBX5E97D201B788402695B7AC52115BD97F">
+		<Item class="Configuration" referent="RBX8CDD6625280C4C139C58DDB88605042D">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBXD30973320CC44A90AAF57E498F66A13C">
+			<Item class="Configuration" referent="RBXA321DD6AFD6D4367BB7086D30D931DC8">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBX4F7869046D0F454CAA09125B93EDA3E6">
+				<Item class="LocalScript" referent="RBX9FE6D4B85FA44AAEB0A749484AA59493">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlrProbe</string>
-						<string name="ScriptGuid">{F53F6194-03BC-4B49-B8C4-E25B059BDFD0}</string>
-						<ProtectedString name="Source"><![CDATA[plr = game.Players.LocalPlayer
+						<string name="ScriptGuid">{0D720DAB-7A66-47B8-82BE-0015071A4597}</string>
+						<ProtectedString name="Source"><![CDATA[joy1 = {}
+joy1.Delta = Vector3.new(0,0,0)
+joy1.Position = Vector3.new(0,0,0)
+joy2 = {}
+joy2.Delta = Vector3.new(0,0,0)
+joy2.Position = Vector3.new(0,0,0)
+plr = game.Players.LocalPlayer
 mouse = plr:GetMouse()
 camera = workspace.CurrentCamera
 idle = 0
 uis = game:GetService("UserInputService")
+uis.InputChanged:Connect(function(input,gp)
+	if input.KeyCode == Enum.KeyCode.Thumbstick1 then
+		joy1.Delta = input.Delta
+		joy1.Position = input.Position
+	elseif input.KeyCode == Enum.KeyCode.Thumbstick2 then
+		joy2.Delta = input.Delta
+		joy2.Position = input.Position
+	end
+end)
 uis.InputBegan:Connect(function(input, gpe)
 	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).KeyDown:FireServer(input.KeyCode)
 end)
@@ -43,7 +58,15 @@ mouse.Idle:Connect(function() idle = 0 end)
 plr.Chatted:Connect(function(msg) game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Chat:FireServer(msg) end)
 tabinput = {}
 while wait(1/30) do
+	local gui
+	if uis:GetFocusedTextBox() then
+		gui = true
+	else
+		gui = false
+	end
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).joystick:FireServer(joy1,joy2)
 	tabinput = {Accelerometer = uis.AccelerometerEnabled,Gamepad = uis.GamepadEnabled,Gyroscope = uis.GyroscopeEnabled,Keyboard = uis.KeyboardEnabled,Modal = uis.ModalEnabled,Mouse = uis.MouseEnabled,Touch = uis.TouchEnabled,VR = uis.VREnabled}
+	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).gui:FireServer(gui)
 	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).type:FireServer(tabinput)
 	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Mouse:FireServer(mouse.hit, mouse.target, mouse.origin)
 	if idle == 1 then
@@ -59,104 +82,104 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX849D4B545A8947569197049F68E247A1">
+		<Item class="Configuration" referent="RBX29F41432A98C4B618C1AAAB12CE21651">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBX2C76FCC632F14C48AD6EC0CA6027BA71">
+			<Item class="Folder" referent="RBX7B9845A7ED17413D88BDFDB5EEF754A1">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX7E151EC5B027417797903A9F14B7983F">
+				<Item class="Folder" referent="RBX1F49D8A2153B4C5FA36077D0995B7499">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBX7F15ECA00DF0439E8940908A5844A388">
+			<Item class="Folder" referent="RBX4527B150150F431AB47E87035584B272">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX591D332218704CB9A4873336A6CD6598">
+				<Item class="Folder" referent="RBX9C4C081CC8A148EFA37FEB8A1F06613B">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX94475E8B4C5C4E44AC62503C48413AB8">
+					<Item class="RemoteEvent" referent="RBX300AAF7EE3774822A168B444818DC88F">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXF247184D09074DBE8B642055C6B7E00F">
+					<Item class="RemoteEvent" referent="RBXD8485D224D8C4D649644B8E61E4C8877">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXF1A943E44B3E4E6380CFBDA1858206A4">
+					<Item class="RemoteEvent" referent="RBXBD6E21F9CEC749EBAD07C13092F94E95">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX600C69E896B24B97A1CCA37C233F13A3">
+					<Item class="RemoteEvent" referent="RBXDC7DC67B2D0841DC8F6E5F46F8C67D92">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX33B541C15B184886BFD09A59EB8BF9F7">
+					<Item class="RemoteEvent" referent="RBXA995D52B5E59485E990D4E57E86FAE9C">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB9D34D30880241DEB22DD33C27FB09D5">
+					<Item class="RemoteEvent" referent="RBX21B2B092E246490792840CA893220D78">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7654AE945DF34D79AEA3E83715AA56C0">
+					<Item class="RemoteEvent" referent="RBX130794C3885A4CC9ADEF09F1A0884D67">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX1C0C377C84F74193B39497D28146526F">
+					<Item class="RemoteEvent" referent="RBXCBAF21A4113D42C6BB74D8F6A8E55A08">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX4B17E55F21C74973BEA28AACC99D0BF6">
+					<Item class="RemoteEvent" referent="RBX0FE82698AC534B2AABB0B75A061D59FA">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX3C6EF626E79A45C9B5ACF2EDE0F0C05A">
+					<Item class="RemoteEvent" referent="RBX0C1896E441B64CCDA108699621AD39AB">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB85B87C3D2B94BBE9ED2789B438526C4">
+					<Item class="RemoteEvent" referent="RBX087908A27EF24D86ADE2A7EA5FB7D144">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXA03B959611364B14B3673BB203A6C781">
+					<Item class="ModuleScript" referent="RBXE6872E1626A649609D5001B8CE1E31AD">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
-							<string name="ScriptGuid">{CED6702E-E55F-49F0-9801-58A64177F3A2}</string>
+							<string name="ScriptGuid">{5794C165-900A-4DA8-B256-97008917FC3B}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 local cc = script.Parent
 plr = game.Players[script.Parent.Name]
@@ -176,10 +199,26 @@ cc.KeyDown.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mkd:
 cc.KeyUp.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mku:Fire(k) end)
 modtable.KeyDown = mkd.Event
 modtable.KeyUp = mku.Event
-modtable.Button1Down = cc.b1d.OnServerEvent
-modtable.Button1Up = cc.b1u.OnServerEvent
-modtable.Button2Down = cc.b2d.OnServerEvent
-modtable.Button2Up = cc.b2u.OnServerEvent
+modtable.Button1Down = Instance.new("BindableEvent",cc)
+modtable.Button1Up = Instance.new("BindableEvent",cc)
+modtable.Button2Down = Instance.new("BindableEvent",cc)
+modtable.Button2Up = Instance.new("BindableEvent",cc)
+cc.b1d.OnServerEvent:Connect(function(p)
+	if p ~= plr then return end
+	modtable.Button1Down:Fire()
+end)
+cc.b1u.OnServerEvent:Connect(function(p)
+	if p ~= plr then return end
+	modtable.Button1Up:Fire()
+end)
+cc.b2d.OnServerEvent:Connect(function(p)
+	if p ~= plr then return end
+	modtable.Button2Down:Fire()
+end)
+cc.b2u.OnServerEvent:Connect(function(p)
+	if p ~= plr then return end
+	modtable.Button2Up:Fire()
+end)
 Camera = {}
 modtable.CameraCframe = CFrame.new()
 local mm = Instance.new("BindableEvent", cc)
@@ -202,12 +241,24 @@ local chat = Instance.new("BindableEvent", script)
 cc.Chat.OnServerEvent:Connect(function(p, msg) if p ~= plr then return end chat:Fire(msg) end)
 modtable.Chatted = chat.Event
 modtable.Type = nil
+modtable.IsInGui = false
+cc.gui.OnServerEvent:Connect(function(p,gui)
+	if p ~= plr then return end
+	modtable.IsInGui = gui
+end)
 cc.type.OnServerEvent:Connect(function(p,type1)
 	if p ~= plr then return end
 	modtable.Type = type1
 	for i,v in ipairs(type1) do
 			print(v)
 	end
+end)
+modtable.JoyStick1 = nil
+modtable.JoyStick2 = nil
+cc.type.OnServerEvent:Connect(function(p,joy1,joy2)
+	if p ~= plr then return end
+	modtable.JoyStick1 = joy1
+	modtable.JoyStick2 = joy2
 end)
 
 
@@ -241,21 +292,33 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXCEDD4E07D4F6412EB48AA485FFF5DEF9">
+					<Item class="RemoteEvent" referent="RBX70CE92C1687C49569780B3D8AEC12B31">
 						<Properties>
 							<string name="Name">type</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX94A1047D45BA4E00A382C6C6ADC870CE">
+						<Properties>
+							<string name="Name">gui</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX5064E50F48154106AB2F2B43CED6B08E">
+						<Properties>
+							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBXFCF6A61F72124D1CB94296AB8EB8AF7D">
+		<Item class="Configuration" referent="RBX7251F58CC2C1494B8E805C6F2FC1D47E">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX53430632FDB645C78E1C1685C27F27FA">
+			<Item class="Script" referent="RBXA13B554560844289BB589155223D6D56">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -296,7 +359,7 @@ The Current Maintainer of this work is StormDirus.
 ]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXA948DA8900834A9BAA76F9D1D16CAA69">
+				<Item class="ModuleScript" referent="RBX3C27CAC1444C440991152FEC3673B9F4">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Main</string>
@@ -337,7 +400,7 @@ The Current Maintainer of this work is StormDirus.
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX240B4E64308440548DD83ACE0F6680BD">
+					<Item class="ModuleScript" referent="RBXE8D4FD63F37444BEAC5C90540330400C">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">PlayerLib</string>
@@ -384,7 +447,7 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX81E16361467449BCBC03BCF1CFB5846C">
+					<Item class="ModuleScript" referent="RBXA1388A6986F94568BC64CD4F5084A119">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">InstanceLib</string>
@@ -558,7 +621,7 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX5A440CC74BA74FA6A1F4EED366F84FE7">
+					<Item class="ModuleScript" referent="RBX8C577F71CC2B45E8902CCC3F1D764E76">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">ValueLib</string>
@@ -637,7 +700,7 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXC3D6AB5C215D4299B388F6FE12417D65">
+					<Item class="ModuleScript" referent="RBX9ED9F7EBC5A249DA8D76078C39306D4A">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">CharacterLib</string>
