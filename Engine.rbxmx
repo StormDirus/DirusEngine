@@ -17,12 +17,12 @@
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBX0E54106CC5164F91A937C8D810BC0D59">
+				<Item class="LocalScript" referent="RBX9A398DEE61DE415B9EBEC4A6CA502736">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlrProbe</string>
-						<string name="ScriptGuid">{0D720DAB-7A66-47B8-82BE-0015071A4597}</string>
+						<string name="ScriptGuid">{AA912D97-E588-4E52-B452-65E563865237}</string>
 						<ProtectedString name="Source"><![CDATA[joy1 = {}
 joy1.Delta = Vector3.new(0,0,0)
 joy1.Position = Vector3.new(0,0,0)
@@ -87,117 +87,117 @@ end
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBXC3A62371E67A49E7B2EEA4E90BAEFD1F">
+			<Item class="Folder" referent="RBXCF16A179F9F142DAB8C5EAEC7A474388">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXFF068C98000140DEB2AFE28D35DD80C1">
+				<Item class="Folder" referent="RBX3A96027A4BE24EC4B6A91A14A8DE8E41">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBXCF173875B8E940E9849A673E4DCD299A">
+			<Item class="Folder" referent="RBX7BF0AA8123AC4EFDB6EE6DF24F39B13B">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXA6FB7F6A73E34181A0986C22124D9A44">
+				<Item class="Folder" referent="RBX4AE84C6DAF434D418DDF792837CCE49F">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX6149DDB2F05D4175AD5A84602E603494">
+					<Item class="RemoteEvent" referent="RBXB1BCE5D481914DD6843DB94E20ADFFC5">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX2003CC4B441F415BB93922DD032FD9F3">
+					<Item class="RemoteEvent" referent="RBX0CEF054EDA9E41849577E44519B47515">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX047FE30368EA47D9AEB2669A3644D3E2">
+					<Item class="RemoteEvent" referent="RBX27F2C9BB98F042DCBE02AF63B850DBB3">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXD04837A9D2994156A8DC1152E65BFFCB">
+					<Item class="RemoteEvent" referent="RBX5F56837AB54647CC8143274CB41D7DF6">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX8CD3108653B14335838E30EF7C3C93D0">
+					<Item class="RemoteEvent" referent="RBX8D3D85A303584D5AA7460F3D273ACF05">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX2D460E61793B486FA8819A8A72379287">
+					<Item class="RemoteEvent" referent="RBX3DD7A8DD26104D2B8252E2F797057FC1">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXCD0E4F6BAB9C421C98C75A1D3AE84CC7">
+					<Item class="RemoteEvent" referent="RBX75A234F7863D409194222C78FF28615A">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC5451B0EE3864A6AA0D053849D476FC0">
+					<Item class="RemoteEvent" referent="RBX9488A6404FC84EBAB9CAFF5728A2B0EB">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXA2DEC73DD87447E1A49B8351C02AAE82">
+					<Item class="RemoteEvent" referent="RBX99826E04465E491EB35995924D12FB80">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB9498DF0B37846FF81F37FDF49CC99B4">
+					<Item class="RemoteEvent" referent="RBX218575E893F44DAF8D54B03C3FBD2BBC">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXF8F85F4A9ABF4C44AF513FF10594ABC4">
+					<Item class="RemoteEvent" referent="RBX0F4A208DA6D14E2995115A701BC6B8C9">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXD31FF56517E44A229952ECE44606F5D3">
+					<Item class="RemoteEvent" referent="RBXC87F348C06334841A5752816591D43D7">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX1029738F99CC4FECA7401DE7DAFD6AF5">
+					<Item class="RemoteEvent" referent="RBXC415781073B14C71BB1B36B4A3C6BDC3">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX3BCB96DD14794E048033558397359151">
+					<Item class="RemoteEvent" referent="RBX231144DA5D144CC0BE4B6BDD664C43ED">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX57A05F11239A4B4D9DB4762764E97151">
+					<Item class="ModuleScript" referent="RBXC0C7F7EE09A1487FA93AA61D85882980">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
-							<string name="ScriptGuid">{A21D5DCD-D7DC-4474-B950-5B3E9E5274F4}</string>
+							<string name="ScriptGuid">{A6200938-E5C7-43DA-800D-4169A39C2ED9}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 local cc = script.Parent
 plr = game.Players[script.Parent.Name]
@@ -255,7 +255,7 @@ end
 game:GetService('RunService').Heartbeat:Connect(mousem)
 modtable.MouseMove = mm.Event
 modtable.MouseIdle = mi.Event
-local chat = Instance.new("BindableEvent", script)
+local chat = Instance.new("BindableEvent", cc)
 cc.Chat.OnServerEvent:Connect(function(p, msg) if p ~= plr then return end chat:Fire(msg) end)
 modtable.Chatted = chat.Event
 modtable.Type = nil
@@ -318,12 +318,12 @@ The Current Maintainer of this work is StormDirus.
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXDC63E74B3F834BBCB72A43EF7933404A">
+			<Item class="Script" referent="RBX1B2B8ABB682C4049A53C43308BE32436">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{A46BF7E0-1112-430D-A72C-514990BF50CE}</string>
+					<string name="ScriptGuid">{27DA4269-0E7F-4180-BC23-7FD7706535E6}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -359,16 +359,15 @@ The Current Maintainer of this work is StormDirus.
 ]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX88E82A07BF4B43BB8F3ED77567C8D925">
+				<Item class="ModuleScript" referent="RBX45688EE3EE8D4F62B3AEBB15752B4536">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Main</string>
-						<string name="ScriptGuid">{A68A7167-2B88-40B8-ABFD-4888C7C8FB93}</string>
+						<string name="ScriptGuid">{9BAD9C1F-C5E4-4BB1-8F94-94A921239C74}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
-modtable.ValueLib = require(script.ValueLib)
-modtable.InstanceLib = require(script.InstanceLib)
-modtable.PlayerLib = require(script.PlayerLib)
-modtable.CharacterLib = require(script.CharacterLib)
+for i,v in pairs(script:GetChildren()) do
+	modtable[v.Name] = require(v)
+end
 return modtable
 
 --[[
@@ -400,11 +399,11 @@ The Current Maintainer of this work is StormDirus.
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX3694ABA405864342906B21F9747044CC">
+					<Item class="ModuleScript" referent="RBX1F15EACF94C1410FB0FE1468969CD536">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">PlayerLib</string>
-							<string name="ScriptGuid">{2917E405-7D80-4609-A959-928222788C76}</string>
+							<string name="ScriptGuid">{D45DCC4D-D527-4DC5-A1DE-9473E70F89C8}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
 	modtable[obj.Name] = {}
@@ -413,8 +412,26 @@ game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
 		if not obj then return end
 		if plr.Name == obj.Name then
 			obj:Remove()
+			modtable[obj.Name] = nil
 		end
 	end)
+	while wait(1) do
+		if modtable[obj.Name] == nil then break end
+		modtable[obj.Name].Friends = {}
+		local page = game.Players:GetFriendsAsync(game.Players:GetUserIdFromNameAsync(obj.Name))
+		local num = 1
+		repeat
+			local table1 = {}
+			table1.Id = page:GetCurrentPage().Id
+			table1.Name = page:GetCurrentPage().Username
+			table1.Online = page:GetCurrentPage().IsOnline
+			modtable[obj.Name].Friends[num] = table1
+			num = num + 1
+			if page.IsFinished ~= true then
+				page:AdvanceToNextPageAsync()
+			end
+		until page.IsFinished == true
+	end
 end)
 return modtable
 
@@ -447,11 +464,11 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXE716325855E74F36A77F7281927F2AC5">
+					<Item class="ModuleScript" referent="RBXFEEA8F55F67A45758DA354269844A23E">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">InstanceLib</string>
-							<string name="ScriptGuid">{3D052976-4BD4-48BF-8A1C-01863C36A84B}</string>
+							<string name="ScriptGuid">{9DF737E4-2A93-420B-B395-1D58145C2CD4}</string>
 							<ProtectedString name="Source"><![CDATA[local modtable = {}
 valuelib = require(script.Parent.ValueLib)
 function modtable:GetAncestors(obj)
@@ -519,7 +536,7 @@ function modtable:WaitForDescendantWithFunc(obj,func,time1)
 			return v
 		end
 	end
-	local eve = Instance.new("BindableEvent")
+	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
 	local func1 = obj.DescendantAdded:Connect(function(obj2)
 		for i,v in ipairs(obj:GetDescendants()) do
 			if func(v) == true then
@@ -538,7 +555,7 @@ function modtable:WaitForChildWithFunc(obj,func,time1)
 			return v
 		end
 	end
-	local eve = Instance.new("BindableEvent")
+	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
 	local func1 = obj.ChildAdded:Connect(function(obj2)
 		for i,v in ipairs(obj:GetDescendants()) do
 			if func(v) == true then
@@ -557,7 +574,7 @@ function modtable:WaitForAncestorWithFunc(obj,func,time1)
 			return v
 		end
 	end
-	local eve = Instance.new("BindableEvent")
+	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
 	local func1 = obj.AncestryChanged():Connect(function(obj2)
 		for i,v in ipairs(modtable:GetAncestors(obj)) do
 			if func(v) == true then
@@ -581,8 +598,10 @@ function modtable:GetInstancesWithFunc(obj,func)
 end
 function modtable.Create(objclass,parent,param1,param2)
 	local obj = Instance.new(objclass,parent)
-	for i,v in ipairs(param1) do
-		obj[v] = param2[i]
+	if param1 then
+		for i,v in ipairs(param1) do
+			obj[v] = param2[i]
+		end
 	end
 	return obj
 end
@@ -621,11 +640,11 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX29AE61C4C7C049CFADF9429A019D3397">
+					<Item class="ModuleScript" referent="RBX0D50E402820B43A5826FB7980B12C209">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">ValueLib</string>
-							<string name="ScriptGuid">{1508B35D-2779-4EF5-8FA5-4CDB6DE881AF}</string>
+							<string name="ScriptGuid">{2A75F0B2-AF76-4B17-8A65-CB93BB101E72}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 Index = {}
 Index[1] = game
@@ -663,12 +682,16 @@ function modtable:CreateFilteredTableClone(tab,func)
 	return tab2
 end
 function modtable.TableContains(tab,func)
-	for i,v in ipairs(tab) do
-		if func(v) == true then
-			return i
+	if tab then
+		for i,v in ipairs(tab) do
+			if func(v) == true then
+				return i
+			end
 		end
+	else
+		return nil
 	end
-end
+end	
 return modtable
 
 --[[
@@ -700,11 +723,11 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX256AF5C90D7F4F67AA8E692E3A159D86">
+					<Item class="ModuleScript" referent="RBX584BF534F85F42EAB7B67DEE0B9A35DF">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">CharacterLib</string>
-							<string name="ScriptGuid">{0944B5FD-6670-4C6E-BA01-8E9A45C0EDEB}</string>
+							<string name="ScriptGuid">{02F4B997-BA4A-478A-8295-51E3C7BE2D89}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 inst = require(script.Parent.InstanceLib)
 pathfinddebounce = {}
@@ -892,6 +915,16 @@ function modtable:EditAnim(anim,speed,weight,fade,looped)
 		anim.Looped = looped
 	end
 end
+DmgEventSub = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
+modtable.DmgEvent = DmgEventSub.Event
+modtable.DmgCache = {}
+function modtable:Damage(hum,damager,dmg)
+	hum.Health = hum.Health - dmg
+	local inval = index:GetUserDataId(hum)
+	modtable.DmgCache[inval] = damager
+	modtable.DmgEventSub:Fire(hum,damager,dmg)
+end
+
 return modtable
 
 --[[
@@ -923,7 +956,225 @@ The Current Maintainer of this work is StormDirus.
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
+					<Item class="ModuleScript" referent="RBX3D8E2DE1D8A94CC9868EB0B4A7706479">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">SandboxLib</string>
+							<string name="ScriptGuid">{C3FD1B82-614D-4E1F-935A-30264823EE43}</string>
+							<ProtectedString name="Source"><![CDATA[valmod = require(script.Parent.ValueLib)
+inst = require(script.Parent.InstanceLib)
+local modtable = {}
+
+modtable.Hidden = function(obj) --Defines what Userdatas will be 'Hidden', which means they can't be accessed, changed, or even detected.
+	if obj == script.Parent.Parent or obj:IsDescendantOf(script.Parent.Parent) then return true
+	elseif obj == game.ReplicatedStorage.Events or obj:IsDescendantOf(game.ReplicatedStorage.Events) then return true
+	elseif obj == game.ReplicatedStorage.PlayerFold or obj:IsDescendantOf(game.ReplicatedStorage.PlayerFold) then return true
+	elseif obj.ClassName == "LocalScript" and obj.Name == "PlrProbe" then return true
+	end
+end
+
+modtable.ReadOnly = function(obj) --Defines what Userdatas will be 'Read-Only', which means the data can be read but not edited.
+	
+end
+
+modtable.Protect = function(obj) --Defines what Userdatas will be 'Protected', which means they can't be destroyed
+	if not pcall(function() return obj.IsA end) then return end
+	if obj.ClassName == "Player" then
+		return true
+	end
+end
+
+modtable.Methods1 = {
+	destroy = true,
+	remove = true,
+	clearallchildren = true,
+	getchildren = true,
+	getservice = true,
+}
+modtable.Methods2 = {
+	destroy = function(obj)
+		if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
+		if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
+		if modtable.Protect(obj) then return error("Userdata is protected.") end
+		obj:Destroy()
+	end,
+	remove = function(obj)
+		if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
+		if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
+		if modtable.Protect(obj) then return error("Userdata is protected.") end
+		obj:Remove()
+	end,
+	clearallchildren = function(obj)
+		for i,v in pairs(obj:GetChildren()) do
+			if not modtable.Protect(obj) and not modtable.ReadOnly(obj) and not modtable.Hidden(obj) then 
+				obj:Remove()
+			end
+		end
+	end,
+	getchildren = function(obj)
+		local table1 = inst:GetChildrenWithFunc(obj,function(obj) if not modtable.Hidden then return true end end) 
+		local table2 = {}
+		for i,v in table1 do
+			table2[i] = modtable.Wrap(v)
+		end
+		return table2
+	end,
+	getservice = function(stringy)
+		if pcall(function() return stringy.IsA end) then return nil end
+		if stringy:lower() == "insertservice" then return error("InsertService is not supported.") end
+		if pcall(function() return game:GetService(stringy).IsA end) then
+			return modtable.Wrap(game:GetService(stringy))
+		else
+			return modtable.Wrap(game:GetService(stringy))
+		end
+	end,
+}
+modtable.Wrap = function(obj) --The actual sandboxing function, it sandboxes the Userdatas so the metamethods can't break the sandbox, its the most important part.
+	if not modtable.Hidden(obj) and not valmod.TableContains(inst:GetAncestors(obj),function(obj1) if modtable.Hidden(obj1) then return true end end) then
+		local nobj = newproxy(true)
+		getmetatable(nobj).__index = function(a,b)
+			if modtable.Methods1[b:lower()] then
+				return modtable.Methods2[b:lower()](obj)
+			end
+			if pcall(function() return obj[b].IsA end) then
+				return modtable.Wrap(obj[b])
+			else
+				return modtable[b]
+			end
+			return nil
+		end
+		getmetatable(nobj).__newindex = function(a,b,c)
+			if modtable.Protect(obj) and b:lower() == "parent" then return error("Userdata is protected.") end
+			if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
+			if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
+			obj[b] = c
+		end
+		getmetatable(nobj).__tostring = obj.Name or tostring(obj)
+		getmetatable(nobj).__metatable = "This metatable is sandboxed."
+		return nobj
+	else
+		return nil
+	end
+end
+return modtable
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
 				</Item>
+				<Item class="Folder" referent="RBX2A896BAABCFD4B1B8D1677CD4E18A795">
+					<Properties>
+						<string name="Name">TempObjs</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Configuration" referent="RBX1197153C4CBD4862B6C5E17F286E3152">
+			<Properties>
+				<string name="Name">ServerStorage</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX90ED6BA14FDA426FBF47266B6E047B54">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Sandboxed_Script</string>
+					<string name="ScriptGuid">{3957E7AC-F55A-4831-B0C2-2D73AE03F9F7}</string>
+					<ProtectedString name="Source"><![CDATA[code = loadstring([[
+	
+]]) --Code goes inside the loadstring.
+do --Begin sandboxing procces strictly on the 'code' function.
+	sand = require(game.ServerScriptService.DirusEngine.Main).SandboxLib
+	setfenv(code,{
+		game = sand.Wrap(game),
+		workspace = sand.Wrap(workspace),
+		_G =  function()
+			return error("Global values are not supported.")
+		end,
+		require = function()
+			return error("Require is not supported.")
+		end,
+		setfenv = function()
+			return error("Functions and script enviroments are locked.")
+		end,
+		getfenv = function()
+			return error("Functions and script enviroments are locked.")
+		end,
+		Instance ={
+        	new = function(a, b)
+            	return sand.Wrap(Instance.new(a, b))
+        	end
+    	},
+		loadstring = loadstring,
+    	print = print,
+    	error = error,
+    	table = table,
+    	pairs = pairs,
+    	string = string,
+	    ipairs = ipairs,
+	    next = next,
+	    os = os,
+	    pcall = pcall,
+	    rawequal = rawequal,
+	    rawget = rawget,
+	    rawset = rawset,
+	    select = select,
+	    setmetatable = setmetatable,
+	    tonumber = tonumber,
+	    tostring = tostring,
+	    type = type,
+	    unpack = unpack,
+	    _VERSION = _VERSION,
+	    xpcall = xpcall,
+	    collectgarbage = collectgarbage,
+	    assert = assert,
+	    gcinfo = gcinfo,
+	    coroutine = coroutine,
+	    string = string,
+	    table = table,
+	    math = math,
+	    delay = delay,
+	    spawn = spawn,
+	    tick = tick,
+	    time = time,
+	    UserSettings = UserSettings,
+	    wait = wait,
+	    warn = warn,
+	    ypcall = ypcall,
+	    settings = settings,
+	})
+end --Sandboxing finnished.
+code() --Activate sandboxed code.
+
+--[[
+## DEFINITIONS
+The term, "StormDirus" can be defined in two ways:
+1. The account holder of the Github account, that can be found at this URL:
+https://github.com/StormDirus
+
+2. The account holder of the Roblox account, that can be found at this URL:
+https://www.roblox.com/users/49946095/profile
+
+The term, "Repository" is the Github repository held in this URL:
+https://github.com/StormDirus/DirusEngine
+
+
+
+## LICENSE AGREEMENT
+Copyright (c) 2019 StormDirus
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt 
+and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+This work has the LPPL maintenance status 'maintained'.
+The Current Maintainer of this work is StormDirus.
+--]]
+]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
 			</Item>
 		</Item>
 	</Item>
