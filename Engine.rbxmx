@@ -2,27 +2,27 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX233C0DEBD7724956B4E8B3CF7CC4ED1A">
+	<Item class="Folder" referent="RBX02294143FC444FE080DC951A54F5A6C2">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBXCDB244DA627F4F84AEAFC4BB9CC448D6">
+		<Item class="Configuration" referent="RBX1A813126B4984A40AE14CFD86CC38401">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBXEDBDED86AA434CE58C70BA476629CA1B">
+			<Item class="Configuration" referent="RBX218BDF9414BC4CA08D497B3797DF841C">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBX9A398DEE61DE415B9EBEC4A6CA502736">
+				<Item class="LocalScript" referent="RBX5FAA561A64784864B026BDDA9633D812">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlrProbe</string>
-						<string name="ScriptGuid">{AA912D97-E588-4E52-B452-65E563865237}</string>
+						<string name="ScriptGuid">{7C49EAC1-F6E2-421C-9C07-193D572DF23A}</string>
 						<ProtectedString name="Source"><![CDATA[joy1 = {}
 joy1.Delta = Vector3.new(0,0,0)
 joy1.Position = Vector3.new(0,0,0)
@@ -32,6 +32,7 @@ joy2.Position = Vector3.new(0,0,0)
 plr = game.Players.LocalPlayer
 mouse = plr:GetMouse()
 camera = workspace.CurrentCamera
+cc = game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name)
 idle = 0
 uis = game:GetService("UserInputService")
 uis.InputChanged:Connect(function(input,gp)
@@ -44,19 +45,23 @@ uis.InputChanged:Connect(function(input,gp)
 	end
 end)
 uis.InputBegan:Connect(function(input, gpe)
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).KeyDown:FireServer(input.KeyCode)
+	cc.KeyDown:FireServer(input.KeyCode)
 end)
 uis.InputEnded:Connect(function(input, gpe)
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).KeyUp:FireServer(input.KeyCode)
+	cc.KeyUp:FireServer(input.KeyCode)
 end)
-mouse.Button1Down:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b1d:FireServer() end)
-mouse.Button1Up:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b1u:FireServer() end)
-mouse.Button2Down:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b2d:FireServer() end)
-mouse.Button2Up:Connect(function() game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).b2d:FireServer() end)
+
+mouse.Button1Down:Connect(function() cc.b1d:FireServer() end)
+mouse.Button1Up:Connect(function() cc.b1u:FireServer() end)
+mouse.Button2Down:Connect(function() cc.b2d:FireServer() end)
+mouse.Button2Up:Connect(function() cc.b2d:FireServer() end)
 mouse.Move:Connect(function() idle = 1 end)
 mouse.Idle:Connect(function() idle = 0 end)
-plr.Chatted:Connect(function(msg) game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Chat:FireServer(msg) end)
+plr.Chatted:Connect(function(msg) cc.Chat:FireServer(msg) end)
 tabinput = {}
+cc.changestate.OnClientEvent:Connect(function(hum,state,bool)
+	hum:SetStateEnabled(state,bool)
+end)
 while wait(1/30) do
 	local gui
 	if uis:GetFocusedTextBox() then
@@ -64,17 +69,17 @@ while wait(1/30) do
 	else
 		gui = false
 	end
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).joystick:FireServer(joy1,joy2)
+	cc.joystick:FireServer(joy1,joy2)
 	tabinput = {Accelerometer = uis.AccelerometerEnabled,Gamepad = uis.GamepadEnabled,Gyroscope = uis.GyroscopeEnabled,Keyboard = uis.KeyboardEnabled,Modal = uis.ModalEnabled,Mouse = uis.MouseEnabled,Touch = uis.TouchEnabled,VR = uis.VREnabled}
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).gui:FireServer(gui)
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).type:FireServer(tabinput)
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Mouse:FireServer(mouse.hit, mouse.target, mouse.origin)
+	cc.gui:FireServer(gui)
+	cc.type:FireServer(tabinput)
+	cc.Mouse:FireServer(mouse.hit, mouse.target, mouse.origin)
 	if idle == 1 then
-		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).mMove:FireServer()
+		cc.mMove:FireServer()
 	else
-		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).mIdle:FireServer()
+		cc.mIdle:FireServer()
 	end
-	game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).Camera:FireServer(camera.CFrame)
+	cc.Camera:FireServer(camera.CFrame)
 end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
@@ -82,122 +87,104 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBXF72EFBA85AA54E429F8EB2382CAC4E72">
+		<Item class="Configuration" referent="RBX2C061C6CE35E4EC08484A8EA35F15244">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBXCF16A179F9F142DAB8C5EAEC7A474388">
+			<Item class="Folder" referent="RBX21B767B118B940E7AAB50CDA209D0575">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX3A96027A4BE24EC4B6A91A14A8DE8E41">
+				<Item class="Folder" referent="RBXF60342204A80481E98E4965E08FF9A99">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBX7BF0AA8123AC4EFDB6EE6DF24F39B13B">
+			<Item class="Folder" referent="RBXD82A2C47F8124BE6A4B3607F0B490A27">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX4AE84C6DAF434D418DDF792837CCE49F">
+				<Item class="Folder" referent="RBXDD0F49858DA74CF7B22FD5D4F3718BCB">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBXB1BCE5D481914DD6843DB94E20ADFFC5">
+					<Item class="RemoteEvent" referent="RBXD0AD529092954A23A435816FAE7527A6">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX0CEF054EDA9E41849577E44519B47515">
+					<Item class="RemoteEvent" referent="RBX2BFE764A3136409495A9B0D065E434CB">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX27F2C9BB98F042DCBE02AF63B850DBB3">
+					<Item class="RemoteEvent" referent="RBXEBF4A95DF6654A7BBC018DC855C0D59D">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX5F56837AB54647CC8143274CB41D7DF6">
+					<Item class="RemoteEvent" referent="RBXB65FBAB69D4640C3AC6F453B6B6A96D1">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX8D3D85A303584D5AA7460F3D273ACF05">
+					<Item class="RemoteEvent" referent="RBX7BC73420308E40E4B87DE4595ADA0E94">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX3DD7A8DD26104D2B8252E2F797057FC1">
+					<Item class="RemoteEvent" referent="RBX3E95DAEFF10A4AAFB2D90E997C929D2D">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX75A234F7863D409194222C78FF28615A">
+					<Item class="RemoteEvent" referent="RBX84F458C823D54A0E80CB0B592E4D9922">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX9488A6404FC84EBAB9CAFF5728A2B0EB">
+					<Item class="RemoteEvent" referent="RBXA4CAA8FDA0C944E78BB82BC55041BF49">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX99826E04465E491EB35995924D12FB80">
+					<Item class="RemoteEvent" referent="RBX22F63518478F46179C5D02B04F4ACD4A">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX218575E893F44DAF8D54B03C3FBD2BBC">
+					<Item class="RemoteEvent" referent="RBX20B59F7B5ED84472BD652CA0C17DBE0A">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX0F4A208DA6D14E2995115A701BC6B8C9">
+					<Item class="RemoteEvent" referent="RBX6A9A6168F5114C8B8776F8383D3EB50B">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC87F348C06334841A5752816591D43D7">
-						<Properties>
-							<string name="Name">type</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="RemoteEvent" referent="RBXC415781073B14C71BB1B36B4A3C6BDC3">
-						<Properties>
-							<string name="Name">gui</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="RemoteEvent" referent="RBX231144DA5D144CC0BE4B6BDD664C43ED">
-						<Properties>
-							<string name="Name">joystick</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBXC0C7F7EE09A1487FA93AA61D85882980">
+					<Item class="ModuleScript" referent="RBXC9D47BD66F374E588E5564756457F553">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
-							<string name="ScriptGuid">{A6200938-E5C7-43DA-800D-4169A39C2ED9}</string>
+							<string name="ScriptGuid">{D0CB3C44-ED66-4D1B-B090-6C01FD68C267}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 local cc = script.Parent
 plr = game.Players[script.Parent.Name]
@@ -217,26 +204,31 @@ cc.KeyDown.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mkd:
 cc.KeyUp.OnServerEvent:Connect(function(p, k) if p ~= plr then return end mku:Fire(k) end)
 modtable.KeyDown = mkd.Event
 modtable.KeyUp = mku.Event
-modtable.Button1Down = Instance.new("BindableEvent",cc)
-modtable.Button1Up = Instance.new("BindableEvent",cc)
-modtable.Button2Down = Instance.new("BindableEvent",cc)
-modtable.Button2Up = Instance.new("BindableEvent",cc)
+Button1Down = Instance.new("BindableEvent",cc)
+Button1Up = Instance.new("BindableEvent",cc)
+Button2Down = Instance.new("BindableEvent",cc)
+Button2Up = Instance.new("BindableEvent",cc)
 cc.b1d.OnServerEvent:Connect(function(p)
 	if p ~= plr then return end
-	modtable.Button1Down:Fire()
+	Button1Down:Fire()
 end)
 cc.b1u.OnServerEvent:Connect(function(p)
 	if p ~= plr then return end
-	modtable.Button1Up:Fire()
+	Button1Up:Fire()
 end)
 cc.b2d.OnServerEvent:Connect(function(p)
 	if p ~= plr then return end
-	modtable.Button2Down:Fire()
+	Button2Down:Fire()
 end)
 cc.b2u.OnServerEvent:Connect(function(p)
 	if p ~= plr then return end
-	modtable.Button2Up:Fire()
+	Button2Up:Fire()
 end)
+modtable.Button1Down = Button1Down.Event
+modtable.Button1Up = Button1Up.Event
+modtable.Button2Down = Button2Down.Event
+modtable.Button2Up = Button2Up.Event
+
 Camera = {}
 modtable.CameraCframe = CFrame.new()
 local mm = Instance.new("BindableEvent", cc)
@@ -255,7 +247,7 @@ end
 game:GetService('RunService').Heartbeat:Connect(mousem)
 modtable.MouseMove = mm.Event
 modtable.MouseIdle = mi.Event
-local chat = Instance.new("BindableEvent", cc)
+local chat = Instance.new("BindableEvent", script)
 cc.Chat.OnServerEvent:Connect(function(p, msg) if p ~= plr then return end chat:Fire(msg) end)
 modtable.Chatted = chat.Event
 modtable.Type = nil
@@ -282,48 +274,48 @@ end)
 
 return modtable
 
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]]]></ProtectedString>
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX7CDC31425D5149E3A6293A071D4DCBA8">
+						<Properties>
+							<string name="Name">type</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX5C083ACC60E242E0A42476FEB7DF5D96">
+						<Properties>
+							<string name="Name">gui</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBX600D480AB48C4F4BA33470F6A46A15C8">
+						<Properties>
+							<string name="Name">joystick</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="RemoteEvent" referent="RBXDD07C65C1019461FBC80E8147F634659">
+						<Properties>
+							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX3546ABB1486647DE9BA047A33DC977B5">
+		<Item class="Configuration" referent="RBXC42BD6C63894496C889D9C5FA40BD156">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX1B2B8ABB682C4049A53C43308BE32436">
+			<Item class="Script" referent="RBXBC93F5DC7F774D4CB363B04A185C5D4C">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{27DA4269-0E7F-4180-BC23-7FD7706535E6}</string>
+					<string name="ScriptGuid">{26551AF6-92F8-4412-8BF7-58BB7D4D687B}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -332,7 +324,7 @@ end)
 engine = require(script.Main)
 
 --[[
-## DEFINITIONS
+DEFINITIONS
 The term, "StormDirus" can be defined in two ways:
 1. The account holder of the Github account, that can be found at this URL:
 https://github.com/StormDirus
@@ -342,133 +334,134 @@ https://www.roblox.com/users/49946095/profile
 
 The term, "Repository" is the Github repository held in this URL:
 https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
+  
 This work may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3
 of this license or (at your option) any later version.
 The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
+http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of LaTeX
+version 2005/12/01 or later.
+This work has the LPPL maintenance status `maintained'.
 The Current Maintainer of this work is StormDirus.
---]]
-]]></ProtectedString>
+This work consists of the files in the Repository
+and any direct derivatives of it.
+
+Copyright 2019 StormDirus
+]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX45688EE3EE8D4F62B3AEBB15752B4536">
+				<Item class="ModuleScript" referent="RBXDF1801CA364C42819D8FE68C35352EBD">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Main</string>
-						<string name="ScriptGuid">{9BAD9C1F-C5E4-4BB1-8F94-94A921239C74}</string>
+						<string name="ScriptGuid">{D459F287-7C9C-4A32-AA4A-1BBF5AF6E3E1}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 for i,v in pairs(script:GetChildren()) do
 	modtable[v.Name] = require(v)
 end
 return modtable
-
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
-
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX1F15EACF94C1410FB0FE1468969CD536">
+					<Item class="ModuleScript" referent="RBX9E5A904420744A28A3AE7BD3CB53CA87">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">PlayerLib</string>
-							<string name="ScriptGuid">{D45DCC4D-D527-4DC5-A1DE-9473E70F89C8}</string>
+							<string name="ScriptGuid">{AA8B18F2-B045-4E17-A3D0-024B16F46A44}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
+groupservice = game:GetService("GroupService")
+httpserice = game:GetService("HttpService")
+function getwebdata(link)
+	local tab = {}
+	local num = 1
+	repeat
+		local json = httpserice:GetAsync(link .."?page=" ..num)
+		for i, v in pairs(httpserice:JSONDecode(json)) do
+			tab[#tab + 1] = modtable:GetInfo(v.Id)
+		end
+		num = num + 1
+	until #(httpserice:JSONDecode(httpserice:GetAsync(link .."?page=" ..num))) == 0
+	return tab
+end
+function getfriends(id)
+	local page = game.Players:GetFriendsAsync(id)
+	local table1 = {}
+	local b = 0
+	for i,v in pairs(getwebdata("https://api.rprxy.xyz/users/" ..id .."/friends")) do
+		b = b + 1
+		table1[b] = v
+	end
+	return table1
+end
+function getgroups(id)
+	local table1 = {}
+	local groups = groupservice:GetGroupsAsync(id)
+	for i,group1 in ipairs(groups) do
+		local group2 = groupservice:GetGroupInfoAsync(group1.Id)
+		local table2 = {
+			Name = group2.Name,
+			Id = group2.Id,
+			Emblem = group2.EmblemUrl,
+			Description = group2.Description,
+			Roles = group2.Roles,
+			PlayerPrimary = group1.IsPrimary,
+			PlayerClan = group1.IsInClan,
+			PlayerRank = group1.Rank,
+			PlayerRole = group1.Role,
+		}
+		if group2.Owner then
+			table2.Owner = modtable:GetInfo(group2.Owner.Id)
+		end
+		table1[i] = table2
+	end
+	return table1
+end
+function modtable:GetInfo(id)
+	local ud = {}
+	ud.GetName = function()
+		return game.Players:GetNameFromUserIdAsync(id)
+	end
+	ud.Id = id
+	ud.GetAppearance = function()
+		return game.Players:GetCharacterAppearanceAsync(id)
+	end
+	ud.GetGroups = function()
+		return getgroups(id)
+	end
+	ud.GetPlayerThumbnail = function(Type,Size)
+		return game.Players:GetUserThumbnailAsync(id,Type,Size)
+	end
+	ud.GetFriends = function()
+		return getfriends(id)
+	end
+	ud.CheckIfOnline = function()
+		return (httpserice:JSONDecode(httpserice:GetAsync("https://api.rprxy.xyz/users" ..id))).IsOnline
+	end
+	return ud
+end
 game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
 	modtable[obj.Name] = {}
 	modtable[obj.Name].Input = require(obj.Input)
+	modtable[obj.Name].Info = modtable:GetInfo(game.Players:GetUserIdFromNameAsync(obj.Name))
 	game.Players.PlayerRemoving:Connect(function(plr)
 		if not obj then return end
 		if plr.Name == obj.Name then
 			obj:Remove()
-			modtable[obj.Name] = nil
 		end
 	end)
-	while wait(1) do
-		if modtable[obj.Name] == nil then break end
-		modtable[obj.Name].Friends = {}
-		local page = game.Players:GetFriendsAsync(game.Players:GetUserIdFromNameAsync(obj.Name))
-		local num = 1
-		repeat
-			local table1 = {}
-			table1.Id = page:GetCurrentPage().Id
-			table1.Name = page:GetCurrentPage().Username
-			table1.Online = page:GetCurrentPage().IsOnline
-			modtable[obj.Name].Friends[num] = table1
-			num = num + 1
-			if page.IsFinished ~= true then
-				page:AdvanceToNextPageAsync()
-			end
-		until page.IsFinished == true
-	end
 end)
 return modtable
 
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
 ]]></ProtectedString>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXFEEA8F55F67A45758DA354269844A23E">
+					<Item class="ModuleScript" referent="RBX6CF7BF17B3EC4180B72B34FF1FE1B243">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">InstanceLib</string>
-							<string name="ScriptGuid">{9DF737E4-2A93-420B-B395-1D58145C2CD4}</string>
+							<string name="ScriptGuid">{50A52068-AA17-4B73-9141-DD7D4C6A6374}</string>
 							<ProtectedString name="Source"><![CDATA[local modtable = {}
 valuelib = require(script.Parent.ValueLib)
 function modtable:GetAncestors(obj)
@@ -611,40 +604,15 @@ end
 
 return modtable
 
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
 ]]></ProtectedString>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX0D50E402820B43A5826FB7980B12C209">
+					<Item class="ModuleScript" referent="RBXF9B580558B6F4179B177C2E201148274">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">ValueLib</string>
-							<string name="ScriptGuid">{2A75F0B2-AF76-4B17-8A65-CB93BB101E72}</string>
+							<string name="ScriptGuid">{4B7A1C20-88BF-411B-AA5E-82DD66670D2B}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 Index = {}
 Index[1] = game
@@ -682,52 +650,23 @@ function modtable:CreateFilteredTableClone(tab,func)
 	return tab2
 end
 function modtable.TableContains(tab,func)
-	if tab then
-		for i,v in ipairs(tab) do
-			if func(v) == true then
-				return i
-			end
+	for i,v in ipairs(tab) do
+		if func(v) == true then
+			return i
 		end
-	else
-		return nil
 	end
-end	
+end
 return modtable
 
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
 ]]></ProtectedString>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX584BF534F85F42EAB7B67DEE0B9A35DF">
+					<Item class="ModuleScript" referent="RBX65DED4F306084938AB4DDDF6CD3C360C">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">CharacterLib</string>
-							<string name="ScriptGuid">{02F4B997-BA4A-478A-8295-51E3C7BE2D89}</string>
+							<string name="ScriptGuid">{8B040C34-517F-4488-96F7-C166394337FD}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 inst = require(script.Parent.InstanceLib)
 pathfinddebounce = {}
@@ -742,6 +681,7 @@ function modtable:GetPlayerFromObj(obj)
 			local val = game.Players:GetPlayerFromCharacter(obj2)
 			return val
 		end
+		return nil
 	else
 		local val = game.Players:GetPlayerFromCharacter(obj)
 		return val
@@ -915,6 +855,15 @@ function modtable:EditAnim(anim,speed,weight,fade,looped)
 		anim.Looped = looped
 	end
 end
+function modtable:SetStateEnabled(hum,state,bool)
+	if modtable:GetPlayerFromObj(hum) then
+		print("Yes!")
+		local plr = modtable:GetPlayerFromObj(hum)
+		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).changestate:FireClient(plr,hum,state,bool)
+	else
+		hum:SetStateEnabled(state,bool)
+	end
+end
 DmgEventSub = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
 modtable.DmgEvent = DmgEventSub.Event
 modtable.DmgCache = {}
@@ -924,43 +873,17 @@ function modtable:Damage(hum,damager,dmg)
 	modtable.DmgCache[inval] = damager
 	modtable.DmgEventSub:Fire(hum,damager,dmg)
 end
-
 return modtable
 
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
 ]]></ProtectedString>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX3D8E2DE1D8A94CC9868EB0B4A7706479">
+					<Item class="ModuleScript" referent="RBX460473E3192640C3BCCADCBCE4027851">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">SandboxLib</string>
-							<string name="ScriptGuid">{C3FD1B82-614D-4E1F-935A-30264823EE43}</string>
+							<string name="ScriptGuid">{CC659579-217A-4F2A-BFB6-DAD47C3783F7}</string>
 							<ProtectedString name="Source"><![CDATA[valmod = require(script.Parent.ValueLib)
 inst = require(script.Parent.InstanceLib)
 local modtable = {}
@@ -1062,119 +985,12 @@ return modtable
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Folder" referent="RBX2A896BAABCFD4B1B8D1677CD4E18A795">
+				<Item class="Folder" referent="RBXCD7C42F6DF284F5F8E2A43C081D6C2AF">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-			</Item>
-		</Item>
-		<Item class="Configuration" referent="RBX1197153C4CBD4862B6C5E17F286E3152">
-			<Properties>
-				<string name="Name">ServerStorage</string>
-				<BinaryString name="Tags"></BinaryString>
-			</Properties>
-			<Item class="Script" referent="RBX90ED6BA14FDA426FBF47266B6E047B54">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Sandboxed_Script</string>
-					<string name="ScriptGuid">{3957E7AC-F55A-4831-B0C2-2D73AE03F9F7}</string>
-					<ProtectedString name="Source"><![CDATA[code = loadstring([[
-	
-]]) --Code goes inside the loadstring.
-do --Begin sandboxing procces strictly on the 'code' function.
-	sand = require(game.ServerScriptService.DirusEngine.Main).SandboxLib
-	setfenv(code,{
-		game = sand.Wrap(game),
-		workspace = sand.Wrap(workspace),
-		_G =  function()
-			return error("Global values are not supported.")
-		end,
-		require = function()
-			return error("Require is not supported.")
-		end,
-		setfenv = function()
-			return error("Functions and script enviroments are locked.")
-		end,
-		getfenv = function()
-			return error("Functions and script enviroments are locked.")
-		end,
-		Instance ={
-        	new = function(a, b)
-            	return sand.Wrap(Instance.new(a, b))
-        	end
-    	},
-		loadstring = loadstring,
-    	print = print,
-    	error = error,
-    	table = table,
-    	pairs = pairs,
-    	string = string,
-	    ipairs = ipairs,
-	    next = next,
-	    os = os,
-	    pcall = pcall,
-	    rawequal = rawequal,
-	    rawget = rawget,
-	    rawset = rawset,
-	    select = select,
-	    setmetatable = setmetatable,
-	    tonumber = tonumber,
-	    tostring = tostring,
-	    type = type,
-	    unpack = unpack,
-	    _VERSION = _VERSION,
-	    xpcall = xpcall,
-	    collectgarbage = collectgarbage,
-	    assert = assert,
-	    gcinfo = gcinfo,
-	    coroutine = coroutine,
-	    string = string,
-	    table = table,
-	    math = math,
-	    delay = delay,
-	    spawn = spawn,
-	    tick = tick,
-	    time = time,
-	    UserSettings = UserSettings,
-	    wait = wait,
-	    warn = warn,
-	    ypcall = ypcall,
-	    settings = settings,
-	})
-end --Sandboxing finnished.
-code() --Activate sandboxed code.
-
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
-]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
 			</Item>
 		</Item>
 	</Item>
