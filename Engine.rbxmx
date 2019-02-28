@@ -867,7 +867,7 @@ end
     	 
     	connect["onWaypointReached"] = hum.MoveToFinished:Connect(followPath)
 		local a = 0
-     	while true do
+     	local qfunc = coroutine.resume(coroutine.create(function() while true do
 			if a == 1 then break end
 			if pathfindingcache[indexnum].isdone == 1 then
 				pathfinddebounce[indexnum] = 0
@@ -878,9 +878,10 @@ end
 			end
 			game:GetService("RunService").Heartbeat:wait()
 		end
+		end))
     	followPath()
 	end
-while true do
+coroutine.resume(coroutine.create(function() while true do
 	for i,hum in ipairs(inst:GetDescendantsWithFunc(workspace,function(funcobj) if funcobj:IsA("Humanoid") or funcobj:IsA("AnimationController") then return true end end)) do
 		local indexnum = index:GetUserDataId(hum)
 		if animcache.hums[indexnum] then
@@ -891,6 +892,7 @@ while true do
 	end
 	game:GetService("RunService").Heartbeat:wait()
 end
+end))
 function modtable:CanPathFind(hum, despoint)
 	if pcall(function() return despoint.Position end) then
 		despoint = despoint.Position
