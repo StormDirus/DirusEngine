@@ -1,4 +1,4 @@
-file = Workspace.Files
+file = Workspace:FindFirstChild("Files")
 if not file then error("'Files' is not in workspace.") end
 function pathsearch(pathstamp,pathfile)
 	for i,v in pairs(pathfile:GetChildren()) do
@@ -11,4 +11,11 @@ function pathsearch(pathstamp,pathfile)
 end
 pathsearch(game,file)
 file.Parent = nil
-print("DirusEngine loaded.")
+print([[
+
+
+DirusEngine loaded.
+
+Apply 'eng = require(game.ServerScriptService.DirusEngine.Main)'
+to the tops of your Sever-Sided scripts.
+]])
