@@ -12,7 +12,9 @@ end
 pathsearch(game,file)
 file.Parent = nil
 print([[
+~
 
+~
 
 DirusEngine loaded.
 
