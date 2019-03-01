@@ -5,7 +5,7 @@ function pathsearch(pathstamp,pathfile)
 		if v:IsA("Configuration") then
 			pathsearch(pathstamp[v.Name],v)
 		else
-			if pathstamp:FindFirstChild(v.Name) then pathstamp:FindFirstChild(v.Name):Destroy() end
+			if pathstamp:FindFirstChild(v.Name) ~= nil then pathstamp:FindFirstChild(v.Name):Destroy() end
 			v.Parent = pathstamp
 		end
 	end
