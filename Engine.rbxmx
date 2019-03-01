@@ -335,12 +335,12 @@ end]]></ProtectedString>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX0DAA615ECBB84AACB80D0F333454E406">
+			<Item class="Script" referent="RBXBC36D14E77FB4EAFADF969DB15A2C480">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{ADB85C96-4CFD-47A6-A3F0-B7F283F2C453}</string>
+					<string name="ScriptGuid">{9FD813F6-8EE7-42E7-B172-48037943A616}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -376,11 +376,11 @@ Copyright 2019 StormDirus
 ]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXFCD336D1304B4F9BA106C7346A25FBC9">
+				<Item class="ModuleScript" referent="RBXC4D97D01D3CE4C2CAAEE78D9810A0E15">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Main</string>
-						<string name="ScriptGuid">{680E05F4-4108-4315-B44C-93261350864B}</string>
+						<string name="ScriptGuid">{2000299E-FBF8-4177-8B3E-FB2D24082706}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 for i,v in pairs(script:GetChildren()) do
 	modtable[v.Name] = require(v)
@@ -389,11 +389,11 @@ return modtable
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX1BAC448866AA4B6E9C4333F92890283C">
+					<Item class="ModuleScript" referent="RBXFAF5CF2EF9C34C79AD0C2C1213F38C42">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">PlayerLib</string>
-							<string name="ScriptGuid">{0E6E6FBA-0BD2-447B-B3AA-A63741AD3ECC}</string>
+							<string name="ScriptGuid">{9FC526B2-7FB6-4F09-865D-066836C89896}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -482,11 +482,11 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXDA3251EB25734EE7AB80C76A6559F4F0">
+					<Item class="ModuleScript" referent="RBX8A3455D2E16343D1A7D03A3FEBF2974F">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">InstanceLib</string>
-							<string name="ScriptGuid">{4EE45747-AE08-418E-824E-C3D7A893BC0B}</string>
+							<string name="ScriptGuid">{A23D483E-9BD2-460C-9C8F-3CF93BFAB590}</string>
 							<ProtectedString name="Source"><![CDATA[local modtable = {}
 valuelib = require(script.Parent.ValueLib)
 function GetMaxMinCorners(cframe,size)
@@ -705,11 +705,11 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXC38E446650FE4583920BFE96ECD53427">
+					<Item class="ModuleScript" referent="RBX92A567CEB2DD4F09B3315E621DA18356">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">ValueLib</string>
-							<string name="ScriptGuid">{67FE0D1A-7ED2-48D4-A05A-99CC6FFE68CE}</string>
+							<string name="ScriptGuid">{BB8C9268-83D1-4740-9A2C-2650D8DD5944}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 Index = {}
 Index[1] = game
@@ -772,11 +772,11 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX368AC9FF2F444F978E1527C032B79104">
+					<Item class="ModuleScript" referent="RBX0AAA97299C97414EB6DC4D459E34B759">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">CharacterLib</string>
-							<string name="ScriptGuid">{049C728D-3B8B-4542-8EAE-F60FD9DC8F2E}</string>
+							<string name="ScriptGuid">{09CE7458-C240-4B11-AC62-D80FA0BAE841}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 inst = require(script.Parent.InstanceLib)
 pathfinddebounce = {}
@@ -994,11 +994,11 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX3F63D8DCD17D4AA3A7C7A03800D4D303">
+					<Item class="ModuleScript" referent="RBX68E689DAF4A04BA1BF0F3FAE35CFB8A9">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">SandboxLib</string>
-							<string name="ScriptGuid">{607ABD43-4463-490C-B8BB-A1696B3E2F33}</string>
+							<string name="ScriptGuid">{21DCDC76-E4A5-4986-A488-F182430635B1}</string>
 							<ProtectedString name="Source"><![CDATA[valmod = require(script.Parent.ValueLib)
 inst = require(script.Parent.InstanceLib)
 local modtable = {}
@@ -1068,7 +1068,7 @@ modtable.Methods2 = {
 	end,
 }
 modtable.Wrap = function(obj) --The actual sandboxing function, it sandboxes the Userdatas so the metamethods can't break the sandbox, its the most important part.
-	if not modtable.Hidden(obj) and not valmod.TableContains(inst:GetAncestors(obj),function(obj1) if modtable.Hidden(obj1) then return true end end) then
+	if inst:GetAncestors(obj) and not modtable.Hidden(obj) and not valmod.TableContains(inst:GetAncestors(obj),function(obj1) if modtable.Hidden(obj1) then return true end end) then
 		local nobj = newproxy(true)
 		getmetatable(nobj).__index = function(a,b)
 			if modtable.Methods1[b:lower()] then
@@ -1077,8 +1077,10 @@ modtable.Wrap = function(obj) --The actual sandboxing function, it sandboxes the
 			if type(obj[b]) == "userdata" then
 				return modtable.Wrap(obj[b])
 			elseif type(obj[b]) == "function" then
-				local methodfunc = loadstring("return function(obj,...) local Wrap = require(game.SeverScriptService.Main.SandboxLib).Wrap local a = obj:" ..b .."(...) if type(a) == 'userdata' then a = Wrap(a) end return a")
+				local methodfunc = loadstring("return function(obj,...) local Wrap = require(game.ServerScriptService.DirusEngine.Main.SandboxLib).Wrap local a = require(game.ServerScriptService.DirusEngine.Main.ValueLib):GetUserDataFromId(" ..tostring(valmod:GetUserDataId(obj)) .."):" ..b .."(...) if type(a) == 'userdata' then a = Wrap(a) end return a end")
 				return methodfunc()
+			elseif obj[b] then
+				return obj[b]
 			end
 			return nil
 		end
@@ -1100,11 +1102,11 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXE986D98ADF9E43E9874FC97009F13EBF">
+					<Item class="ModuleScript" referent="RBXFE261B32C5A842058E74F9017860EFD0">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">ModLib</string>
-							<string name="ScriptGuid">{0AB4FEFC-85A5-4E27-A827-FAC646E6BBE9}</string>
+							<string name="ScriptGuid">{8BF6B436-67BE-4AC4-BC55-F2D53D932F7F}</string>
 							<ProtectedString name="Source"><![CDATA[local modtable = {}
 local DataStoreService = game:GetService("DataStoreService")
 bancache = DataStoreService:GetDataStore("Moderation")
@@ -1181,7 +1183,7 @@ return modtable
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Folder" referent="RBX1FE958CBAFD3453A9082627C9C63F5B1">
+				<Item class="Folder" referent="RBXE8C7FABF2D4C437D90F57FB5AFE94DFD">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
@@ -1194,12 +1196,12 @@ return modtable
 				<string name="Name">ServerStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXDB1247C9538A414EBE44B2071662D0F0">
+			<Item class="Script" referent="RBXCB5B166AAFD84368989D1163D903B6C1">
 				<Properties>
 					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Sandboxed_Script</string>
-					<string name="ScriptGuid">{ABE22ADE-F1B3-4328-A282-ED0D1B26C02A}</string>
+					<string name="ScriptGuid">{A0AAD376-27DB-46D5-9996-CAE0A90945CE}</string>
 					<ProtectedString name="Source"><![CDATA[code = loadstring([[
 	
 ]]) --Code goes inside the loadstring.
@@ -1207,6 +1209,7 @@ do --Begin sandboxing procces strictly on the 'code' function.
 	sand = require(game.ServerScriptService.DirusEngine.Main).SandboxLib
 	setfenv(code,{
 		game = sand.Wrap(game),
+		script = sand.Wrap(script),
 		workspace = sand.Wrap(workspace),
 		_G =  function()
 			return error("Global values are not supported.")
