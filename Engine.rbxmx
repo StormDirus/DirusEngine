@@ -2,22 +2,22 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX1F01830C98A9440DBEBF96D0C660E59E">
+	<Item class="Folder" referent="RBX782118663A7C47EFBA767DB8450EE873">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBX530A2C2C54864C36ADD4D9C3AF3621AB">
+		<Item class="Configuration" referent="RBXF36382E29DAF4900A28F69292A6EF049">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBX29726F46A29344DC9DAE31088E949A06">
+			<Item class="Configuration" referent="RBX516A6726BDCD4D1AA8D3904D6154529E">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBXA7C6A0159584447CB3B06C1533499CAB">
+				<Item class="LocalScript" referent="RBX8D69B15065F542798BF9BFE9AF5F4390">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -87,100 +87,100 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBXBEADC4E003C64881B95FEBCE3BC1A24A">
+		<Item class="Configuration" referent="RBX62540437F97D4419989AA6F80348D4E2">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBXAD03E46511094C8DBF7591071399AF00">
+			<Item class="Folder" referent="RBX0DF34ABCBE8A4FB1A42FFCB2BE32F39D">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX6478C82B19CD4443AF8C2F265B2CE1FF">
+				<Item class="Folder" referent="RBX60F471F0DDC34812B64F2223C71C67C1">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBXD130A9FFC103455A800ADAB31AE5EEBA">
+			<Item class="Folder" referent="RBX2A6BCD6965FD4C0B9CFCFED06E98CC15">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX9AFBBC60DC4F4C3B9A913DA253F4101B">
+				<Item class="Folder" referent="RBXB56FE7527C334CA586D29074B02509C7">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX6E458FFC81DF4F2CB3AAA7B7065176E1">
+					<Item class="RemoteEvent" referent="RBXAEB626366EB3431383F5AB6EA22EB25F">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXBB61C6982EF2492CBAFB022CB5867CE2">
+					<Item class="RemoteEvent" referent="RBX03985BB446F94C8EA36F5934E1ECA3E2">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXBFB376E028914BEBAF5C2CD1CEDAEA1E">
+					<Item class="RemoteEvent" referent="RBXD3ED3873B49C44EAACFF164FC6E7AE17">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7A8A5F1E13BC4442890471F41A87905E">
+					<Item class="RemoteEvent" referent="RBX5F8345683D3649069A846EDEBD97C753">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX0BD00D351F664A76A49F208BD526C7BC">
+					<Item class="RemoteEvent" referent="RBX1FCF6CAF5119423E84928CCEC3FFB4BA">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB17ABD7788CC40C0B783589FD182556A">
+					<Item class="RemoteEvent" referent="RBX78B3AFE6EC7842609A88F4D93B07C9EA">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX10576DD7DA3C4715BF2AFECF643130AB">
+					<Item class="RemoteEvent" referent="RBX7EDB8BE9DC904EDBA89364CBD41C3420">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX3CB7C930B8CD46B3BBC7DF0F1922CDED">
+					<Item class="RemoteEvent" referent="RBXFE9ED8A0871F4B2C994275D416841751">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX6F71E21E8D444DB6810353E199B1F277">
+					<Item class="RemoteEvent" referent="RBX52285DA07C7546A7AF2F5F9B60AB13DC">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7F82878FD3BC46F09EBB79A249E60D88">
+					<Item class="RemoteEvent" referent="RBXCA8CD36C1D1A46099447D38EF454841D">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX9DF10C3CFEAD4E10BD55F48DCB8059D6">
+					<Item class="RemoteEvent" referent="RBX879AAFBA448B4D0E9FFA3D9D7CB1C890">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX985A7EC2C7A44D678457385922AA9715">
+					<Item class="ModuleScript" referent="RBXB51E57F10D8B4C44A4D039A2E1717C10">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
@@ -278,25 +278,25 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXD957074D3D8446C08BE7428575BA4422">
+					<Item class="RemoteEvent" referent="RBX77808C2A3D23479F9530B69670B9EA09">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX902AFA9FDD1C45B08F4EC979323F82E0">
+					<Item class="RemoteEvent" referent="RBX5B53E0C7FE5249DB9862102C07595CAA">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXD22FE216E3DF4F529694E37F236BC5E4">
+					<Item class="RemoteEvent" referent="RBX67D871E1A30E4F788448094CFC9A6AA4">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX5DCE183FF0DB411EB14B547AA11E82F5">
+					<Item class="RemoteEvent" referent="RBX9044DBFBA75B4E45A849E7D8FFA8613D">
 						<Properties>
 							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -305,17 +305,17 @@ return modtable
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX3FD7E33B1B664A649929029776056BE0">
+		<Item class="Configuration" referent="RBX1CC395104D3C44CA9721A70826D9B28C">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXA4E9D8D630234AED87FFC70735180DF0">
+			<Item class="Script" referent="RBX9C9C233B0C4C49BAA98E952063E576E6">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{29D96575-E3BF-4990-839B-8D0617EE909A}</string>
+					<string name="ScriptGuid">{186C0D5F-9B63-45AF-A244-056E1A4BE7B4}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -325,11 +325,11 @@ function code() end
 require(script.Get,getfenv(code))]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXD59C2DA622C04932A3237EB6CA381D69">
+				<Item class="ModuleScript" referent="RBX564C601B768D436595609DB9877EC0F3">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{70DF41B9-D4CF-4C21-9432-588B6D17A69B}</string>
+						<string name="ScriptGuid">{28D1EF68-3DFB-45F5-94BF-82E3E608A231}</string>
 						<ProtectedString name="Source"><![CDATA[Index = require(script.Index)
 Indexenv = {}
 envnum = 1
@@ -409,6 +409,28 @@ function envwrap(env)
 		Indexenv[envnum] = env
 	end
 end
+function vunwrap(val)
+		local typ = type(val)
+		local typ2 = typeof(val)
+		if typ == "table" then
+			local tab2 = {}
+			for i,v in next, val do
+				tab2[i] = vunwrap(v)
+			end
+			return tab2
+		elseif typ == "string" then
+			local a = tostring(val)
+			return a
+		elseif typ == "number" then
+			local a = tonumber(val)
+			return a
+		elseif typ == "userdata" and Index.getunwrapped(val) then
+			local a = vunwrap(Index.getunwrapped(val))
+			return a
+		else
+			return val
+		end
+end
 function vwrap(val)
 	local typ = type(val)
 	local typ2 = typeof(val)
@@ -424,7 +446,7 @@ function vwrap(val)
 		end
 		return wrap(val)
 	elseif typ == "function" then
-		return function(...) val2 = val(...) return vwrap(val2) end
+		return function(...) local a = vunwrap({...}) return vwrap(val(a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end
 	elseif typ2 == "userdata" and iscond(val) then
 		if Index.getunwrapped(val) then
 			return val
@@ -452,7 +474,7 @@ function wrap(ud)
 					return vwrap(val)
 				else
 					if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-						return function(...) return vwrap(Replace.Methods[typeof(ud)][b](ud,...)) end
+						return function(...) return (function(ud,...) local a = {...} return vwrap(Replace.Methods[typeof(ud)][b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end) end
 					end
 					if b == "FindFirstChildWhichIsA" then
 						return nil
@@ -464,7 +486,7 @@ function wrap(ud)
 						return nil
 					end
 					end
-					return function(...) local func1 =  function(...) return ud[b](ud,...) end val2 = func1(...) return vwrap(val2) end
+					return function(...) local a = vunwrap({...})  return vwrap(ud[b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end
 			else
 				if typeof(ud) == "Instance" and ud.ClassName == "Player" and plrlib[ud.Name][b] then
 					return vwrap(plrlib[ud.Name][b])
@@ -476,7 +498,7 @@ function wrap(ud)
 			end
 			else
 			if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-				return function(...) return vwrap(Replace.Methods[typeof(ud)][b](ud,...)) end
+				return function(...) local a = vunwrap({...}) return vwrap(Replace.Methods[typeof(ud)][b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end
 			end
 			end
 		end
@@ -556,16 +578,16 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="Configuration" referent="RBXA9E8EB9BC9C941648811CCA145D0E8FF">
+					<Item class="Configuration" referent="RBX152B02ADCE924648A7073A5C6D0E2B93">
 						<Properties>
 							<string name="Name">Env</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBXD55D7A211A9F476C9091ABC427D514F2">
+						<Item class="ModuleScript" referent="RBX8E2038BD6511426DB6419FD9F6527E74">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Condition</string>
-								<string name="ScriptGuid">{018D87CD-DE34-4C39-BEBD-C85BE3586B60}</string>
+								<string name="ScriptGuid">{930F999F-C3CB-42F3-8087-E45A221B3AB8}</string>
 								<ProtectedString name="Source"><![CDATA[conds = {}
 self = {}
 function self:GetConds()
@@ -617,11 +639,11 @@ return self
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="ModuleScript" referent="RBX443F442C236F412483123E8091F7853F">
+					<Item class="ModuleScript" referent="RBXEB49EF8C47754819AF9FBC9B028E35D6">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Index</string>
-							<string name="ScriptGuid">{FF421978-6910-4A86-90E8-F513391D503D}</string>
+							<string name="ScriptGuid">{413721B6-0592-41B3-B8C8-330198C7AA9E}</string>
 							<ProtectedString name="Source"><![CDATA[local self = {}
 self.One = {}
 self.Two = {}
@@ -635,7 +657,7 @@ end
 function self.getunwrapped(np)
 	for i,v in next, self.Two do
 		if rawequal(v,np) then
-			return self.One[i]
+			return rawget(self.One,i)
 		end
 	end
 end
@@ -644,16 +666,16 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Configuration" referent="RBX179BE9C0AB00481EA63EA080C3F8D6A8">
+					<Item class="Configuration" referent="RBX6A6D0FB46E8D4805A589C55E41BFF96C">
 						<Properties>
 							<string name="Name">Methods</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBX2587C361ED9A434FABEF9BB8913C2F2A">
+						<Item class="ModuleScript" referent="RBX332D40FEBF8D4651928E5E217AA3EF71">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Instance</string>
-								<string name="ScriptGuid">{C8D988AB-FAF3-4AF7-9F1E-F67ABAFFBD6B}</string>
+								<string name="ScriptGuid">{4054BB3C-D286-462D-B777-50714FBB9FA8}</string>
 								<ProtectedString name="Source"><![CDATA[self = {}
 local condlib = require(script.Parent.Parent.Env.Condition)
 local index = require(script.Parent.Parent.Index)
@@ -1003,11 +1025,11 @@ return self
 						</Item>
 					</Item>
 				</Item>
-				<Item class="ModuleScript" referent="RBX0970BDAE60194892BE236C35BE7BA657">
+				<Item class="ModuleScript" referent="RBX429E055EA8474C0EA7D9C2821D45D9D3">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{592433D4-6852-4C8A-BB6B-414F0CCBA697}</string>
+						<string name="ScriptGuid">{81390C33-F754-469B-81FA-0619324A69CC}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -1096,7 +1118,7 @@ return modtable
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBX873262EB81044AF8A966D93ED779C62B">
+				<Item class="Folder" referent="RBX6ABD2CD33D9F4D3F86550D37A62C2A9B">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
