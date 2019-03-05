@@ -17,6 +17,6 @@ print([[
 
 DirusEngine loaded.
 
-Apply 'eng = require(game.ServerScriptService.DirusEngine.Main)'
+Apply 'require(game.ServerScriptService.DirusEngine.Get)()'
 to the tops of your Sever-Sided scripts.
 ]])
