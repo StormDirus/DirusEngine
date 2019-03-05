@@ -2,27 +2,27 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX5CAB3C78E04D4505A3D7350C05D58108">
+	<Item class="Folder" referent="RBX1F01830C98A9440DBEBF96D0C660E59E">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBX67B0EDAAE885458B812428ADC61AC887">
+		<Item class="Configuration" referent="RBX530A2C2C54864C36ADD4D9C3AF3621AB">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBXA7DFD2B8B2FF4D41A9800B1665D0BF71">
+			<Item class="Configuration" referent="RBX29726F46A29344DC9DAE31088E949A06">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBXF83A465682704F148352D5730FB0B1D0">
+				<Item class="LocalScript" referent="RBXA7C6A0159584447CB3B06C1533499CAB">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlrProbe</string>
-						<string name="ScriptGuid">{E9CC71A3-6ADF-423E-B16E-D792BEE60BC1}</string>
+						<string name="ScriptGuid">{363317DE-ADDF-4422-BDD6-F5C3C442D97D}</string>
 						<ProtectedString name="Source"><![CDATA[joy1 = {}
 joy1.Delta = Vector3.new(0,0,0)
 joy1.Position = Vector3.new(0,0,0)
@@ -62,11 +62,6 @@ tabinput = {}
 cc.changestate.OnClientEvent:Connect(function(hum,state,bool)
 	hum:SetStateEnabled(state,bool)
 end)
-cc.Crash.OnClientInvoke = function()
-	local a = game.ReplicatedStorage.Crash:Clone()
-	a.Parent = script.Parent
-	return true
-end
 while wait(1/30) do
 	local gui
 	if uis:GetFocusedTextBox() then
@@ -92,104 +87,104 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX45D3CC05EED7405A8447415B4A88E3C7">
+		<Item class="Configuration" referent="RBXBEADC4E003C64881B95FEBCE3BC1A24A">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBX6121941F3AF14F0BBE4ED20EB2A98822">
+			<Item class="Folder" referent="RBXAD03E46511094C8DBF7591071399AF00">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXCB53256DD9E24FE5BEC6D73976BE2CD9">
+				<Item class="Folder" referent="RBX6478C82B19CD4443AF8C2F265B2CE1FF">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBX9F3A78C509534E7093BFC5B22047D4B2">
+			<Item class="Folder" referent="RBXD130A9FFC103455A800ADAB31AE5EEBA">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXD1ED3481502A4E9E8DB035007F145D2A">
+				<Item class="Folder" referent="RBX9AFBBC60DC4F4C3B9A913DA253F4101B">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX2A9AA6D4213F45DAB35492023600F536">
+					<Item class="RemoteEvent" referent="RBX6E458FFC81DF4F2CB3AAA7B7065176E1">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX94B54B07CD2E447C999BA56157861C03">
+					<Item class="RemoteEvent" referent="RBXBB61C6982EF2492CBAFB022CB5867CE2">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC44F06754B96450B98D6F12FE8CE5045">
+					<Item class="RemoteEvent" referent="RBXBFB376E028914BEBAF5C2CD1CEDAEA1E">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7453A9E5C8BB4CD498D5B39C70823C32">
+					<Item class="RemoteEvent" referent="RBX7A8A5F1E13BC4442890471F41A87905E">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXA28073DCE9F142118453593B4E400353">
+					<Item class="RemoteEvent" referent="RBX0BD00D351F664A76A49F208BD526C7BC">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX29344300443A40B985419A41EFCE21AD">
+					<Item class="RemoteEvent" referent="RBXB17ABD7788CC40C0B783589FD182556A">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXBA77C89A190D4BFB9CDF543DDCB1346E">
+					<Item class="RemoteEvent" referent="RBX10576DD7DA3C4715BF2AFECF643130AB">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX15C91951D54C4F58AC41B59FF2BBB0F5">
+					<Item class="RemoteEvent" referent="RBX3CB7C930B8CD46B3BBC7DF0F1922CDED">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX70CB938CE46346338BC7BDD0723A7CB5">
+					<Item class="RemoteEvent" referent="RBX6F71E21E8D444DB6810353E199B1F277">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX876C6AF97B094A8F8F3CD7AE4429DE47">
+					<Item class="RemoteEvent" referent="RBX7F82878FD3BC46F09EBB79A249E60D88">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXA12445195C0F4C3EAAE83B195A8CD55E">
+					<Item class="RemoteEvent" referent="RBX9DF10C3CFEAD4E10BD55F48DCB8059D6">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX291BFBD3A9754CE2860C326278AC7FA8">
+					<Item class="ModuleScript" referent="RBX985A7EC2C7A44D678457385922AA9715">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
-							<string name="ScriptGuid">{C54D03D0-89B8-4C5D-84E2-D9B6E88B86D8}</string>
+							<string name="ScriptGuid">{136C0D38-AF84-4D3D-B718-5E031657CB94}</string>
 							<ProtectedString name="Source"><![CDATA[modtable = {}
 local cc = script.Parent
 plr = game.Players[script.Parent.Name]
@@ -283,118 +278,737 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC794739DE8D0481198D094335EE9A7D4">
+					<Item class="RemoteEvent" referent="RBXD957074D3D8446C08BE7428575BA4422">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX10CE54DC19ED4C91AC2C8923F55AFE73">
+					<Item class="RemoteEvent" referent="RBX902AFA9FDD1C45B08F4EC979323F82E0">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX55F76DF1E29349D7976639AE732DE280">
+					<Item class="RemoteEvent" referent="RBXD22FE216E3DF4F529694E37F236BC5E4">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXDFFCC2E0B5194E12902C2E2C9BF0C68E">
+					<Item class="RemoteEvent" referent="RBX5DCE183FF0DB411EB14B547AA11E82F5">
 						<Properties>
 							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteFunction" referent="RBXA67F738C88454CE4A9C24D68790C5A86">
-						<Properties>
-							<string name="Name">Crash</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
 				</Item>
 			</Item>
-			<Item class="LocalScript" referent="RBX65CA124D8B2B454F82B6B676AA3CD0A3">
-				<Properties>
-					<bool name="Disabled">false</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Crash</string>
-					<string name="ScriptGuid">{055D695A-6A0E-4B2A-B3AE-8AEB089DBC2C}</string>
-					<ProtectedString name="Source"><![CDATA[wait(2)
-while true do
-	local a = script.Parent:Clone()
-	a.Parent = script.Parent
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBXEB8507E039434699B28D68EC9B5D8859">
+		<Item class="Configuration" referent="RBX3FD7E33B1B664A649929029776056BE0">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXD3B0462F01F9492A8A389949763129A6">
+			<Item class="Script" referent="RBXA4E9D8D630234AED87FFC70735180DF0">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{1C9DA6CD-C73F-4F6C-A30D-5B24CA741A31}</string>
+					<string name="ScriptGuid">{29D96575-E3BF-4990-839B-8D0617EE909A}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
 	fold.Parent = game.ReplicatedStorage.Events.Players
 end)
-engine = require(script.Main)
-
---[[
-DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-  
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt
-and version 1.3 or later is part of all distributions of LaTeX
-version 2005/12/01 or later.
-This work has the LPPL maintenance status `maintained'.
-The Current Maintainer of this work is StormDirus.
-This work consists of the files in the Repository
-and any direct derivatives of it.
-
-Copyright 2019 StormDirus
-]]]]></ProtectedString>
+function code() end
+require(script.Get,getfenv(code))]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX6F1AD3990DE84C96A9FE688A725C8892">
+				<Item class="ModuleScript" referent="RBXD59C2DA622C04932A3237EB6CA381D69">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">Main</string>
-						<string name="ScriptGuid">{B783258A-D2D2-480D-8713-75B9E1EBEAFA}</string>
-						<ProtectedString name="Source"><![CDATA[modtable = {}
-for i,v in pairs(script:GetChildren()) do
-	modtable[v.Name] = require(v)
+						<string name="Name">Get</string>
+						<string name="ScriptGuid">{70DF41B9-D4CF-4C21-9432-588B6D17A69B}</string>
+						<ProtectedString name="Source"><![CDATA[Index = require(script.Index)
+Indexenv = {}
+envnum = 1
+Replace =  {}
+Replace.Methods = {}
+Replace.Methods.Instance = require(script.Methods.Instance)
+Replace.Env = {}
+Replace.Env.Condition = require(script.Env.Condition)
+plrlib = require(script.Parent.PlayerLib)
+function iscond(cond)
+	for i,v in next, Replace.Env.Condition:GetConds() do
+		if v == cond then
+			return true
+		end
+	end
 end
-return modtable
+function isenvwraped(env)
+	for i,v in next, Indexenv do
+		if env == v then
+			return true
+		end
+	end
+end
+function envwrap(env)
+	for i, v in next, env do
+		env[i] = vwrap(v)
+	end
+	if env.workspace then
+		env.workspace = vwrap(env.workspace)
+	end
+	if env.game then
+		env.game = vwrap(env.game)
+	end
+	if env.script then
+		env.script = vwrap(env.script)
+	end
+	if env.typeof then
+		env.typeof = function(thing)
+					if type(thing) == "userdata" and Index.getunwrapped(thing) then
+						return typeof(Index.getunwrapped(thing))
+					else
+						return typeof(thing)
+					end
+		end
+	end
+	if env.type then
+		env.type = function(thing)
+					if type(thing) == "userdata" and Index.getunwrapped(thing) then
+						return type(Index.getunwrapped(thing))
+					else
+						return type(thing)
+					end
+		end
+	end
+	if env.getmetatable then
+		env.getmetatable = function(thing)
+					if Index.getunwrapped(thing) then
+						return getmetatable(Index.getunwrapped(thing))
+					else
+						return getmetatable(thing)
+					end
+		end
+	end
+	if env.setmetatable then
+		env.setmetatable = function(thing1,thing2)
+				if Index.getunwrapped(thing1) then
+					return setmetatable(Index.getunwrapped(thing1),thing2)
+				else
+					return setmetatable(thing1,thing2)
+				end
+		end
+	end
+	for i,v in next, script.Env:GetChildren() do
+		env[v.Name] = require(v)
+	end
+	if not isenvwraped(env) then
+		Indexenv[envnum] = env
+	end
+end
+function vwrap(val)
+	local typ = type(val)
+	local typ2 = typeof(val)
+	if typ == "table" then
+		local tab = {}
+		for i,v in next, val do
+			tab[i] = vwrap(val[i])
+		end
+		return tab
+	elseif typ == "userdata" and typ2 == "Instance" then
+		if Index.getunwrapped(val) then
+			return val
+		end
+		return wrap(val)
+	elseif typ == "function" then
+		return function(...) val2 = val(...) return vwrap(val2) end
+	elseif typ2 == "userdata" and iscond(val) then
+		if Index.getunwrapped(val) then
+			return val
+		end
+		return wrap(val)
+	else
+		return val
+	end
+end
+function wrap(ud)
+	if Index.getunwrapped(ud) then
+		return ud
+	end
+	local nud = newproxy(true)
+	local meta = getmetatable(nud)
+	meta.__index = function(a,b)
+		if pcall(function() if not ud[b] then return error("Doesnt exist.") end return ud[b] end) then
+			local val = ud[b]
+			local typ = type(val)
+			local typ2 = typeof(val)
+			if typ == "userdata" and typ2 == "Instance" then
+				return wrap(val)
+			elseif typ == "function" then
+				if pcall(function() return val() end) then
+					return vwrap(val)
+				else
+					if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
+						return function(...) return vwrap(Replace.Methods[typeof(ud)][b](ud,...)) end
+					end
+					if b == "FindFirstChildWhichIsA" then
+						return nil
+					elseif b == "FindFirstChildOfClass" then
+						return nil
+					elseif b == "FindFirstAncestorWhichIsA" then
+						return nil
+					elseif b == "FindFirstAncestorOfClass" then
+						return nil
+					end
+					end
+					return function(...) local func1 =  function(...) return ud[b](ud,...) end val2 = func1(...) return vwrap(val2) end
+			else
+				if typeof(ud) == "Instance" and ud.ClassName == "Player" and plrlib[ud.Name][b] then
+					return vwrap(plrlib[ud.Name][b])
+				end
+				if typeof(ud) == "Instance" and ud.ClassName == "Players" and b == "GetInfo" then
+					return vwrap(plrlib.GetInfo)
+				end
+				return vwrap(val)
+			end
+			else
+			if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
+				return function(...) return vwrap(Replace.Methods[typeof(ud)][b](ud,...)) end
+			end
+			end
+		end
+	
+	meta.__newindex = function(a,b,c)
+		return (function()
+			ud[b] = c
+		end)()
+	end
+	meta.__tostring = function(a)
+		return vwrap(tostring(ud))
+	end
+	meta.__tonumber = function(a)
+		return vwrap(tonumber(ud))
+	end
+	meta.__add = function(a,b)
+		return vwrap(ud + b)
+	end
+	meta.__sub = function(a,b)
+		return vwrap(ud - b)
+	end
+	meta.__mul = function(a,b)
+		return vwrap(ud*b)
+	end
+	meta.__unm = function(a)
+		return vwrap(-ud)
+	end
+	meta.__div = function(a,b)
+		return vwrap(ud/b)
+	end
+	meta.__mod = function(a,b)
+		return vwrap(ud%b)
+	end
+	meta.__pow = function(a,b)
+		return vwrap(ud^b)
+	end
+	meta.__eq = function(a,b)
+		return vwrap((ud == b))
+	end
+	meta.__it = function(a,b)
+		return vwrap((ud < b))
+	end
+	meta.__le = function(a,b)
+		return vwrap((ud <= b))
+	end
+	meta.__concact = function(a,b)
+		return vwrap((ud ..b))
+	end
+	meta.__call = function(a,...)
+		return vwrap(ud(...))
+	end
+	meta.__metatable = "sandboxed"
+	local numcheck = false
+	for i,v in next, Index.One do
+		if rawequal(v,ud) then
+			Index.Two[i] = nud
+			numcheck = true
+		end
+	end
+	if not numcheck then
+		Index.One[#Index.One + 1] = ud
+		Index.Two[#Index.Two + 1] = nud
+	end
+	meta.__len = function(a)
+		return vwrap(#ud)
+	end
+	return nud
+	end
+if not Index.One[1] then
+	Index.One[1] = wrap(game)
+end
+return function(env)
+	local fenv = env or getfenv(2)
+	local script2 = fenv.script
+	envwrap(fenv)
+end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX5F2C01967DC84E1B95060A775ABFF237">
+					<Item class="Configuration" referent="RBXA9E8EB9BC9C941648811CCA145D0E8FF">
+						<Properties>
+							<string name="Name">Env</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+						<Item class="ModuleScript" referent="RBXD55D7A211A9F476C9091ABC427D514F2">
+							<Properties>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Condition</string>
+								<string name="ScriptGuid">{018D87CD-DE34-4C39-BEBD-C85BE3586B60}</string>
+								<ProtectedString name="Source"><![CDATA[conds = {}
+self = {}
+function self:GetConds()
+	local tab = {}
+	for i,v in next, conds do
+		tab[i] = v
+	end
+	return tab
+end
+function self.new(func)
+	if type(func) ~= "function" then
+		func = function() return true end
+	end
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	local tab = {}
+	tab.Function = func
+	function tab.Cast(...)
+		if tab.Function(...) then
+			return true
+		else
+			return false
+		end
+	end
+	meta.__index = function(a,b)
+		if tab[b] then
+			return tab[b]
+		end
+	end
+	meta.__newindex = function(a,b,c)
+		if b == "Function" then
+			tab[b] = c
+		end
+	end
+	meta.__eq = function(a,b)
+		return rawequal(np,b)
+	end
+	meta.__tostring = function()
+		return tostring(tab.Cast())
+	end
+	meta.__metatable = "This metatable is locked."
+	conds[#conds + 1] = np
+	return np
+end
+
+return self
+]]></ProtectedString>
+								<BinaryString name="Tags"></BinaryString>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ModuleScript" referent="RBX443F442C236F412483123E8091F7853F">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">PlayerLib</string>
-							<string name="ScriptGuid">{180206E6-A120-48C1-A33E-05982F6D0EB1}</string>
-							<ProtectedString name="Source"><![CDATA[modtable = {}
+							<string name="Name">Index</string>
+							<string name="ScriptGuid">{FF421978-6910-4A86-90E8-F513391D503D}</string>
+							<ProtectedString name="Source"><![CDATA[local self = {}
+self.One = {}
+self.Two = {}
+function self.getwrapped(inst)
+	for i,v in next, self.One do
+		if rawequal(v,inst) then
+			return self.Two[i]
+		end
+	end
+end
+function self.getunwrapped(np)
+	for i,v in next, self.Two do
+		if rawequal(v,np) then
+			return self.One[i]
+		end
+	end
+end
+return self
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="Configuration" referent="RBX179BE9C0AB00481EA63EA080C3F8D6A8">
+						<Properties>
+							<string name="Name">Methods</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+						<Item class="ModuleScript" referent="RBX2587C361ED9A434FABEF9BB8913C2F2A">
+							<Properties>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Instance</string>
+								<string name="ScriptGuid">{C8D988AB-FAF3-4AF7-9F1E-F67ABAFFBD6B}</string>
+								<ProtectedString name="Source"><![CDATA[self = {}
+local condlib = require(script.Parent.Parent.Env.Condition)
+local index = require(script.Parent.Parent.Index)
+local function iscond(cond)
+	for i,v in next, condlib:GetConds() do
+		if v == cond then
+			return true
+		end
+	end
+end
+local function GetAncestors(obj)
+	if obj.Parent then
+		local a = obj.Parent
+		local b = {}
+		repeat
+			b[#b + 1] = a
+			a = a.Parent
+		until a == nil
+		return b
+	end
+end
+function self:FindFirstChild(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil then
+		print(children[1])
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				print(v)
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function self:FindFirstAncestor(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function self:FindFirstDescendant(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function self:GetChildren(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(v) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function self:GetAncestors(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(v) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function self:GetDescendants(inst,thing)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(v) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function self:WaitForChild(inst,thing,time1)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.ChildAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(obj2) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = inst:GetChildren()
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+function self:WaitForDescendant(inst,thing,time1)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.DescendantAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(obj2) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = inst:GetDescendants()
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+function self:WaitForAncestor(inst,thing,time1)
+	if index.getunwrapped(inst) then
+		inst = index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(v) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.DescendantAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(obj2) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = GetAncestors(inst)
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+
+return self
+]]></ProtectedString>
+								<BinaryString name="Tags"></BinaryString>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="ModuleScript" referent="RBX0970BDAE60194892BE236C35BE7BA657">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlayerLib</string>
+						<string name="ScriptGuid">{592433D4-6852-4C8A-BB6B-414F0CCBA697}</string>
+						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
 function getwebdata(link)
@@ -442,7 +1056,7 @@ function getgroups(id)
 	end
 	return table1
 end
-function modtable:GetInfo(id)
+function modtable.GetInfo(id)
 	local ud = {}
 	ud.GetName = function()
 		return game.Players:GetNameFromUserIdAsync(id)
@@ -468,7 +1082,7 @@ end
 game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
 	modtable[obj.Name] = {}
 	modtable[obj.Name].Input = require(obj.Input)
-	modtable[obj.Name].Info = modtable:GetInfo(game.Players:GetUserIdFromNameAsync(obj.Name))
+	modtable[obj.Name].Info = modtable.GetInfo(game.Players:GetUserIdFromNameAsync(obj.Name))
 	game.Players.PlayerRemoving:Connect(function(plr)
 		if not obj then return end
 		if plr.Name == obj.Name then
@@ -479,823 +1093,15 @@ end)
 return modtable
 
 ]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX934A2ABBCC514B689EE9370271A5BA9B">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">InstanceLib</string>
-							<string name="ScriptGuid">{8D8AB7C5-6D30-42E5-A0BB-29921CEDA808}</string>
-							<ProtectedString name="Source"><![CDATA[local modtable = {}
-valuelib = require(script.Parent.ValueLib)
-function GetMaxMinCorners(cframe,size)
-	local min = {}
-	local max = {}
-	local size = size/2
-	local corn = {}
-	for x = -1, 1, 2 do
-		for y = -1, 1, 2 do
-			for z = -1, 1, 2 do
-				table.insert(corn, (cframe * CFrame.new(size * Vector3.new(x, y, z))).p)
-			end
-		end
-	end
-	for i,v in next,{Enum.NormalId.Right, Enum.NormalId.Top, Enum.NormalId.Back} do
-		local norm = Vector3.FromNormalId(v)
-		table.sort(corn, function(a, b) return a:Dot(norm) > b:Dot(norm) end)
-		table.insert(min, corn[#corn])
-		table.insert(max, corn[1])
-	end;
-	min, max = Vector3.new(min[1].x, min[2].y, min[3].z), Vector3.new(max[1].x, max[2].y, max[3].z)
-	return {["Min"] = min, ["Max"] = max}
-end
-function modtable:MakeRegion3FromObj(obj)
-	local tab = GetMaxMinCorners(obj.CFrame,obj.Size)
-	return Region3.new(tab["Min"],tab["Max"])
-end
-function modtable:MakeRegion3(cframe,size)
-	local tab = GetMaxMinCorners(cframe,size)
-	return Region3.new(tab["Min"],tab["Max"])
-end
-function modtable:GetAncestors(obj)
-	if obj.Parent then
-		local a = obj.Parent
-		local b = {}
-		repeat
-			table.insert(b,a)
-			a = a.Parent
-		until a == nil
-		return b
-	end
-end
-function modtable:FindFirstPartInRegion3WithFunc(reg3,func)
-	for i,v in ipairs(workspace:FindPartsInRegion3(reg3,nil,math.huge)) do
-		if func(v) == true then
-			return v
-		end
-	end
-end
-function modtable:FindFirstChildWithFunc(obj,func)
-	for i,v in ipairs(obj:GetChildren()) do
-		if func(v) == true then
-			return v
-		end
-	end
-end
-function modtable:FindFirstDescendantWithFunc(obj,func)
-	for i,v in ipairs(obj:GetDescendants()) do
-		if func(v) == true then
-			return v
-		end
-	end
-end
-function modtable:FindFirstAncestorWithFunc(obj,func)
-	for i,v in ipairs(modtable:GetAncestors(obj)) do
-		if func(v) == true then
-			return v
-		end
-	end
-end
-function modtable:GetChildrenWithFunc(obj,func)
-	local tab = {}
-	for i,v in ipairs(obj:GetChildren()) do
-		if func(v) == true then
-			table.insert(tab,v)
-		end
-	end
-	return tab
-end
-function modtable:GetDescendantsWithFunc(obj,func)
-	local tab = {}
-	for i,v in ipairs(obj:GetDescendants()) do
-		if func(v) == true then
-			table.insert(tab,v)
-		end
-	end
-	return tab
-end
-function modtable:GetAncestorsWithFunc(obj,func)
-	local tab = {}
-	for i,v in ipairs(modtable:GetAncestors()) do
-		if func(v) == true then
-			table.insert(tab,v)
-		end
-	end
-	return tab
-end
-function modtable:WaitForPartInRegion3WithFunc(reg3,func,time1)
-	for i,v in ipairs(workspace:FindPartsInRegion3(reg3,nil,math.huge)) do
-		if func(v) == true then
-			return v
-		end
-	end
-	local a = false
-	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-	spawn(function()
-		while true do
-			if a then break end
-			game:GetService("RunService").Heartbeat:wait()
-			for i,v in ipairs(workspace:FindPartsInRegion3(reg3,nil,math.huge)) do
-				if func(v) == true then
-					eve:Fire(v)
-					eve:Destroy()
-				end
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	a = true
-	if eve then eve:Destroy() end
-	return val
-end
-function modtable:WaitForDescendantWithFunc(obj,func,time1)
-	for i,v in ipairs(obj:GetDescendants()) do
-		if func(v) == true then
-			return v
-		end
-	end
-	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-	local func1 = obj.DescendantAdded:Connect(function(obj2)
-		for i,v in ipairs(obj:GetDescendants()) do
-			if func(v) == true then
-				eve:Fire(v)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-function modtable:WaitForChildWithFunc(obj,func,time1)
-	for i,v in ipairs(obj:GetChildren()) do
-		if func(v) == true then
-			return v
-		end
-	end
-	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-	local func1 = obj.ChildAdded:Connect(function(obj2)
-		for i,v in ipairs(obj:GetDescendants()) do
-			if func(v) == true then
-				eve:Fire(v)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-function modtable:WaitForAncestorWithFunc(obj,func,time1)
-	for i,v in ipairs(obj:GetDescendants()) do
-		if func(v) == true then
-			return v
-		end
-	end
-	local eve = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-	local func1 = obj.AncestryChanged():Connect(function(obj2)
-		for i,v in ipairs(modtable:GetAncestors(obj)) do
-			if func(v) == true then
-				eve:Fire(v)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-function modtable:GetInstancesWithFunc(func)
-	local tab = {}
-	for i,v in ipairs(valuelib:GetIndex()) do
-		if func(v) == true then
-			table.insert(tab,v)
-		end
-	end
-	return tab
-end
-function modtable.Create(objclass,parent,param)
-	local obj = Instance.new(objclass,parent)
-	if param then
-		for i,v in ipairs(param) do
-			obj[i] = v
-		end
-	end
-	return obj
-end
-function modtable:GetPartsInRegion3WithFunc(reg3,func)
-	local tab = {}
-	for i,v in ipairs(workspace:FindPartsInRegion3(reg3,nil,math.huge)) do
-		if func(v) == true then
-			table.insert(tab,v)
-		end
-	end
-	return tab
-end
-
-
-return modtable
-
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX3D19A8B0488F42DF866107E74C541EE5">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">ValueLib</string>
-							<string name="ScriptGuid">{8C720F4A-6B56-4BA5-BBDB-EEB1F138BF1C}</string>
-							<ProtectedString name="Source"><![CDATA[modtable = {}
-Index = {}
-Index[1] = game
-local indexnum = 1
-for i,v in ipairs(game:GetDescendants()) do
-	indexnum = indexnum + 1
-	Index[indexnum] = v
-end
-game.DescendantAdded:Connect(function(obj)
-	indexnum = indexnum + 1
-	Index[indexnum] = obj
-end)
-function modtable:GetUserDataId(obj)
-	for i,v in ipairs(Index) do
-		if v == obj then
-			return i
-		end
-	end
-end
-function modtable:GetIndex()
-	return Index
-end
-function modtable:GetUserDataFromId(num)
-	if Index[num] then
-		return Index[num]
-	end
-end
-function modtable:CreateFilteredTableClone(tab,func)
-	local tab2 = {}
-	for i,v in ipairs(tab) do
-		if func(v) == true then
-			table.insert(tab2,v)
-		end
-	end
-	return tab2
-end
-function modtable.TableContains(tab,func)
-	for i,v in ipairs(tab) do
-		if func(v) == true then
-			return i
-		end
-	end
-end
-function modtable:WaitForEventWithFunc(eve,func,time1)
-	local eve1 = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-	local func1 = eve:Connect(function(...)
-		if func(...) == true then
-			eve1:Fire(...)
-			eve1:Destroy()
-		end
-	end)
-	local val = eve1:wait(time1)
-	func1:Disconnect()
-	if eve1 then eve1:Destroy() end
-	return val
-end
-return modtable
-
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBXBAA240758F4F44AF8E033FABDC512C60">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">CharacterLib</string>
-							<string name="ScriptGuid">{BA664AA0-2EA7-4C6B-A645-53BCAE044A45}</string>
-							<ProtectedString name="Source"><![CDATA[modtable = {}
-inst = require(script.Parent.InstanceLib)
-pathfinddebounce = {}
-pathfindingcache = {}
-animcache = {}
-animcache.hums = {}
-index = require(script.Parent.ValueLib)
-function modtable:GetPlayerFromObj(obj)
-	if not game.Players:GetPlayerFromCharacter(obj) then
-		local obj2 = inst:FindFirstAncestorWithFunc(obj,function(obj1) if game.Players:GetPlayerFromCharacter(obj1) then return true end end)
-		if obj2 then
-			local val = game.Players:GetPlayerFromCharacter(obj2)
-			return val
-		end
-		return nil
-	else
-		local val = game.Players:GetPlayerFromCharacter(obj)
-		return val
-	end
-end
-function modtable:GetHumanoidFromPlayer(plr)
-	local char = plr.Character
-	if char then
-		local hum = inst:FindFirstDescendantWithFunc(char,function(obj1) if obj1:IsA("Humanoid") then return true end end)
-		if hum then return hum end
-	end
-end
-	function modtable:StartPathFind(hum, despoint)
-		local indexnum = index:GetUserDataId(hum)
-		if not pathfinddebounce[indexnum] then
-			pathfinddebounce[indexnum] = 0
-		end
-		if pathfinddebounce[indexnum] == 1 then return end
-		if pathfindingcache[indexnum] then
-			pathfindingcache[indexnum].isdone = 1
-			repeat game:GetService("RunService").Heartbeat:wait() until pathfindingcache[indexnum] == nil
-			pathfindingcache[indexnum] = {}
-			pathfindingcache[indexnum].isdone = 0
-		else
-			pathfindingcache[indexnum] = {}
-			pathfindingcache[indexnum].isdone = 0
-		end
-		pathfinddebounce[indexnum] = 1
-		if pcall(function() return despoint.Position end) then
-			despoint = despoint.Position
-		end
-		local PathfindingService = game:GetService("PathfindingService")
-    	local connect = {}
-    	 
-		local path = PathfindingService:CreatePath()
-    	local waypoints
-    	local currentWaypointIndex
-    	
-		local function waypointcheck(num1, num2)
-			if CFrame.new(hum.RootPart.Position,num1).LookVector == CFrame.new(num1,num2).LookVector then
-				return 1
-			else
-				return 0
-			end
-		end
-    	
-		local function followPath()
-			path = PathfindingService:CreatePath()
-    		path:ComputeAsync(hum.RootPart.Position, despoint)
-    		waypoints = {}
-    		if path.Status == Enum.PathStatus.Success then
-    			waypoints = path:GetWaypoints()
-    			currentWaypointIndex = 1
-				repeat
-				currentWaypointIndex = currentWaypointIndex + 1
-				if not waypoints[currentWaypointIndex + 2] then
-					break
-				end
-			until waypointcheck(waypoints[currentWaypointIndex].Position,waypoints[currentWaypointIndex + 1].Position) == 0
-    			hum:MoveTo(waypoints[currentWaypointIndex].Position)
-				if waypoints[currentWaypointIndex].Action == Enum.PathWaypointAction.Jump then
-					hum.Jump = true
-				end
-				pathfinddebounce[indexnum] = 0
-    		else
-    			hum:MoveTo(hum.RootPart.Position)
-				pathfinddebounce[indexnum] = 0
-    		end
-   	 end
-   	  
-    	 
-    	connect["onPathBlocked"] = path.Blocked:Connect(followPath)
-    	 
-    	connect["onWaypointReached"] = hum.MoveToFinished:Connect(followPath)
-		local a = 0
-     	local qfunc = spawn(function() while true do
-			if a == 1 then break end
-			if pathfindingcache[indexnum].isdone == 1 then
-				pathfinddebounce[indexnum] = 0
-				connect["onPathBlocked"]:disconnect()
-				connect["onWaypointReached"]:disconnect()
-				pathfindingcache[indexnum] = nil
-				a = 1
-			end
-			game:GetService("RunService").Heartbeat:wait()
-		end
-		end)
-    	followPath()
-	end
-spawn(function() while true do
-	for i,hum in ipairs(inst:GetDescendantsWithFunc(workspace,function(funcobj) if funcobj:IsA("Humanoid") or funcobj:IsA("AnimationController") then return true end end)) do
-		local indexnum = index:GetUserDataId(hum)
-		if animcache.hums[indexnum] then
-			animcache.hums[indexnum].anims = hum:GetPlayingAnimationTracks()
-		else
-			animcache.hums[indexnum] = {}
-		end
-	end
-	game:GetService("RunService").Heartbeat:wait()
-end
-end)
-function modtable:CanPathFind(hum, despoint)
-	if pcall(function() return despoint.Position end) then
-		despoint = despoint.Position
-	end
-	local PathfindingService = game:GetService("PathfindingService")
-	local path = PathfindingService:CreatePath()
-    path:ComputeAsync(hum.RootPart.Position, despoint)
-	return path.Status
-end
-function modtable:StopPathFind(hum)
-	local indexnum = index:GetUserDataId(hum)
-	if pathfindingcache[indexnum] then
-		pathfindingcache[indexnum].isdone = 1
-		repeat game:GetService("RunService").Heartbeat:wait() until pathfindingcache[indexnum] == nil
-	end
-end
-function modtable:PlayAnim(hum,anim,speed,looped,weight,fade)
-	local anim2
-	if hum then
-		if hum:IsA("Humanoid") or hum:IsA("AnimationController") then
-		else
-			local obj2 = inst.FindFirstDescendantWithFunc(hum,function(obj1) if obj1:IsA("Humanoid") or obj1:IsA("AnimationController") then return true end end)
-			if obj2 then
-				hum = obj2
-			else
-				if hum:FindFirstChild("HumanoidRootPart") then
-					hum = Instance.new("Humanoid",hum)
-				else
-					hum = Instance.new("AnimationController",hum)
-				end
-			end
-		end
-		
-	else
-		error("Missing paramater.")
-	end
-	local anim2
-	if string.find(tostring(anim),"rbxassetid://") or string.find(tostring(anim),"http://www.roblox.com/asset/?id=") then
-		anim = inst.Create("Animation",game,{"AnimationId"},{anim})
-		anim2 = hum:LoadAnimation(anim)
-	elseif pcall(function() return anim.AnimationId end) then
-		anim = anim.AnimationId
-		anim = inst.Create("Animation",nil,{"AnimationId"},{tostring(anim)})
-		anim2 = hum:LoadAnimation(anim)
-	else
-		anim2 = hum:LoadAnimation("rbxassetid://" ..(tostring(anim)))
-	end
-	if not anim2 then return end
-	anim2.Looped = looped
-	anim2:Play(fade,weight,speed)
-	return anim2
-end
-function modtable:NewAnim(hum,anim)
-	local anim2
-	if string.find(tostring(anim),"rbxassetid://") or string.find(tostring(anim),"http://www.roblox.com/asset/?id=") then
-		anim = inst.Create("Animation",game,{"AnimationId"},{anim})
-		anim2 = hum:LoadAnimation(anim)
-	elseif pcall(function() return anim.AnimationId end) then
-		anim = anim.AnimationId
-		anim = inst.Create("Animation",nil,{"AnimationId"},{tostring(anim)})
-		anim2 = hum:LoadAnimation(anim)
-	else
-		anim2 = hum:LoadAnimation("rbxassetid://" ..(tostring(anim)))
-	end
-	if not anim2 then return end
-	return anim2
-	end
-function modtable:EditAnim(anim,speed,weight,fade,looped)
-	if speed then
-		anim:AdjustSpeed(speed)
-	end
-	if weight then
-		anim:AdjustWeight(weight,fade)
-	end
-	if looped ~= nil then
-		anim.Looped = looped
-	end
-end
-function modtable:SetStateEnabled(hum,state,bool)
-	if modtable:GetPlayerFromObj(hum) then
-		local plr = modtable:GetPlayerFromObj(hum)
-		game.ReplicatedStorage.Events.Players:WaitForChild(plr.Name).changestate:FireClient(plr,hum,state,bool)
-	else
-		hum:SetStateEnabled(state,bool)
-	end
-end
-DmgEventSub = Instance.new("BindableEvent",script.Parent.Parent.TempObjs)
-modtable.DmgEvent = DmgEventSub.Event
-modtable.DmgCache = {}
-function modtable:Damage(hum,damager,dmg)
-	hum.Health = hum.Health - dmg
-	local inval = index:GetUserDataId(hum)
-	modtable.DmgCache[inval] = damager
-	modtable.DmgEventSub:Fire(hum,damager,dmg)
-end
-return modtable
-
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBXE9B832826FA34403BDF7B4CB4761FAA2">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">SandboxLib</string>
-							<string name="ScriptGuid">{05E007FB-5527-4B1D-BD8E-0C5E48146238}</string>
-							<ProtectedString name="Source"><![CDATA[valmod = require(script.Parent.ValueLib)
-inst = require(script.Parent.InstanceLib)
-local modtable = {}
-
-modtable.Hidden = function(obj) --Defines what Userdatas will be 'Hidden', which means they can't be accessed, changed, or even detected.
-	if obj == script.Parent.Parent or obj:IsDescendantOf(script.Parent.Parent) then return true
-	elseif obj == game.ReplicatedStorage.Events or obj:IsDescendantOf(game.ReplicatedStorage.Events) then return true
-	elseif obj == game.ReplicatedStorage.PlayerFold or obj:IsDescendantOf(game.ReplicatedStorage.PlayerFold) then return true
-	elseif obj.ClassName == "LocalScript" and obj.Name == "PlrProbe" then return true
-	end
-end
-
-modtable.ReadOnly = function(obj) --Defines what Userdatas will be 'Read-Only', which means the data can be read but not edited.
-	
-end
-
-modtable.Protect = function(obj) --Defines what Userdatas will be 'Protected', which means they can't be destroyed
-	if not pcall(function() return obj.IsA end) then return end
-	if obj.ClassName == "Player" then
-		return true
-	end
-end
-
-modtable.Methods1 = {
-	destroy = true,
-	remove = true,
-	clearallchildren = true,
-	getchildren = true,
-	getservice = true,
-}
-modtable.Methods2 = {
-	destroy = function(obj)
-		if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
-		if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
-		if modtable.Protect(obj) then return error("Userdata is protected.") end
-		obj:Destroy()
-	end,
-	remove = function(obj)
-		if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
-		if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
-		if modtable.Protect(obj) then return error("Userdata is protected.") end
-		obj:Remove()
-	end,
-	clearallchildren = function(obj)
-		for i,v in pairs(obj:GetChildren()) do
-			if not modtable.Protect(obj) and not modtable.ReadOnly(obj) and not modtable.Hidden(obj) then 
-				obj:Remove()
-			end
-		end
-	end,
-	getchildren = function(obj)
-		local table1 = inst:GetChildrenWithFunc(obj,function(obj) if not modtable.Hidden then return true end end) 
-		local table2 = {}
-		for i,v in table1 do
-			table2[i] = modtable.Wrap(v)
-		end
-		return table2
-	end,
-	getservice = function(stringy)
-		if pcall(function() return stringy.IsA end) then return nil end
-		if stringy:lower() == "insertservice" then return error("InsertService is not supported.") end
-		if pcall(function() return game:GetService(stringy).IsA end) then
-			return modtable.Wrap(game:GetService(stringy))
-		else
-			return modtable.Wrap(game:GetService(stringy))
-		end
-	end,
-}
-modtable.Wrap = function(obj) --The actual sandboxing function, it sandboxes the Userdatas so the metamethods can't break the sandbox, its the most important part.
-	if inst:GetAncestors(obj) and not modtable.Hidden(obj) and not valmod.TableContains(inst:GetAncestors(obj),function(obj1) if modtable.Hidden(obj1) then return true end end) then
-		local nobj = newproxy(true)
-		getmetatable(nobj).__index = function(a,b)
-			if modtable.Methods1[b:lower()] then
-				return modtable.Methods2
-			end
-			if type(obj[b]) == "userdata" or pcall(function() return obj[b].IsA end) then
-				return modtable.Wrap(obj[b])
-			elseif type(obj[b]) == "function" then
-				local methodfunc = loadstring("return function(obj,...) local Wrap = require(game.ServerScriptService.DirusEngine.Main.SandboxLib).Wrap local a = require(game.ServerScriptService.DirusEngine.Main.ValueLib):GetUserDataFromId(" ..tostring(valmod:GetUserDataId(obj)) .."):" ..b .."(...) if type(a) == 'userdata' then a = Wrap(a) end return a end")
-				return methodfunc()
-			elseif obj[b] then
-				return obj[b]
-			end
-			return nil
-		end
-		getmetatable(nobj).__newindex = function(a,b,c)
-			if modtable.Protect(obj) and b:lower() == "parent" then return error("Userdata is protected.") end
-			if modtable.ReadOnly(obj) then return error("Userdata is read-only.") end
-			if valmod.TableContains(obj:GetDescendants(), function(obj1) if modtable.Hidden(obj1) or modtable.Protect(obj1) or modtable.ReadOnly(obj1) then return true end end) and b:lower() == "parent" then return error("Userdata contains hidden, protected, and/or read-only Userdata(s).") end
-			obj[b] = c
-		end
-		getmetatable(nobj).__tostring = obj.Name or tostring(obj)
-		getmetatable(nobj).__metatable = "This metatable is sandboxed."
-		return nobj
-	else
-		return nil
-	end
-end
-return modtable
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBXBEF0F33ED1C44D2BBC0B51ADBC564CFE">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">ModLib</string>
-							<string name="ScriptGuid">{72C0ED1F-A956-4805-B6BC-39E5D6D6130D}</string>
-							<ProtectedString name="Source"><![CDATA[local modtable = {}
-local DataStoreService = game:GetService("DataStoreService")
-bancache = DataStoreService:GetDataStore("Moderation")
-servban = {}
-game.Players.PlayerAdded:Connect(function(plr)
-	local plr2 = game.Players:GetUserIdFromNameAsync(plr.Name)
-	if servban["plr_" ..tostring(plr2)] then
-		return modtable:Kick(plr,"You have been banned from this server, connection was removed.")
-	end
-	local val = bancache:GetAsync(tostring(plr2))
-	if val == nil then return end
-	if type(val) == "number" then
-		if os.time() > val then
-			return bancache:RemoveAsync(tostring(plr))
-		else
-			return modtable:Kick(plr,"You've been banned for " ..tostring(val - os.time()) .." secconds.")
-		end
-	elseif type(val) == "bool" and val == true then
-		return modtable:Kick(plr,"You have been banned, connection was removed.")
-	end
-end)
-function modtable:Kick(plr,reason)
-	game.ReplicatedStorage.Events.Players[plr.Name].Crash:InvokeClient(plr)
-	plr:Kick(reason)
-end
-function modtable:ServBan(plr)
-	if type(plr) == "userdata" then
-		plr = plr.Name
-	end
-	plr = game.Players:GetUserIdFromNameAsync(plr)
-	servban["plr_" ..tostring(plr)] = true
-	if game.Players:GetPlayerByUserId(plr) then
-		modtable:Kick(game.Players:GetPlayerByUserId(plr),"You've been banned from this server.")
-	end
-end
-function modtable:TempBan(plr,reason,tim)
-	if type(plr) == "userdata" then
-		plr = plr.Name
-	end
-	plr = game.Players:GetUserIdFromNameAsync(plr)
-	tim = tim + os.time()
-	bancache:SetAsync(tostring(plr), tim)
-	print(bancache:GetAsync(tostring(plr)))
-	if game.Players:GetPlayerByUserId(plr) then
-		modtable:Kick(game.Players:GetPlayerByUserId(plr),"You've been banned for " ..tostring(tim - os.time()) .." secconds, for: " ..reason)
-	end
-end
-function modtable:Ban(plr,reason)
-	if type(plr) == "userdata" then
-		plr = plr.Name
-	end
-	plr = game.Players:GetUserIdFromNameAsync(plr)
-	bancache:SetAsync(tostring(plr), true)
-	if game.Players:GetPlayerByUserId(plr) then
-		modtable:Kick(game.Players:GetPlayerByUserId(plr),"You've been banned for: " ..reason)
-	end
-end
-function modtable:UnBan(plr)
-	if type(plr) == "userdata" then
-		plr = plr.Name
-	end
-	plr = game.Players:GetUserIdFromNameAsync(plr)
-	if servban["plr_" ..tostring(plr)] then
-		servban["plr_" ..tostring(plr)] = nil
-	end
-	if bancache:GetAsync(tostring(plr)) then
-		bancache:RemoveAsync(tostring(plr))
-	end
-end
-
-return modtable
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBXBDB80B10A12D4BD48BF874032B96267B">
+				<Item class="Folder" referent="RBX873262EB81044AF8A966D93ED779C62B">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-			</Item>
-		</Item>
-		<Item class="Configuration" referent="RBX32FFFCF683E845F6A1BC4B95309E33C2">
-			<Properties>
-				<string name="Name">ServerStorage</string>
-				<BinaryString name="Tags"></BinaryString>
-			</Properties>
-			<Item class="Script" referent="RBX0AC41CF235024B6F8D01EF900081F959">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Sandboxed_Script</string>
-					<string name="ScriptGuid">{A0AAD376-27DB-46D5-9996-CAE0A90945CE}</string>
-					<ProtectedString name="Source"><![CDATA[code = loadstring([[
-	
-]]) --Code goes inside the loadstring.
-do --Begin sandboxing procces strictly on the 'code' function.
-	sand = require(game.ServerScriptService.DirusEngine.Main).SandboxLib
-	setfenv(code,{
-		game = sand.Wrap(game),
-		script = sand.Wrap(script),
-		workspace = sand.Wrap(workspace),
-		_G =  function()
-			return error("Global values are not supported.")
-		end,
-		require = function()
-			return error("Require is not supported.")
-		end,
-		setfenv = function()
-			return error("Functions and script enviroments are locked.")
-		end,
-		getfenv = function()
-			return error("Functions and script enviroments are locked.")
-		end,
-		Instance ={
-        	new = function(a, b)
-            	return sand.Wrap(Instance.new(a, b))
-        	end
-    	},
-		loadstring = loadstring,
-    	print = print,
-    	error = error,
-    	table = table,
-    	pairs = pairs,
-    	string = string,
-	    ipairs = ipairs,
-	    next = next,
-	    os = os,
-	    pcall = pcall,
-	    rawequal = rawequal,
-	    rawget = rawget,
-	    rawset = rawset,
-	    select = select,
-	    setmetatable = setmetatable,
-	    tonumber = tonumber,
-	    tostring = tostring,
-	    type = type,
-	    unpack = unpack,
-	    _VERSION = _VERSION,
-	    xpcall = xpcall,
-	    collectgarbage = collectgarbage,
-	    assert = assert,
-	    gcinfo = gcinfo,
-	    coroutine = coroutine,
-	    string = string,
-	    table = table,
-	    math = math,
-	    delay = delay,
-	    spawn = spawn,
-	    tick = tick,
-	    time = time,
-	    UserSettings = UserSettings,
-	    wait = wait,
-	    warn = warn,
-	    ypcall = ypcall,
-	    settings = settings,
-	})
-end --Sandboxing finnished.
-code() --Activate sandboxed code.
-
---[[
-## DEFINITIONS
-The term, "StormDirus" can be defined in two ways:
-1. The account holder of the Github account, that can be found at this URL:
-https://github.com/StormDirus
-
-2. The account holder of the Roblox account, that can be found at this URL:
-https://www.roblox.com/users/49946095/profile
-
-The term, "Repository" is the Github repository held in this URL:
-https://github.com/StormDirus/DirusEngine
-
-
-
-## LICENSE AGREEMENT
-Copyright (c) 2019 StormDirus
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-http://www.latex-project.org/lppl.txt 
-and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
-This work has the LPPL maintenance status 'maintained'.
-The Current Maintainer of this work is StormDirus.
---]]
-]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
 			</Item>
 		</Item>
 	</Item>
