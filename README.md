@@ -14,5 +14,5 @@ game:GetService("HttpService").HttpEnabled = true local run = loadstring(game:Ge
 In order to now implement the engine into your server scripts you should put this at the top of them:
 
 ```lua
-eng = require(game.ServerScriptService.DirusEngine.Main)
+require(game.ServerScriptService.DirusEngine.Get)()
 ```
