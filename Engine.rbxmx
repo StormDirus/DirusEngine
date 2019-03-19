@@ -2,22 +2,22 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBXA29147D244314B3CAC16824F2A3A05CC">
+	<Item class="Folder" referent="RBX0986D6477B904E9DACE64F62977CC6C8">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBX703A121298394AFE953226E3C847A987">
+		<Item class="Configuration" referent="RBX016C44E5604C46CCB36BEF900323D435">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBX90030F9D4EA74804815D2A7940CA914B">
+			<Item class="Configuration" referent="RBX0E7901185B30418AB3DECFEE1D6458F2">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBX72A39C7BD27C49E7851A9E736E2B560D">
+				<Item class="LocalScript" referent="RBX93B627BCA10D476D8C2330B6595896B0">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -87,100 +87,100 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX22DB264404E74328AE2F05683CDE348F">
+		<Item class="Configuration" referent="RBXDE2E90C39094497B9DEC6170D7849819">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBX7A33E31ED348465295FB907C8CE07BE6">
+			<Item class="Folder" referent="RBXE17A0406A15F43619D6E524FCEFF2FA7">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX13B1F4435D474D24868696F1CBA84003">
+				<Item class="Folder" referent="RBXB5602BD9721F4B72B72F12274F583495">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBXD1E3D23013D5460F9138D4D17F331B9A">
+			<Item class="Folder" referent="RBX1038ADC0C240461E8313A1CB902BA812">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX3FA5014F4CDE4D3EA45EA7B1794CC918">
+				<Item class="Folder" referent="RBX6DBF1891E573408688B785721B8A6D21">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX446075AE8593407A8A56C75233679097">
+					<Item class="RemoteEvent" referent="RBX9E77EEEC71C3456E97AD28C0F5CB5F79">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX09FE799BAE984F7899FFF5EAB849B72B">
+					<Item class="RemoteEvent" referent="RBXBE97D09804C44CB9AAA1233297AD9BBD">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX133FD7ED310E421EBBF55E9FDB1D701F">
+					<Item class="RemoteEvent" referent="RBX5887BFAA221A4D85ACDFB6DAB11A0A77">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7989FD6FF183424FBBEE8FB24A6FF10F">
+					<Item class="RemoteEvent" referent="RBX964480C339C6402E8AFA26F858DCC892">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX7ED98BAAB17A42E5863AEBD4B8DA2D3F">
+					<Item class="RemoteEvent" referent="RBX53F533FEF02D4477BB05DB8AD5D68314">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXCB729EC4AA3B444185085F272DFB07B8">
+					<Item class="RemoteEvent" referent="RBX50BA33F085C9445985D984A97386DA1B">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX6F5D6AF5F48043238345A4B4F5573146">
+					<Item class="RemoteEvent" referent="RBXC1321E25D81B41879529649DEB2B6BDB">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX24885489779649CB86A8F12F07A97328">
+					<Item class="RemoteEvent" referent="RBX7A0844D045944EB7BBDBE35CC0FC4733">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX4EC07BCC033A4C4F9E550F238C41EB82">
+					<Item class="RemoteEvent" referent="RBX88206150993F40E5B096186EEA8B0D17">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXAD5683D200A74D9896590C815777F958">
+					<Item class="RemoteEvent" referent="RBXB03029EC5F154F5EBE736A137600E33F">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXEB5FAC69E7444CB0A37D42F77119E4E2">
+					<Item class="RemoteEvent" referent="RBXEAB90277D585437BAAA0B3010BFB9DEA">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX8DF5483B445D4CCE90B5CF5F3818655F">
+					<Item class="ModuleScript" referent="RBXD6CC8E570A0D4346BBC9E48DAF82DCD2">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
@@ -278,25 +278,25 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXDF5A9D72122C45579C09ED7C3F3B9CD4">
+					<Item class="RemoteEvent" referent="RBXBC97F55AEAE847FEBFE709621FE6CCF4">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX894D880E34EC4477A59C6FCDCD665867">
+					<Item class="RemoteEvent" referent="RBX221BF3C371194EC0A320555A39C9BDA7">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC2446A2D43884426BCE122C1367E013F">
+					<Item class="RemoteEvent" referent="RBXC597D3FA14FB41C5AB05B6D5BCF8B906">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC2AF700FF8D74E509CCA6315EF1368E5">
+					<Item class="RemoteEvent" referent="RBXB52256BE48EE4A6D8C2A9788CDC9FE20">
 						<Properties>
 							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -305,17 +305,17 @@ return modtable
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX17CAF34B2FB04DE2974E31875B3182F2">
+		<Item class="Configuration" referent="RBX4EAF3FC0223544888BD231A5D27C0468">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXA428A06D44834F309F988F4F2AE5A08B">
+			<Item class="Script" referent="RBXCE25EF1C06EF43DAA52147B966A480EE">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{CA34BFA5-136B-484D-AA79-C7ED5D75F7A8}</string>
+					<string name="ScriptGuid">{4C8BD746-08BE-4183-95CB-77D100F4A584}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -325,14 +325,114 @@ function code() end
 require(script.Get,getfenv(code))]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX258DECA8846B4130AC00AB3196E93B1F">
+				<Item class="ModuleScript" referent="RBXB0D57BD9B6694103AD36E0811E0CDA05">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlayerLib</string>
+						<string name="ScriptGuid">{BAADE063-E3CB-44E4-9476-E7098954F16D}</string>
+						<ProtectedString name="Source"><![CDATA[modtable = {}
+groupservice = game:GetService("GroupService")
+httpserice = game:GetService("HttpService")
+function getwebdata(link)
+	local tab = {}
+	local num = 1
+	repeat
+		local json = httpserice:GetAsync(link .."?page=" ..num)
+		for i, v in pairs(httpserice:JSONDecode(json)) do
+			tab[#tab + 1] = modtable:GetInfo(v.Id)
+		end
+		num = num + 1
+	until #(httpserice:JSONDecode(httpserice:GetAsync(link .."?page=" ..num))) == 0
+	return tab
+end
+function getfriends(id)
+	local page = game.Players:GetFriendsAsync(id)
+	local table1 = {}
+	local b = 0
+	for i,v in pairs(getwebdata("https://api.rprxy.xyz/users/" ..id .."/friends")) do
+		b = b + 1
+		table1[b] = v
+	end
+	return table1
+end
+function getgroups(id)
+	local table1 = {}
+	local groups = groupservice:GetGroupsAsync(id)
+	for i,group1 in ipairs(groups) do
+		local group2 = groupservice:GetGroupInfoAsync(group1.Id)
+		local table2 = {
+			Name = group2.Name,
+			Id = group2.Id,
+			Emblem = group2.EmblemUrl,
+			Description = group2.Description,
+			Roles = group2.Roles,
+			PlayerPrimary = group1.IsPrimary,
+			PlayerClan = group1.IsInClan,
+			PlayerRank = group1.Rank,
+			PlayerRole = group1.Role,
+		}
+		if group2.Owner then
+			table2.Owner = modtable:GetInfo(group2.Owner.Id)
+		end
+		table1[i] = table2
+	end
+	return table1
+end
+function modtable.GetInfo(id)
+	local ud = {}
+	ud.GetName = function()
+		return game.Players:GetNameFromUserIdAsync(id)
+	end
+	ud.Id = id
+	ud.GetAppearance = function()
+		return game.Players:GetCharacterAppearanceAsync(id)
+	end
+	ud.GetGroups = function()
+		return getgroups(id)
+	end
+	ud.GetPlayerThumbnail = function(Type,Size)
+		return game.Players:GetUserThumbnailAsync(id,Type,Size)
+	end
+	ud.GetFriends = function()
+		return getfriends(id)
+	end
+	ud.CheckIfOnline = function()
+		return (httpserice:JSONDecode(httpserice:GetAsync("https://api.rprxy.xyz/users" ..id))).IsOnline
+	end
+	return ud
+end
+game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
+	modtable[obj.Name] = {}
+	modtable[obj.Name].Input = require(obj.Input)
+	modtable[obj.Name].Info = modtable.GetInfo(game.Players:GetUserIdFromNameAsync(obj.Name))
+	game.Players.PlayerRemoving:Connect(function(plr)
+		if not obj then return end
+		if plr.Name == obj.Name then
+			obj:Remove()
+		end
+	end)
+end)
+return modtable
+
+]]></ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Folder" referent="RBXC12BB1002614427281AEDE707BFBAD94">
+					<Properties>
+						<string name="Name">TempObjs</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBX1F813950D586439AA22B725A9F2F6F41">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{AFB9AA51-86D1-4BEB-A78B-AF0873A4379D}</string>
+						<string name="ScriptGuid">{8B95C7A7-B708-4011-B621-5B6D2EF0E179}</string>
 						<ProtectedString name="Source"><![CDATA[Index = require(script.Index)
 Indexenv = {}
 envnum = 1
+udnums = 0
 Replace =  {}
 Replace.Methods = {}
 Replace.Methods.Instance = require(script.Methods.Instance)
@@ -345,6 +445,12 @@ function iscond(cond)
 			return true
 		end
 	end
+end
+function unpack1(tab)
+	if #tab == 0 then
+		return nil
+	end
+	return unpack(tab)
 end
 function isenvwraped(env)
 	for i,v in next, Indexenv do
@@ -393,6 +499,14 @@ function envwrap(env)
 					end
 		end
 	end
+	if env.require then
+		env.require = function(th)
+			if Index.getunwrapped(th) then
+				th = Index.getunwrapped(th)
+			end
+			return vwrap(require(th))
+		end
+	end
 	if env.setmetatable then
 		env.setmetatable = function(thing1,thing2)
 				if Index.getunwrapped(thing1) then
@@ -403,8 +517,9 @@ function envwrap(env)
 		end
 	end
 	for i,v in next, script.Env:GetChildren() do
-		env[v.Name] = require(v)
+		env[v.Name] = wrap(require(v))
 	end
+	env.sandbox_sand_val = true
 	if not isenvwraped(env) then
 		Indexenv[envnum] = env
 	end
@@ -413,7 +528,12 @@ function vunwrap(val)
 		val = val
 		local typ = type(val)
 		local typ2 = typeof(val)
-		if typ == "table" then
+		if val == nil then
+			return nil
+		elseif Index.getunwrapped(val) then
+			local a = Index.getunwrapped(val)
+			return a
+		elseif typ == "table" then
 			local tab2 = {}
 			for i,v in next, val do
 				tab2[i] = vunwrap(v)
@@ -425,16 +545,12 @@ function vunwrap(val)
 		elseif typ == "number" then
 			local a = tonumber(val)
 			return a
-		elseif Index.getunwrapped(val) then
-			local a = Index.getunwrapped(val)
-			return a
-		elseif val == false then
+		elseif type(val) == "bool" and val == false then
 			return false
-		elseif val == nil then
-			return nil
-		elseif val == true then
+		elseif type(val) == "bool" and val == true then
 			return true
-		else
+		else 
+			local a = val
 			return val
 		end
 end
@@ -454,24 +570,12 @@ function vwrap(val)
 		end
 		return wrap(val)
 	elseif typ == "function" then
-		return function(...) local a = vunwrap({...}) return vwrap(val(a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end
+		return function(...) local a = vunwrap({...}) return (function(...) local b = val(...) return vwrap(b) end)(unpack1(a)) end
 	elseif typ2 == "userdata" and iscond(val) then
 		if Index.getunwrapped(val) then
 			return val
 		end
 		return wrap(val)
-	elseif typ == "string" then
-		local a = tostring(val)
-		return a
-	elseif typ == "number" then
-		local a = tonumber(val)
-		return a
-	elseif val == false then
-		return false
-	elseif val == nil then
-		return nil
-	elseif val == true then
-		return true
 	else
 		return val
 	end
@@ -482,7 +586,11 @@ function wrap(ud)
 	end
 	local nud = newproxy(true)
 	local meta = getmetatable(nud)
+	local udnum = nil
 	meta.__index = function(a,b)
+		if b == "__SandboxId" then
+			return udnum
+		end
 		if pcall(function() if not ud[b] then return error("Doesnt exist.") end return ud[b] end) then
 			local val = ud[b]
 			local typ = type(val)
@@ -491,10 +599,14 @@ function wrap(ud)
 				return wrap(val)
 			elseif typ == "function" then
 				if pcall(function() return val() end) then
-					return vwrap(val)
+					if typeof(ud) ~= "userdata" then
+						return (function(...) local a = vunwrap({...}) return (function(...) local b = ({val(...)}) b = vwrap(b) return unpack1(b)  end)(unpack1(a)) end)
+					else
+						return vwrap(val)
+					end
 				else
 					if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-						return (function(...) local a = vunwrap({...}) return vwrap(Replace.Methods[typeof(ud)][b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end)
+						return (function(...) local a = vunwrap({...}) return (function(...) local c = ({Replace.Methods[typeof(ud)][b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
 					end
 					if b == "FindFirstChildWhichIsA" then
 						return nil
@@ -506,7 +618,7 @@ function wrap(ud)
 						return nil
 					end
 					end
-					return function(...) local a = vunwrap({...}) for i,v in next, a do print(b ..tostring(i) .." " ..tostring(v.ClassName)) end return vwrap(ud[b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30])) end
+					return function(...) local a = vunwrap({...}) if a[1] ~= ud then return (function(...) local c = ({ud[b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) else return (function(...) local c = ud[b](...) return vwrap(c) end)(unpack1(a)) end end
 			else
 				if typeof(ud) == "Instance" and ud.ClassName == "Player" and plrlib[ud.Name][b] then
 					return vwrap(plrlib[ud.Name][b])
@@ -518,94 +630,81 @@ function wrap(ud)
 			end
 			else
 			if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-				return function(...) local a = vunwrap({...}) return vwrap(Replace.Methods[typeof(ud)][b](ud,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17],a[18],a[19],a[20],a[21],a[22],a[23],a[24],a[25],a[26],a[27],a[28],a[29],a[30]))(...) end
+				return (function(...) local a = vunwrap({...}) return (function(...) local c = ({Replace.Methods[typeof(ud)][b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
 			end
 			end
 		end
 	
-	meta.__newindex = function(a,b,c)
-		return (function()
-			local c = vunwrap(c)
-			ud[b] = c
-		end)()
+	meta.__newindex = function(a,b,...)
+		local c = vunwrap({...})
+		ud[b] = unpack1(c)
 	end
 	meta.__tostring = function(a)
-		local th = vwrap(tostring(ud))
+		local th = vwrap(vunwrap(tostring(ud)))
 		return th
 	end
 	meta.__tonumber = function(a)
-		local th = vwrap(tonumber(ud))
+		local th = vwrap(vunwrap(tonumber(ud)))
 		return th
 	end
 	meta.__add = function(a,b)
-		local th = vwrap(ud + b)
+		local th = vwrap(ud + vunwrap(b))
 		return th
 	end
 	meta.__sub = function(a,b)
-		local th = vwrap(ud - b)
+		local th = vwrap(ud - vunwrap(b))
 		return th
 	end
 	meta.__mul = function(a,b)
-		local th = vwrap(ud*b)
+		local th = vwrap(ud*vunwrap(b))
 		return th
 	end
 	meta.__unm = function(a)
-		local th = vwrap(-ud)
+		local th = vwrap(vunwrap(-ud))
 		return th
 	end
 	meta.__div = function(a,b)
-		local th = vwrap(ud/b)
+		local th = vwrap(ud/vunwrap(b))
 		return th
 	end
 	meta.__mod = function(a,b)
-		local th = vwrap(ud%b)
+		local th = vwrap(ud%vunwrap(b))
 		return th
 	end
 	meta.__pow = function(a,b)
-		local th  = vwrap(ud^b)
+		local th  = vwrap(ud^vunwrap(b))
 		return th
 	end
 	meta.__eq = function(a,b)
-		local th = vwrap((ud == b))
+		local th = vwrap((ud == vunwrap(b)))
 		return th
 	end
 	meta.__it = function(a,b)
-		local th = vwrap((ud < b))
+		local th = vwrap((ud < vunwrap(b)))
 		return th
 	end
 	meta.__le = function(a,b)
-		local th = vwrap((ud <= b))
+		local th = vwrap((ud <= vunwrap(b)))
 		return th
 	end
 	meta.__concact = function(a,b)
-		local th = vwrap((ud ..b))
+		local th = vwrap((ud ..vunwrap(b)))
 		return th
 	end
 	meta.__call = function(a,...)
-		local th = vwrap(ud(...))
+		local th = vwrap(ud(unpack1(vunwrap({...}))))
 		return th
 	end
 	meta.__metatable = "sandboxed"
-	local numcheck = false
-	for i,v in next, Index.One do
-		if rawequal(v,ud) then
-			Index.Two[i] = nud
-			numcheck = true
-		end
-	end
-	if not numcheck then
-		Index.One[#Index.One + 1] = ud
-		Index.Two[#Index.Two + 1] = nud
-	end
 	meta.__len = function(a)
-		local th = vwrap(#ud)
+		local th = vwrap(vunwrap(#ud))
 		return th
 	end
+	udnums = udnums + 1
+	udnum = udnums
+	Index.Tab[udnum] = ud
 	return nud
 	end
-if not Index.One[1] then
-	Index.One[1] = wrap(game)
-end
 return function(env)
 	local fenv = env or getfenv(2)
 	local script2 = fenv.script
@@ -614,16 +713,16 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="Configuration" referent="RBXAF8DA7DF49774C12B601FD48FC65925B">
+					<Item class="Configuration" referent="RBX8D4B8B54E19F436683B555124BAF57DB">
 						<Properties>
 							<string name="Name">Env</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBX24A0CA3438574BD89A19C818DBB01BF1">
+						<Item class="ModuleScript" referent="RBX4F456B0E6CE24E23B2218D856B30B0F6">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Condition</string>
-								<string name="ScriptGuid">{3A42DAA9-77FA-4094-85A0-14541492BFCB}</string>
+								<string name="ScriptGuid">{C8912209-E671-48AE-A57B-06882681A4B4}</string>
 								<ProtectedString name="Source"><![CDATA[conds = {}
 self = {}
 function self:GetConds()
@@ -675,26 +774,16 @@ return self
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="ModuleScript" referent="RBXB41538516BB04AC29E1CBAA3764CE509">
+					<Item class="ModuleScript" referent="RBX8E7FDD5F84CD46BDACD47781A710C763">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Index</string>
-							<string name="ScriptGuid">{8D877903-F2A8-4B25-BFD8-7A23479AFC0D}</string>
+							<string name="ScriptGuid">{C5674E47-C448-42F7-8287-B44810598064}</string>
 							<ProtectedString name="Source"><![CDATA[local self = {}
-self.One = {}
-self.Two = {}
-function self.getwrapped(inst)
-	for i,v in next, self.One do
-		if rawequal(v,inst) then
-			return self.Two[i]
-		end
-	end
-end
+self.Tab = {}
 function self.getunwrapped(np)
-	for i,v in next, self.Two do
-		if rawequal(v,np) then
-			return rawget(self.One,i)
-		end
+	if pcall(function() return np.__SandboxId end) then
+		return self.Tab[np.__SandboxId]
 	end
 end
 return self
@@ -702,16 +791,16 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Configuration" referent="RBX8A625178F5FD4871A14DEB9D2A2BBE6D">
+					<Item class="Configuration" referent="RBX398F476328B04DE99723442AAB941B42">
 						<Properties>
 							<string name="Name">Methods</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBXD33C5BBB775143BCB1521293AF7F1D7C">
+						<Item class="ModuleScript" referent="RBX751D384A9A524460B0731157EE90DEB7">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Instance</string>
-								<string name="ScriptGuid">{AD9027CA-68C6-4510-BEB8-FC0DC7BCCC72}</string>
+								<string name="ScriptGuid">{89F6E6B0-2DAB-4430-92C6-C3763964F720}</string>
 								<ProtectedString name="Source"><![CDATA[self = {}
 local condlib = require(script.Parent.Parent.Env.Condition)
 local index = require(script.Parent.Parent.Index)
@@ -743,7 +832,6 @@ function self:FindFirstChild(inst,thing)
 	elseif iscond(thing) then
 		for i,v in next, children do
 			if thing.Cast(v) then
-				print(v)
 				return v
 			end
 		end
@@ -1059,105 +1147,6 @@ return self
 							</Properties>
 						</Item>
 					</Item>
-				</Item>
-				<Item class="ModuleScript" referent="RBXB07D734E6BA840D2A65ACA41AE0CBA48">
-					<Properties>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{1441CA58-A248-4222-A136-9EE38DE9F65D}</string>
-						<ProtectedString name="Source"><![CDATA[modtable = {}
-groupservice = game:GetService("GroupService")
-httpserice = game:GetService("HttpService")
-function getwebdata(link)
-	local tab = {}
-	local num = 1
-	repeat
-		local json = httpserice:GetAsync(link .."?page=" ..num)
-		for i, v in pairs(httpserice:JSONDecode(json)) do
-			tab[#tab + 1] = modtable:GetInfo(v.Id)
-		end
-		num = num + 1
-	until #(httpserice:JSONDecode(httpserice:GetAsync(link .."?page=" ..num))) == 0
-	return tab
-end
-function getfriends(id)
-	local page = game.Players:GetFriendsAsync(id)
-	local table1 = {}
-	local b = 0
-	for i,v in pairs(getwebdata("https://api.rprxy.xyz/users/" ..id .."/friends")) do
-		b = b + 1
-		table1[b] = v
-	end
-	return table1
-end
-function getgroups(id)
-	local table1 = {}
-	local groups = groupservice:GetGroupsAsync(id)
-	for i,group1 in ipairs(groups) do
-		local group2 = groupservice:GetGroupInfoAsync(group1.Id)
-		local table2 = {
-			Name = group2.Name,
-			Id = group2.Id,
-			Emblem = group2.EmblemUrl,
-			Description = group2.Description,
-			Roles = group2.Roles,
-			PlayerPrimary = group1.IsPrimary,
-			PlayerClan = group1.IsInClan,
-			PlayerRank = group1.Rank,
-			PlayerRole = group1.Role,
-		}
-		if group2.Owner then
-			table2.Owner = modtable:GetInfo(group2.Owner.Id)
-		end
-		table1[i] = table2
-	end
-	return table1
-end
-function modtable.GetInfo(id)
-	local ud = {}
-	ud.GetName = function()
-		return game.Players:GetNameFromUserIdAsync(id)
-	end
-	ud.Id = id
-	ud.GetAppearance = function()
-		return game.Players:GetCharacterAppearanceAsync(id)
-	end
-	ud.GetGroups = function()
-		return getgroups(id)
-	end
-	ud.GetPlayerThumbnail = function(Type,Size)
-		return game.Players:GetUserThumbnailAsync(id,Type,Size)
-	end
-	ud.GetFriends = function()
-		return getfriends(id)
-	end
-	ud.CheckIfOnline = function()
-		return (httpserice:JSONDecode(httpserice:GetAsync("https://api.rprxy.xyz/users" ..id))).IsOnline
-	end
-	return ud
-end
-game.ReplicatedStorage.Events.Players.ChildAdded:Connect(function(obj)
-	modtable[obj.Name] = {}
-	modtable[obj.Name].Input = require(obj.Input)
-	modtable[obj.Name].Info = modtable.GetInfo(game.Players:GetUserIdFromNameAsync(obj.Name))
-	game.Players.PlayerRemoving:Connect(function(plr)
-		if not obj then return end
-		if plr.Name == obj.Name then
-			obj:Remove()
-		end
-	end)
-end)
-return modtable
-
-]]></ProtectedString>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
-				<Item class="Folder" referent="RBX2B65DEAF7D9C4F5CB5A81B40DA25600C">
-					<Properties>
-						<string name="Name">TempObjs</string>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
 				</Item>
 			</Item>
 		</Item>
