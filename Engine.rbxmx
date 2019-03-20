@@ -310,26 +310,51 @@ return modtable
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBXFE2053555BE44017A5A1583EACBA028F">
+			<Item class="Script" referent="RBX255A224546FB414492916EAF383960B6">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{A84FB564-3878-4379-A732-CBBFBEA77386}</string>
+					<string name="ScriptGuid">{F6CED379-0EFC-4BF6-A6EB-491877821E24}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
 	fold.Parent = game.ReplicatedStorage.Events.Players
 end)
 function code() end
-require(script.Get,getfenv(code))]]></ProtectedString>
+require(script.Get,getfenv(code))
+--[[
+
+MIT License
+
+Copyright (c) 2019 StormDirus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX0BA4CE25AC9042D0BC6F3FE35E117C5A">
+				<Item class="ModuleScript" referent="RBXE7481F2203314749A2B69C98F8E50FC7">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{0F3EF167-F707-43D0-A8DD-40A0716F71EA}</string>
+						<string name="ScriptGuid">{D6FB9266-6E05-4C9E-B4DC-2B36877CB03A}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -418,17 +443,17 @@ return modtable
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBX98A253802EA945149F00D6B8543D7089">
+				<Item class="Folder" referent="RBX336964E2358F424595F4FD7A590B3F86">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX8BE119EFBEC64C3A91E77C87456A02EB">
+				<Item class="ModuleScript" referent="RBX60DAC9B8BD384737BB2CE3D432F30CEC">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{315607ED-D8F6-4AD2-92B8-4E6ABB9AE510}</string>
+						<string name="ScriptGuid">{C3BCF4B6-1909-4FC5-B00B-1AC3C23F9250}</string>
 						<ProtectedString name="Source"><![CDATA[Index = require(script.Index)
 Indexenv = {}
 envnum = 1
@@ -760,16 +785,16 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="Configuration" referent="RBX18BE078CF40B4DA8809EFA749CD4626F">
+					<Item class="Configuration" referent="RBX1F4A5B36F4A6450D91D01761EA3CDF30">
 						<Properties>
 							<string name="Name">Env</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBX205C9EA21BBD4D3795499FE95015F111">
+						<Item class="ModuleScript" referent="RBX516F8C92363C43189D18D950E054D1AA">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Condition</string>
-								<string name="ScriptGuid">{8EF6AB54-BBCD-4C12-94B0-138B546F1469}</string>
+								<string name="ScriptGuid">{20B160D2-CEA5-4060-9F93-8EE63A0481E1}</string>
 								<ProtectedString name="Source"><![CDATA[conds = {}
 self = {}
 function self:GetConds()
@@ -821,11 +846,11 @@ return self
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="ModuleScript" referent="RBX4331ADACD1084377B0C7CF355F14BC79">
+					<Item class="ModuleScript" referent="RBX562BBEFBF2964E9388CE92B17A85ABB9">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Index</string>
-							<string name="ScriptGuid">{54A48712-52F0-441B-B1F3-8547FE3CEAA5}</string>
+							<string name="ScriptGuid">{53360AC7-C099-4E9D-A9F9-BDCFEA787A81}</string>
 							<ProtectedString name="Source"><![CDATA[local self = {}
 self.Tab = {}
 function self.getunwrapped(np)
@@ -838,16 +863,16 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Configuration" referent="RBXED378A4864F849B88E19C4B80D7F915D">
+					<Item class="Configuration" referent="RBXE2721CF9A4794D85BC1230C18052EA16">
 						<Properties>
 							<string name="Name">Methods</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
-						<Item class="ModuleScript" referent="RBX7BAAB7A67FF74D7E817307883389A9EA">
+						<Item class="ModuleScript" referent="RBX4009877822D74B4D97223C3F92FA54A2">
 							<Properties>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Instance</string>
-								<string name="ScriptGuid">{6B05F59E-55DE-4B2B-973D-F059F982143A}</string>
+								<string name="ScriptGuid">{CF5B4CDE-E455-4A21-8FF9-14A57BA634B6}</string>
 								<ProtectedString name="Source"><![CDATA[self = {}
 local condlib = require(script.Parent.Parent.Env.Condition)
 local index = require(script.Parent.Parent.Index)
