@@ -2,22 +2,22 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX8C3B0D17FA804512B986CFE572486156">
+	<Item class="Folder" referent="RBX24D465FD3972495288959D794A789FE4">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBXD23CF595DA8A45E4847D350F24DBB9D8">
+		<Item class="Configuration" referent="RBX97474DC5E8DD4C12826654C496EE3E35">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBXD06E2826E13A4A4DADF3CE19C1320DCD">
+			<Item class="Configuration" referent="RBX440A18BE853241758F530BE83FBCA75B">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBXC2260E3E436542538EB93880BB77CA47">
+				<Item class="LocalScript" referent="RBX5BA7DA389D554E01A500E82A6F08335E">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -87,100 +87,100 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX14F7231694E94CF08C8BFEB27F2F0D01">
+		<Item class="Configuration" referent="RBX738101E27A304E778C0F1EE4E3BA3FDA">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBXD7F5031196BC489F823B6179BA9711CC">
+			<Item class="Folder" referent="RBXC308BBAFA49F4A5F9BE22FDA2A1557E4">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX09E127E8A40A4E8B987C0448F7F3C9FB">
+				<Item class="Folder" referent="RBX9EC9967D510447A189ECC6352A82531F">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBX8AEE3859039248D2834E3899EFDDFF78">
+			<Item class="Folder" referent="RBX78B2DA6B5BEF45E498202097A615387E">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXE3E082B0EF4C40E48A8423FDE4F42D00">
+				<Item class="Folder" referent="RBXB9A4A01EFFE64AF49E0B1516605D6135">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBXD3100A8AB4A745A7B9C5F06C497468D3">
+					<Item class="RemoteEvent" referent="RBX9CCB886694EA41C0958CCEAACEDEEAB8">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB28EB0D4C8CA4A86B79AAB90684F1266">
+					<Item class="RemoteEvent" referent="RBXF8A57D8817664564A32B3FE92CEF055B">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX97DB1F8AAF7A408A9F149F836B3BF739">
+					<Item class="RemoteEvent" referent="RBX81B4922217EC4262B42ED63183734654">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXF7105999289141FC9609DA21ABD4854A">
+					<Item class="RemoteEvent" referent="RBX6CA9309E787447CC86D3029D377905AC">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXB6ED614988CD4A41AEBC2464169C5693">
+					<Item class="RemoteEvent" referent="RBXA7DBD53274D5434B9760AAB739DDF2A0">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXBD5DCF9F42D5430AB07847299B86F0B2">
+					<Item class="RemoteEvent" referent="RBX42C4C89D477C486C956B1BB36DF09DDA">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXF1379A58E5884E81AACAED3590435F39">
+					<Item class="RemoteEvent" referent="RBXA8218FAC81424CBBA5D3D76FEF7D925E">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX426E6A88B318433891963490C56F7964">
+					<Item class="RemoteEvent" referent="RBX0DC8EE44F1924FE2996A1BCA0B8C776C">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX9B6D1437CC6D42FBA30262088B68B4AA">
+					<Item class="RemoteEvent" referent="RBX7B6F406F2B204F3E9B41CCAE5E01A1F2">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX8799BE0065E541F8A0A7D50D883A71D5">
+					<Item class="RemoteEvent" referent="RBX37FD9806E15241CFA7AE16E7AF465FD3">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXDA092032D56D49C687BD0AD06EFC747F">
+					<Item class="RemoteEvent" referent="RBXF77FCB7063FB42DB81CAA94D9745F3D2">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXC79DAB4F89854D7886F1B9A47B7E9848">
+					<Item class="ModuleScript" referent="RBX3DCE99BC79394DFD9473CFC226508CB2">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
@@ -278,25 +278,25 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXA5F5AE8D1051418E9B4A6F357909D384">
+					<Item class="RemoteEvent" referent="RBX115F7B3C767144A0A6A596B57CFE7AAF">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC010C1515028481FA04E995F64F9EE7D">
+					<Item class="RemoteEvent" referent="RBX613A220D906E40CF938E749952A70003">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX4B39C2B29087413EB9C3681927206B63">
+					<Item class="RemoteEvent" referent="RBXC50970FC927C43468B4146EFDF1CF276">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXC75685851541488CB7DFDDA78BB2D903">
+					<Item class="RemoteEvent" referent="RBX1C8E3768916B4D7498A1EE6EA1D92D4B">
 						<Properties>
 							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -305,17 +305,17 @@ return modtable
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBXDC202AD39CE74915999672BE3269E138">
+		<Item class="Configuration" referent="RBX4A8D81B1C9AC4C48B4E377A0F3157C6E">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX255A224546FB414492916EAF383960B6">
+			<Item class="Script" referent="RBX611F871CCEAC46D0B9B636787AA73F07">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{F6CED379-0EFC-4BF6-A6EB-491877821E24}</string>
+					<string name="ScriptGuid">{28989EE6-E229-43E4-AD94-1FD337C51B7A}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -350,11 +350,11 @@ SOFTWARE.
 --]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXE7481F2203314749A2B69C98F8E50FC7">
+				<Item class="ModuleScript" referent="RBX1B4C34BF1DA944FBB10C32AF7D8C0C19">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{D6FB9266-6E05-4C9E-B4DC-2B36877CB03A}</string>
+						<string name="ScriptGuid">{7D8AA8BE-329C-4869-8AE1-F28E382B399D}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -443,32 +443,26 @@ return modtable
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBX336964E2358F424595F4FD7A590B3F86">
+				<Item class="Folder" referent="RBX6B74D9EC7CE4441080A29507D171AF30">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX60DAC9B8BD384737BB2CE3D432F30CEC">
+				<Item class="ModuleScript" referent="RBX15D621524EDB4CA59620025FC0608939">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{C3BCF4B6-1909-4FC5-B00B-1AC3C23F9250}</string>
-						<ProtectedString name="Source"><![CDATA[Index = require(script.Index)
+						<string name="ScriptGuid">{0FE83D44-FC50-49F7-84C2-E229F36BF25A}</string>
+						<ProtectedString name="Source"><![CDATA[Index = require(script.Sandbox)
 Indexenv = {}
-envnum = 1
 udnums = 0
-Replace =  {}
-Replace.Methods = {}
-Replace.Methods.Instance = require(script.Methods.Instance)
-Replace.Env = {}
-Replace.Env.Condition = require(script.Env.Condition)
+MetaIndex = require(script.Index)
+Env1 = require(script.Env)
 plrlib = require(script.Parent.PlayerLib)
 function iscond(cond)
-	for i,v in next, Replace.Env.Condition:GetConds() do
-		if v == cond then
-			return true
-		end
+	if type(cond) == "userdata" and pcall(function() if not cond.__SandboxType then return error("!") end end) and cond.__SandboxType == "Condition" then
+		return true
 	end
 end
 function unpack1(tab)
@@ -479,72 +473,83 @@ function unpack1(tab)
 end
 function isenvwraped(env)
 	for i,v in next, Indexenv do
-		if env == v then
+		if rawequal(env,v) then
 			return true
 		end
 	end
 end
+function envvalwrap1(val)
+	if type(val) == "function" then
+		if not isenvwraped(getfenv(val)) then
+			envwrap(getfenv())
+		end
+		return val
+	elseif type(val) == "table" then
+		for i,v in next, val do
+			val[i] = envvalwrap1(val[i])
+		end
+		return val
+	end
+	return vwrap(val)
+end
+function envvalwrap2(val)
+	if type(val) == "function" and not isenvwraped(getfenv(val)) then
+		return function(...)
+			local a = vunwrap({...})
+			return unpack1(vwrap({val(unpack1(a))}))
+		end
+	elseif type(val) == "table" then
+		for i,v in next, val do
+			val[i] = envvalwrap2(val[i])
+		end
+		return val
+	end
+	return vwrap(val)
+end
 function envwrap(env)
 	for i, v in next, env do
-		env[i] = vwrap(v)
+		env[i] = envvalwrap1(v)
 	end
 	if env.workspace then
-		env.workspace = vwrap(env.workspace)
+		env.workspace = envvalwrap2(env.workspace)
 	end
 	if env.game then
-		env.game = vwrap(env.game)
+		env.game = envvalwrap2(env.game)
 	end
 	if env.script then
-		env.script = vwrap(env.script)
+		env.script = envvalwrap2(env.script)
 	end
 	if env.typeof then
 		env.typeof = function(thing)
-					if type(thing) == "userdata" and Index.getunwrapped(thing) then
-						return typeof(Index.getunwrapped(thing))
-					else
-						return typeof(thing)
-					end
+			if type(thing) == "userdata" and pcall(function() if not thing.__SandboxType then return error("!") end end) then
+				return tostring(thing.__SandboxType)
+			end
+			return (envvalwrap2(env.typeof))(thing)
 		end
 	end
 	if env.type then
-		env.type = function(thing)
-					if type(thing) == "userdata" and Index.getunwrapped(thing) then
-						return type(Index.getunwrapped(thing))
-					else
-						return type(thing)
-					end
-		end
+		env.type = envvalwrap2(env.type)
 	end
 	if env.getmetatable then
-		env.getmetatable = function(thing)
-					if Index.getunwrapped(thing) then
-						return getmetatable(Index.getunwrapped(thing))
-					else
-						return getmetatable(thing)
-					end
-		end
+		env.getmetatable = envvalwrap2(env.getmetatable)
 	end
 	if env.require then
-		env.require = function(th)
-			if Index.getunwrapped(th) then
-				th = Index.getunwrapped(th)
-			end
-			return vwrap(require(th))
-		end
+		env.require = envvalwrap2(env.require)
+	end
+	if env.rawget then
+		env.rawget = envvalwrap2(env.rawget)
+	end
+	if env.rawset then
+		env.rawset = envvalwrap2(env.rawset)
+	end
+	if env.rawequal then
+		env.rawequal = envvalwrap2(env.rawequal)
 	end
 	if env.setmetatable then
-		env.setmetatable = function(thing1,thing2)
-				if Index.getunwrapped(thing1) then
-					return setmetatable(Index.getunwrapped(thing1),thing2)
-				else
-					return setmetatable(thing1,thing2)
-				end
-		end
+		env.setmetatable = envvalwrap2(env.setmetatable)
 	end
 	local instnew = {}
-	instnew.new = function(...) 
-		local a = vunwrap({...})
-		return (function(a,b,c)
+	instnew.new = function(a,b,c) 
 		local obj = Instance.new(a,b)
 		if c and type(c) == "table" then
 			for i,v in next, c do
@@ -552,17 +557,19 @@ function envwrap(env)
 			end
 		end
 		return obj
-	end)(unpack1(a))
 	end
 	if env.Instance then
-		env.Instance = vwrap(instnew)
+		if env.Instance == Instance then
+			env.Instance = envvalwrap2(instnew)
+		else
+			env.Instance = envvalwrap2(env.Instance)
+		end
 	end
-	for i,v in next, script.Env:GetChildren() do
-		env[v.Name] = wrap(require(v))
+	for i,v in next, Env1 do
+		env[i] = wrap(v)
 	end
-	env.sandbox_sand_val = true
 	if not isenvwraped(env) then
-		Indexenv[envnum] = env
+		Indexenv[#Indexenv + 1] = env
 	end
 end
 function vunwrap(val)
@@ -600,12 +607,11 @@ function vwrap(val)
 	local typ = type(val)
 	local typ2 = typeof(val)
 	if typ == "table" then
-		local tab = {}
 		for i,v in next, val do
-			tab[i] = vwrap(val[i])
+			val[i] = vwrap(val[i])
 		end
-		return tab
-	elseif typ == "userdata" and typ2 == "Instance" then
+		return val
+	elseif typ == "userdata" and MetaIndex[typ2] then
 		if Index.getunwrapped(val) then
 			return val
 		end
@@ -629,6 +635,12 @@ function wrap(ud)
 	local meta = getmetatable(nud)
 	local udnum = nil
 	meta.__index = function(a,b)
+		if iscond(ud) then
+			return ud[b]
+		end
+		if MetaIndex[typeof(ud)] and MetaIndex[typeof(ud)][b:lower()] then
+			return (function(...) local a = vunwrap({...}) return (function(...) local c = ({MetaIndex[typeof(ud)][b:lower()](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
+		end
 		if b == "__SandboxId" then
 			return udnum
 		elseif b == "BreakJoints" and typeof(ud) == "Instance" and ud.ClassName == "Humanoid" then
@@ -661,7 +673,13 @@ function wrap(ud)
 				for i,v in next, tab do
 					v:Destroy()
 				end
-		end
+			end
+		elseif typeof(ud) == "RBXScriptSignal" and b:lower() == "connect" then
+			return function(a,func1)
+				local tab1 = {}
+				local con = ud:Connect(function(...) local a = vwrap({...}) func1(unpack1(a)) end)
+				return con
+			end
 		end
 		if pcall(function() if not ud[b] then return error("Doesnt exist.") end return ud[b] end) then
 			local val = ud[b]
@@ -671,15 +689,8 @@ function wrap(ud)
 				return wrap(val)
 			elseif typ == "function" then
 				if pcall(function() return val() end) then
-					if typeof(ud) ~= "userdata" then
-						return (function(...) local a = vunwrap({...}) return (function(...) local b = ({val(...)}) b = vwrap(b) return unpack1(b)  end)(unpack1(a)) end)
-					else
-						return vwrap(val)
-					end
+					return function(...) local a = vunwrap({...}) return unpack1(vwrap({val(unpack1(a))})) end
 				else
-					if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-						return (function(...) local a = vunwrap({...}) return (function(...) local c = ({Replace.Methods[typeof(ud)][b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
-					end
 					if b == "FindFirstChildWhichIsA" then
 						return nil
 					elseif b == "FindFirstChildOfClass" then
@@ -693,22 +704,22 @@ function wrap(ud)
 					return function(...) local a = vunwrap({...}) if a[1] ~= ud then return (function(...) local c = ({ud[b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) else return (function(...) local c = ud[b](...) return vwrap(c) end)(unpack1(a)) end end
 			else
 				if typeof(ud) == "Instance" and ud.ClassName == "Player" and plrlib[ud.Name][b] then
-					return vwrap(plrlib[ud.Name][b])
+					return wrap(plrlib[ud.Name][b])
 				end
 				if typeof(ud) == "Instance" and ud.ClassName == "Players" and b == "GetInfo" then
-					return vwrap(plrlib.GetInfo)
+					return wrap(plrlib.GetInfo)
 				end
 				return vwrap(val)
 			end
 			else
-				if Replace.Methods[typeof(ud)] and Replace.Methods[typeof(ud)][b] then
-					return (function(...) local a = vunwrap({...}) return (function(...) local c = ({Replace.Methods[typeof(ud)][b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
-				end
+				
 			end
 		end
 	
 	meta.__newindex = function(a,b,c)
-		local c = vunwrap(c)
+		if not iscond(ud) then
+			local c = vunwrap(c)
+		end
 		ud[b] = c
 	end
 	meta.__tostring = function(a)
@@ -772,8 +783,7 @@ function wrap(ud)
 		local th = vwrap(vunwrap(#ud))
 		return th
 	end
-	udnums = udnums + 1
-	udnum = udnums
+	udnum = #Index.Tab + 1
 	Index.Tab[udnum] = ud
 	return nud
 	end
@@ -785,72 +795,11 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="Configuration" referent="RBX1F4A5B36F4A6450D91D01761EA3CDF30">
-						<Properties>
-							<string name="Name">Env</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-						<Item class="ModuleScript" referent="RBX516F8C92363C43189D18D950E054D1AA">
-							<Properties>
-								<Content name="LinkedSource"><null></null></Content>
-								<string name="Name">Condition</string>
-								<string name="ScriptGuid">{20B160D2-CEA5-4060-9F93-8EE63A0481E1}</string>
-								<ProtectedString name="Source"><![CDATA[conds = {}
-self = {}
-function self:GetConds()
-	local tab = {}
-	for i,v in next, conds do
-		tab[i] = v
-	end
-	return tab
-end
-function self.new(func)
-	if type(func) ~= "function" then
-		func = function() return true end
-	end
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	local tab = {}
-	tab.Function = func
-	function tab.Cast(...)
-		if tab.Function(...) then
-			return true
-		else
-			return false
-		end
-	end
-	meta.__index = function(a,b)
-		if tab[b] then
-			return tab[b]
-		end
-	end
-	meta.__newindex = function(a,b,c)
-		if b == "Function" then
-			tab[b] = c
-		end
-	end
-	meta.__eq = function(a,b)
-		return rawequal(np,b)
-	end
-	meta.__tostring = function()
-		return tostring(tab.Cast())
-	end
-	meta.__metatable = "This metatable is locked."
-	conds[#conds + 1] = np
-	return np
-end
-
-return self
-]]></ProtectedString>
-								<BinaryString name="Tags"></BinaryString>
-							</Properties>
-						</Item>
-					</Item>
-					<Item class="ModuleScript" referent="RBX562BBEFBF2964E9388CE92B17A85ABB9">
+					<Item class="ModuleScript" referent="RBX3270503FB2904370B50464059C219E6E">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">Index</string>
-							<string name="ScriptGuid">{53360AC7-C099-4E9D-A9F9-BDCFEA787A81}</string>
+							<string name="Name">Sandbox</string>
+							<string name="ScriptGuid">{E1ADF024-0B24-4868-9EE5-B3B092264719}</string>
 							<ProtectedString name="Source"><![CDATA[local self = {}
 self.Tab = {}
 function self.getunwrapped(np)
@@ -863,24 +812,18 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Configuration" referent="RBXE2721CF9A4794D85BC1230C18052EA16">
+					<Item class="ModuleScript" referent="RBXC9D54587265E46BE9E2A346D755AA1CD">
 						<Properties>
-							<string name="Name">Methods</string>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-						<Item class="ModuleScript" referent="RBX4009877822D74B4D97223C3F92FA54A2">
-							<Properties>
-								<Content name="LinkedSource"><null></null></Content>
-								<string name="Name">Instance</string>
-								<string name="ScriptGuid">{CF5B4CDE-E455-4A21-8FF9-14A57BA634B6}</string>
-								<ProtectedString name="Source"><![CDATA[self = {}
-local condlib = require(script.Parent.Parent.Env.Condition)
-local index = require(script.Parent.Parent.Index)
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Index</string>
+							<string name="ScriptGuid">{FD6FC57E-BFB9-4048-8F5C-1526237919C0}</string>
+							<ProtectedString name="Source"><![CDATA[self = {}
+self.Instance = {}
+local condlib = require(script.Parent.Env)
+local index = require(script.Parent.Sandbox)
 local function iscond(cond)
-	for i,v in next, condlib:GetConds() do
-		if v == cond then
-			return true
-		end
+	if type(cond) == "userdata" and pcall(function() if not cond.__SandboxType then return error("!") end end) and cond.__SandboxType == "Condition" then
+		return true
 	end
 end
 local function GetAncestors(obj)
@@ -894,7 +837,7 @@ local function GetAncestors(obj)
 		return b
 	end
 end
-function self:FindFirstChild(inst,thing)
+function self.Instance:findfirstchild(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -917,7 +860,7 @@ function self:FindFirstChild(inst,thing)
 		return children[thing]
 	end
 end
-function self:FindFirstAncestor(inst,thing)
+function self.Instance:findfirstancestor(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -940,7 +883,7 @@ function self:FindFirstAncestor(inst,thing)
 		return children[thing]
 	end
 end
-function self:FindFirstDescendant(inst,thing)
+function self.Instance:findfirstdescendant(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -963,7 +906,7 @@ function self:FindFirstDescendant(inst,thing)
 		return children[thing]
 	end
 end
-function self:GetChildren(inst,thing)
+function self.Instance:getchildren(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -996,7 +939,7 @@ function self:GetChildren(inst,thing)
 		return tab
 	end
 end
-function self:GetAncestors(inst,thing)
+function self.Instance:getancestors(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -1029,7 +972,7 @@ function self:GetAncestors(inst,thing)
 		return tab
 	end
 end
-function self:GetDescendants(inst,thing)
+function self.Instance:getdescendants(inst,thing)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -1062,7 +1005,7 @@ function self:GetDescendants(inst,thing)
 		return tab
 	end
 end
-function self:WaitForChild(inst,thing,time1)
+function self.Instance:waitforchild(inst,thing,time1)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -1112,7 +1055,7 @@ function self:WaitForChild(inst,thing,time1)
 	if eve then eve:Destroy() end
 	return val
 end
-function self:WaitForDescendant(inst,thing,time1)
+function self.Instance:waitfordescendant(inst,thing,time1)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -1162,7 +1105,7 @@ function self:WaitForDescendant(inst,thing,time1)
 	if eve then eve:Destroy() end
 	return val
 end
-function self:WaitForAncestor(inst,thing,time1)
+function self.Instance:waitforancestor(inst,thing,time1)
 	if index.getunwrapped(inst) then
 		inst = index.getunwrapped(inst)
 	end
@@ -1212,12 +1155,93 @@ function self:WaitForAncestor(inst,thing,time1)
 	if eve then eve:Destroy() end
 	return val
 end
+self.RBXScriptSignal = {}
+function self.RBXScriptSignal:wait(inst,time1,cond)
+	if cond and iscond(cond) then
+		local eve = Instance.new("BindableEvent")
+		local func1 = inst:Connect(function(...)
+			if cond.Cast(...) then
+				eve:Fire(...)
+				eve:Destroy()
+			end
+		end)
+		local val = ({eve.Event:Wait(time1)})
+		if eve then
+			eve:Destroy()
+		end
+		func1:Disconnect()
+		if #val ==0 then
+			return nil
+		end
+		return unpack(val)
+	else
+		return inst:Wait(time1)
+	end
+end
+
 
 return self
 ]]></ProtectedString>
-								<BinaryString name="Tags"></BinaryString>
-							</Properties>
-						</Item>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBX32C6B47F20CF4F7591EADE5D4C2C1F67">
+						<Properties>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Env</string>
+							<string name="ScriptGuid">{3A739CBA-4BB6-4358-9B8F-A1247A748B49}</string>
+							<ProtectedString name="Source"><![CDATA[conds = {}
+self = {}
+self.Condition = {}
+function self.Condition:GetConds()
+	local tab = {}
+	for i,v in next, conds do
+		tab[i] = v
+	end
+	print(#tab)
+	return tab
+end
+function self.Condition.new(func)
+	if type(func) ~= "function" then
+		func = function() return true end
+	end
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	local tab = {}
+	tab.Function = func
+	tab["__SandboxType"] = "Condition"
+	function tab.Cast(...)
+		if tab.Function(...) then
+			return true
+		else
+			return false
+		end
+	end
+	meta.__index = function(a,b)
+		if tab[b] then
+			return tab[b]
+		end
+	end
+	meta.__newindex = function(a,b,c)
+		if b == "Function" then
+			tab[b] = c
+		end
+	end
+	meta.__eq = function(a,b)
+		return np == b
+	end
+	meta.__tostring = function()
+		return tostring(tab.Cast())
+	end
+	meta.__metatable = "This metatable is locked."
+	conds[#conds + 1] = np
+	return np
+end
+
+return self
+]]></ProtectedString>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
 					</Item>
 				</Item>
 			</Item>
