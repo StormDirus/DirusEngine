@@ -310,12 +310,12 @@ return modtable
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX0663452D087045D0B4D8C9D754D0AC73">
+			<Item class="Script" referent="RBX57FC5B236EE8412E997F90E44CB31223">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{533C7E0E-B792-451D-A904-2C7066A3AFD5}</string>
+					<string name="ScriptGuid">{D8792D81-8021-497B-8B3F-2AD9658B5B5C}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -350,11 +350,11 @@ SOFTWARE.
 --]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXF5E4A8B04A194660B4E916E01C501EBD">
+				<Item class="ModuleScript" referent="RBX0BAF4938C95C4471A3511530626C80B2">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{E53C8564-540B-42D4-AB15-1C1D27AAA5D2}</string>
+						<string name="ScriptGuid">{F336589F-B342-41C5-B65D-DE0CF1B54046}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -443,17 +443,17 @@ return modtable
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBXF0CE9CBAE0AB47F79283970BFB327FD7">
+				<Item class="Folder" referent="RBX440D49335D6D4B089917B8E97CBD227F">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX6D437DCC696B4E0AB0A01770D5223F77">
+				<Item class="ModuleScript" referent="RBXC45D65E039B14BB59A76FEE45836644B">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{AB6B86CC-431B-4A6B-9FAE-AFE04FEDF95C}</string>
+						<string name="ScriptGuid">{8DA659DE-9EDC-4A97-B10D-B51DF4B99A72}</string>
 						<ProtectedString name="Source"><![CDATA[Index = require(script.Sandbox)
 Indexenv = {}
 udnums = 0
@@ -611,18 +611,7 @@ function vunwrap(val)
 				tab2[i] = vunwrap(v)
 			end
 			return tab2
-		elseif typ == "string" then
-			local a = tostring(val)
-			return a
-		elseif typ == "number" then
-			local a = tonumber(val)
-			return a
-		elseif type(val) == "bool" and val == false then
-			return false
-		elseif type(val) == "bool" and val == true then
-			return true
-		else 
-			local a = val
+		else
 			return val
 		end
 end
@@ -668,7 +657,7 @@ function wrap(ud)
 			return ud[b]
 		end
 		if MetaIndex[typeof(ud)] and MetaIndex[typeof(ud)][b:lower()] then
-			return (function(...) local a = vunwrap({...}) return (function(...) local c = ({MetaIndex[typeof(ud)][b:lower()](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) end)
+			return function(...) local c = vwrap({MetaIndex[typeof(ud)][b:lower()](ud,...)}) print(unpack1(c)) return unpack1(c) end
 		end
 		if b == "__SandboxId" then
 			return udnum
@@ -760,7 +749,7 @@ end
 						return nil
 					end
 					end
-					return function(...) local a = vunwrap({...}) if a[1] ~= ud then return (function(...) local c = ({ud[b](...)}) c = vwrap(c) return unpack1(c) end)(ud,unpack1(a)) else return (function(...) local c = ud[b](...) return vwrap(c) end)(unpack1(a)) end end
+					return function(...) local a = vunwrap({...}) if a[1] ~= ud then return (function(...) local c = vwrap({ud[b](...)}) c = unpack1()(c) return unpack1(c) end)(ud,unpack1(a)) else return (function(...) local c = vwrap({ud[b](...)}) return unpack1(c) end)(unpack1(a)) end end
 			else
 				if typeof(ud) == "Instance" and ud.ClassName == "Player" and plrlib[ud.Name][b] then
 					return wrap(plrlib[ud.Name][b])
@@ -794,7 +783,8 @@ end
 				Index.Tab[udnum] = ud  
 			end
 		else
-		ud[b] = c
+			ud[b] = c
+			return true
 		end
 	end
 	meta.__tostring = function(a)
@@ -870,11 +860,11 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX949D184806EA492099441841B24305CA">
+					<Item class="ModuleScript" referent="RBX0AD389FA17724D79ADD6C01DE449CA45">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Sandbox</string>
-							<string name="ScriptGuid">{B8CF1EEA-1AB1-4AA6-BE2A-CC46EB6F2BDB}</string>
+							<string name="ScriptGuid">{A4326657-E7C6-4A67-B45F-156F8D5F7035}</string>
 							<ProtectedString name="Source"><![CDATA[local self = {}
 self.Tab = {}
 function self.getunwrapped(np)
@@ -887,11 +877,11 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX2ABF36021F29471BB3ADC70738BC4BE9">
+					<Item class="ModuleScript" referent="RBX1C36D3B02A5D4F659F4671A4CE05718E">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Index</string>
-							<string name="ScriptGuid">{D1662AC0-C841-4284-8E5D-646809E9B981}</string>
+							<string name="ScriptGuid">{4F17ADE6-3755-483B-826F-845670666BE1}</string>
 							<ProtectedString name="Source"><![CDATA[self = {}
 self.Instance = {}
 local condlib = require(script.Parent.Env)
@@ -1237,11 +1227,11 @@ return self
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBX8F074E4B26784ED9BE02AEC3311AB784">
+					<Item class="ModuleScript" referent="RBX34846DBACB37483B9F423C5232BA03A5">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Env</string>
-							<string name="ScriptGuid">{17215D8B-7C0B-4B71-A756-A1B25997697C}</string>
+							<string name="ScriptGuid">{99D2169E-4E07-4E3C-BA2A-A983ED8930BC}</string>
 							<ProtectedString name="Source"><![CDATA[conds = {}
 self = {}
 self.Condition = {}
