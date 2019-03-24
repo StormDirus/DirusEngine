@@ -18,5 +18,5 @@ print([[
 DirusEngine loaded.
 
 Apply 'require(game.ServerScriptService.DirusEngine.Get)()'
-to the tops of your Sever-Sided scripts.
+to the tops of your Server-Sided scripts.
 ]])
