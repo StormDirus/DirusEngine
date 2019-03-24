@@ -2,22 +2,22 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX094A7267D99549A59237B3CEBC73C8D5">
+	<Item class="Folder" referent="RBX49D4F8BFBE284BCC84E1C7B8E6B490B5">
 		<Properties>
 			<string name="Name">Files</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Configuration" referent="RBX1C80908832F54A2AA1B5B8495BFFD520">
+		<Item class="Configuration" referent="RBXBCA08C24F6C44146921BEA637EE5D9E8">
 			<Properties>
 				<string name="Name">StarterPlayer</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Configuration" referent="RBX56E36EA524334561A96CC05E1D79E07A">
+			<Item class="Configuration" referent="RBX8487E8B9253B4098BE2680F5E0F016E5">
 				<Properties>
 					<string name="Name">StarterPlayerScripts</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBX90FA909EEC524562A8C55A82F989B771">
+				<Item class="LocalScript" referent="RBX715CA42D71F54CCE9640F624DEE13EE8">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -87,100 +87,100 @@ end
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX84CB6F544F6E4EED927C0E011D13E4CA">
+		<Item class="Configuration" referent="RBXF3472E626D6749169D84BEE5A5789069">
 			<Properties>
 				<string name="Name">ReplicatedStorage</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Folder" referent="RBXEF35949EF015403686E42D2E5B834B58">
+			<Item class="Folder" referent="RBXB0CE9C02C8D2468A93396AAF85E84F29">
 				<Properties>
 					<string name="Name">Events</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBX9A1DC9C12F9546A78799651885292324">
+				<Item class="Folder" referent="RBXAD1CFC762A32441BBCB9CA7FB73246E9">
 					<Properties>
 						<string name="Name">Players</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBX1F3C06F4705746DD85995E29547DAA6A">
+			<Item class="Folder" referent="RBXD5D7429F285D43589139AB6AD6F422A1">
 				<Properties>
 					<string name="Name">PlayerFold</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Folder" referent="RBXDEDF10256F1A479F87F38CB891EAAE7B">
+				<Item class="Folder" referent="RBXFDEB8CD858E944E894426FCA3ACD445E">
 					<Properties>
 						<string name="Name">Folder</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="RemoteEvent" referent="RBX0AF6CAF1B16E433D882E48287019EDC7">
+					<Item class="RemoteEvent" referent="RBXE2279B036A624FE0A5AF11EBD0C1EEE4">
 						<Properties>
 							<string name="Name">Camera</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX0EB81BCE1C2A41E5A56D09D00DE81E6C">
+					<Item class="RemoteEvent" referent="RBX1E35166CF0DA4091BCFA6E0546E33866">
 						<Properties>
 							<string name="Name">Chat</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX155C4FC7C032405C8739C73E88432DAC">
+					<Item class="RemoteEvent" referent="RBX5A2ED0FEF6824E7F871292361BDE9F8E">
 						<Properties>
 							<string name="Name">KeyDown</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX50854B4DFF7C472C9BE9794330C35C54">
+					<Item class="RemoteEvent" referent="RBX8EDB2E01B6694ADA8A0BC36FD7135E52">
 						<Properties>
 							<string name="Name">KeyUp</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX630C8A856DEF4E8182FA2AA4E7930963">
+					<Item class="RemoteEvent" referent="RBXFAFACB026C1444359ABE9A07D100964F">
 						<Properties>
 							<string name="Name">Mouse</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX42311924161B4246BD1A697313A338B7">
+					<Item class="RemoteEvent" referent="RBX3FFFCA96FA064DBDB65837C0175BCA12">
 						<Properties>
 							<string name="Name">b1d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX8951346C5D8647F683B96D417688E526">
+					<Item class="RemoteEvent" referent="RBXBA433692712E4EE69C103DC1BA5DD0E2">
 						<Properties>
 							<string name="Name">b1u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXD521D30CDA1847E1940621D2DCEA62D0">
+					<Item class="RemoteEvent" referent="RBX9D066F1250294DC2996D84259F08CD53">
 						<Properties>
 							<string name="Name">b2d</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXBA6C96054D904CD9B3C9C16A6323D3BC">
+					<Item class="RemoteEvent" referent="RBXB4C2FE4CF7034341B3182ED902A18A07">
 						<Properties>
 							<string name="Name">b2u</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX86CB9E0ECFAD4BFAABDCFAB2B5828B4B">
+					<Item class="RemoteEvent" referent="RBX8C16049F1153400E9DBFBEC59297FB6D">
 						<Properties>
 							<string name="Name">mIdle</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX6AF59BD65C194C6A901D7135EEDF3357">
+					<Item class="RemoteEvent" referent="RBXA847C3271B794234A771CBA125A0EAC2">
 						<Properties>
 							<string name="Name">mMove</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="ModuleScript" referent="RBXCD9561ED30EA472589B2AD41DA2A941B">
+					<Item class="ModuleScript" referent="RBX5E666069BE704C2BA29B015682CBCAB6">
 						<Properties>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Input</string>
@@ -278,25 +278,25 @@ return modtable
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBXA23D0F1687CD4042B29B6510079F3ED0">
+					<Item class="RemoteEvent" referent="RBXB92A837B050F471BB7A1D305A4F0FE93">
 						<Properties>
 							<string name="Name">type</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX41182ADE5A914D0E922E6514A8D1E251">
+					<Item class="RemoteEvent" referent="RBX7D0B96C45DC2432A9F96ED42B20EFF8A">
 						<Properties>
 							<string name="Name">gui</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX6FBD1017D0734B788852D00344942F90">
+					<Item class="RemoteEvent" referent="RBX32C643CD940A42288D8D7D216927DB51">
 						<Properties>
 							<string name="Name">joystick</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="RemoteEvent" referent="RBX6B6E47F8176D4E358FFA0C72315A9A64">
+					<Item class="RemoteEvent" referent="RBX5F521F2986D543108DB6651ECC24F787">
 						<Properties>
 							<string name="Name">changestate</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -305,17 +305,17 @@ return modtable
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Configuration" referent="RBX6A3FE27490224109B3EA13CC20276933">
+		<Item class="Configuration" referent="RBX456326D221064C72A04025C7D7412208">
 			<Properties>
 				<string name="Name">ServerScriptService</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX78187956809A41B896D943BB25458EDD">
+			<Item class="Script" referent="RBX280EFF9D894544D295218DF54E1443E1">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">DirusEngine</string>
-					<string name="ScriptGuid">{1AFEBBE5-4FC9-429F-A9E4-B1CA45CEB776}</string>
+					<string name="ScriptGuid">{4463D79A-1E08-402F-BFAD-0D0D3D641AF8}</string>
 					<ProtectedString name="Source"><![CDATA[game.Players.PlayerAdded:Connect(function(plr)
 	local fold = game.ReplicatedStorage.PlayerFold.Folder:Clone()
 	fold.Name = plr.Name
@@ -350,11 +350,11 @@ SOFTWARE.
 --]]]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXB170F71C91A544B0A0C51F8C6C9DFDB2">
+				<Item class="ModuleScript" referent="RBX8BA35704C717482E82D0E42B4358AF1E">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">PlayerLib</string>
-						<string name="ScriptGuid">{0DF44A0E-08E7-4945-98A4-3A1E2DB486EB}</string>
+						<string name="ScriptGuid">{C0AB1CD7-AA76-472B-9983-CDCBE9C0E56E}</string>
 						<ProtectedString name="Source"><![CDATA[modtable = {}
 groupservice = game:GetService("GroupService")
 httpserice = game:GetService("HttpService")
@@ -434,22 +434,439 @@ return modtable
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Folder" referent="RBX4A80237BF94E4D26A2FBF54918A4EE89">
+				<Item class="Folder" referent="RBX50A7C8B75836494895891247BB724BA8">
 					<Properties>
 						<string name="Name">TempObjs</string>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX49731B9B657C443E9C36837BF055999F">
+				<Item class="ModuleScript" referent="RBX0D7E217C9BAA4689B271BB3CD2B291B6">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Get</string>
-						<string name="ScriptGuid">{CDDC747D-1A91-4133-BA3A-3EDCD1FEB8A5}</string>
-						<ProtectedString name="Source"><![CDATA[Index = require(script.Sandbox)
+						<string name="ScriptGuid">{BE6F0F3C-FCB1-45B9-B304-8A814C68143B}</string>
+						<ProtectedString name="Source"><![CDATA[Index = {}
+Index.Tab = {}
+function Index.getunwrapped(np)
+	if pcall(function() return np.__SandboxId end) then
+		return Index.Tab[np.__SandboxId]
+	end
+end
 Indexenv = {}
 udnums = 0
-MetaIndex = require(script.Index)
-Env1 = require(script.Env)
+Env1 = {}
+Env1.Condition = {}
+local conds = {}
+function Env1.Condition.new(func)
+	if type(func) ~= "function" then
+		func = function() return true end
+	end
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	local tab = {}
+	tab.Function = func
+	tab["__SandboxType"] = "Condition"
+	function tab.Cast(...)
+		if pcall(function(...) return tab.Function(...) end) and tab.Function(...) then
+			return true
+		else
+			return false
+		end
+	end
+	meta.__index = function(a,b)
+		if tab[b] then
+			return tab[b]
+		end
+	end
+	meta.__newindex = function(a,b,c)
+		if b == "Function" then
+			tab[b] = c
+		end
+	end
+	meta.__eq = function(a,b)
+		return np == b
+	end
+	meta.__tostring = function()
+		return tostring(tab.Cast())
+	end
+	meta.__metatable = "This metatable is locked."
+	conds[#conds + 1] = np
+	return np
+end
+
+MetaIndex = {}
+MetaIndex.Instance = {}
+local function GetAncestors(obj)
+	if obj.Parent then
+		local a = obj.Parent
+		local b = {}
+		repeat
+			b[#b + 1] = a
+			a = a.Parent
+		until a == nil
+		local i = #b
+		local tab = {}
+		repeat
+			tab[#tab + 1] = b[i]
+			i = i - 1
+		until i == 0
+		return tab
+	end
+end
+function MetaIndex.Instance:findfirstchild(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function MetaIndex.Instance:findfirstancestor(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function MetaIndex.Instance:findfirstdescendant(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" then
+		return children[thing]
+	end
+end
+function MetaIndex.Instance:getchildren(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function MetaIndex.Instance:getancestors(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function MetaIndex.Instance:getdescendants(inst,thing)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil then
+		return children
+	elseif iscond(thing) then
+		local tab = {}
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "string" then
+		local tab = {}
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				tab[i] = v
+			end
+		end
+		return tab
+	elseif type(thing) == "number" then
+		local tab = {}
+		for i,v in next, children do
+			if i < thing then
+				tab[#tab + 1] = v
+			end
+		end
+		return tab
+	end
+end
+function MetaIndex.Instance:waitforchild(inst,thing,time1)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetChildren()
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.ChildAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(wrap(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = inst:GetChildren()
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+function MetaIndex.Instance:waitfordescendant(inst,thing,time1)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = inst:GetDescendants()
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.DescendantAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(wrap(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = inst:GetDescendants()
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+function MetaIndex.Instance:waitforancestor(inst,thing,time1)
+	if Index.getunwrapped(inst) then
+		inst = Index.getunwrapped(inst)
+	end
+	local children = GetAncestors(inst)
+	if thing == nil and children[1] then
+		return children[1]
+	elseif iscond(thing) then
+		for i,v in next, children do
+			if thing.Cast(wrap(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "string" then
+		for i,v in next, children do
+			if thing == (v.Name or tostring(v)) then
+				return v
+			end
+		end
+	elseif type(thing) == "number" and children[thing] then
+		return children[thing]
+	end
+	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
+	local func1 = inst.DescendantAdded:Connect(function(obj2)
+		if thing == nil then
+			eve:Fire(obj2)
+			eve:Destroy()
+		elseif iscond(thing) then
+			if thing.Cast(wrap(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "string" then
+			if thing == (obj2.Name or tostring(obj2)) then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		elseif type(thing) == "number" then
+			children = GetAncestors(inst)
+			if children[thing] then
+				eve:Fire(obj2)
+				eve:Destroy()
+			end
+		end
+	end)
+	local val = eve.Event:wait(time1)
+	func1:disconnect()
+	if eve then eve:Destroy() end
+	return val
+end
+MetaIndex.RBXScriptSignal = {}
+function MetaIndex.RBXScriptSignal:connect(a,func1,cond)
+	if cond and type(cond) == "userdata" and iscond(cond) then
+		local tab1 = {}
+		local con = a:Connect(function(...) local a = vwrap({...}) if cond.Cast(unpack1(a)) then func1(unpack1(a)) end end)
+		return con
+	else
+		local tab1 = {}
+		local con = a:Connect(function(...) local a = vwrap({...}) func1(unpack1(a)) end)
+		return con
+	end
+end
+function MetaIndex.RBXScriptSignal:wait(inst,time1,cond)
+			if cond and iscond(cond) then
+				local eve = Instance.new("BindableEvent")
+				local func1 = inst:Connect(function(...)
+					local a = vwrap({...})
+					if cond.Cast(unpack1(a)) then
+						eve:Fire(unpack1(a))
+						eve:Destroy()
+					end
+				end)
+				local val = ({eve.Event:Wait(time1)})
+				if eve then
+					eve:Destroy()
+				end
+				func1:Disconnect()
+				if #val ==0 then
+					return nil
+				end
+				return unpack(val)
+			else
+				return inst:Wait(time1)
+			end
+end
+MetaIndex.Region3 = {}
 plrlib = require(script.Parent.PlayerLib)
 function GetMaxMinCorners(cframe,size)
 	local min = {}
@@ -862,437 +1279,6 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="ModuleScript" referent="RBX87B2B1C33744463284874467A4CC5EE1">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">Sandbox</string>
-							<string name="ScriptGuid">{7AF70B30-614D-43D3-8CEF-FE6D7918B052}</string>
-							<ProtectedString name="Source"><![CDATA[local self = {}
-self.Tab = {}
-function self.getunwrapped(np)
-	if pcall(function() return np.__SandboxId end) then
-		return self.Tab[np.__SandboxId]
-	end
-end
-return self
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBXE0E7DE4FE3A24DFCB6E6CF0A11C6FB06">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">Index</string>
-							<string name="ScriptGuid">{75BFDD7C-CEA7-4A1E-B36D-E085FF0C6D01}</string>
-							<ProtectedString name="Source"><![CDATA[self = {}
-self.Instance = {}
-local condlib = require(script.Parent.Env)
-local index = require(script.Parent.Sandbox)
-local function iscond(cond)
-	if type(cond) == "userdata" and pcall(function() if not cond.__SandboxType then return error("!") end end) and cond.__SandboxType == "Condition" then
-		return true
-	end
-end
-local function GetAncestors(obj)
-	if obj.Parent then
-		local a = obj.Parent
-		local b = {}
-		repeat
-			b[#b + 1] = a
-			a = a.Parent
-		until a == nil
-		local i = #b
-		local tab = {}
-		repeat
-			tab[#tab + 1] = b[i]
-			i = i - 1
-		until i == 0
-		return tab
-	end
-end
-function self.Instance:findfirstchild(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetChildren()
-	if thing == nil then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" then
-		return children[thing]
-	end
-end
-function self.Instance:findfirstancestor(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = GetAncestors(inst)
-	if thing == nil then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" then
-		return children[thing]
-	end
-end
-function self.Instance:findfirstdescendant(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetDescendants()
-	if thing == nil then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" then
-		return children[thing]
-	end
-end
-function self.Instance:getchildren(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetChildren()
-	if thing == nil then
-		return children
-	elseif iscond(thing) then
-		local tab = {}
-		for i,v in next, children do
-			if thing.Cast(v) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "string" then
-		local tab = {}
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "number" then
-		local tab = {}
-		for i,v in next, children do
-			if i < thing then
-				tab[#tab + 1] = v
-			end
-		end
-		return tab
-	end
-end
-function self.Instance:getancestors(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = GetAncestors(inst)
-	if thing == nil then
-		return children
-	elseif iscond(thing) then
-		local tab = {}
-		for i,v in next, children do
-			if thing.Cast(v) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "string" then
-		local tab = {}
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "number" then
-		local tab = {}
-		for i,v in next, children do
-			if i < thing then
-				tab[#tab + 1] = v
-			end
-		end
-		return tab
-	end
-end
-function self.Instance:getdescendants(inst,thing)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetDescendants()
-	if thing == nil then
-		return children
-	elseif iscond(thing) then
-		local tab = {}
-		for i,v in next, children do
-			if thing.Cast(v) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "string" then
-		local tab = {}
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				tab[i] = v
-			end
-		end
-		return tab
-	elseif type(thing) == "number" then
-		local tab = {}
-		for i,v in next, children do
-			if i < thing then
-				tab[#tab + 1] = v
-			end
-		end
-		return tab
-	end
-end
-function self.Instance:waitforchild(inst,thing,time1)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetChildren()
-	if thing == nil and children[1] then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" and children[thing] then
-		return children[thing]
-	end
-	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
-	local func1 = inst.ChildAdded:Connect(function(obj2)
-		if thing == nil then
-			eve:Fire(obj2)
-			eve:Destroy()
-		elseif iscond(thing) then
-			if thing.Cast(obj2) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "string" then
-			if thing == (obj2.Name or tostring(obj2)) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "number" then
-			children = inst:GetChildren()
-			if children[thing] then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-function self.Instance:waitfordescendant(inst,thing,time1)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = inst:GetDescendants()
-	if thing == nil and children[1] then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" and children[thing] then
-		return children[thing]
-	end
-	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
-	local func1 = inst.DescendantAdded:Connect(function(obj2)
-		if thing == nil then
-			eve:Fire(obj2)
-			eve:Destroy()
-		elseif iscond(thing) then
-			if thing.Cast(obj2) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "string" then
-			if thing == (obj2.Name or tostring(obj2)) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "number" then
-			children = inst:GetDescendants()
-			if children[thing] then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-function self.Instance:waitforancestor(inst,thing,time1)
-	if index.getunwrapped(inst) then
-		inst = index.getunwrapped(inst)
-	end
-	local children = GetAncestors(inst)
-	if thing == nil and children[1] then
-		return children[1]
-	elseif iscond(thing) then
-		for i,v in next, children do
-			if thing.Cast(v) then
-				return v
-			end
-		end
-	elseif type(thing) == "string" then
-		for i,v in next, children do
-			if thing == (v.Name or tostring(v)) then
-				return v
-			end
-		end
-	elseif type(thing) == "number" and children[thing] then
-		return children[thing]
-	end
-	local eve = Instance.new("BindableEvent",game.ServerScriptService.DirusEngine.TempObjs)
-	local func1 = inst.DescendantAdded:Connect(function(obj2)
-		if thing == nil then
-			eve:Fire(obj2)
-			eve:Destroy()
-		elseif iscond(thing) then
-			if thing.Cast(obj2) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "string" then
-			if thing == (obj2.Name or tostring(obj2)) then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		elseif type(thing) == "number" then
-			children = GetAncestors(inst)
-			if children[thing] then
-				eve:Fire(obj2)
-				eve:Destroy()
-			end
-		end
-	end)
-	local val = eve.Event:wait(time1)
-	func1:disconnect()
-	if eve then eve:Destroy() end
-	return val
-end
-
-
-return self
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX55B59C16DBBC44CDA567B7C78CD14E38">
-						<Properties>
-							<Content name="LinkedSource"><null></null></Content>
-							<string name="Name">Env</string>
-							<string name="ScriptGuid">{6A512605-27F7-4EBB-9330-EABF255AFD1E}</string>
-							<ProtectedString name="Source"><![CDATA[conds = {}
-self = {}
-self.Condition = {}
-function self.Condition:GetConds()
-	local tab = {}
-	for i,v in next, conds do
-		tab[i] = v
-	end
-	print(#tab)
-	return tab
-end
-function self.Condition.new(func)
-	if type(func) ~= "function" then
-		func = function() return true end
-	end
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	local tab = {}
-	tab.Function = func
-	tab["__SandboxType"] = "Condition"
-	function tab.Cast(...)
-		if tab.Function(...) then
-			return true
-		else
-			return false
-		end
-	end
-	meta.__index = function(a,b)
-		if tab[b] then
-			return tab[b]
-		end
-	end
-	meta.__newindex = function(a,b,c)
-		if b == "Function" then
-			tab[b] = c
-		end
-	end
-	meta.__eq = function(a,b)
-		return np == b
-	end
-	meta.__tostring = function()
-		return tostring(tab.Cast())
-	end
-	meta.__metatable = "This metatable is locked."
-	conds[#conds + 1] = np
-	return np
-end
-
-return self
-]]></ProtectedString>
-							<BinaryString name="Tags"></BinaryString>
-						</Properties>
-					</Item>
 				</Item>
 			</Item>
 		</Item>
