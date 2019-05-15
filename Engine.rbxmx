@@ -18,572 +18,6 @@
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC6BAF9D433FC4E4885DE8172174C4300">
-				<Properties>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Engine</string>
-					<string name="ScriptGuid">{6C70E2D4-056E-46FD-B341-B8935D2ED225}</string>
-					<ProtectedString name="Source"><![CDATA[local hidden = {game.ReplicatedStorage.LS,game.ReplicatedStorage.Engine,game.ReplicatedStorage.Loadstring}
-function GetAncestors(obj)
-	local a = obj.Parent
-	local b = {}
-	repeat
-		b[#b + 1] = a
-		a = a.Parent
-	until a == nil
-	local i = #b
-	local tab = {}
-	repeat
-		tab[#tab + 1] = b[i]
-		i = i - 1
-	until i == 0
-	return tab
-end
-local method = {}
-method.All = {}
-method.All.findfirstchild = function(a,b)
-	if type(b) == "string" then
-		return a:FindFirstChild(b)
-	elseif type(b) == "number" then
-		return a:GetChildren()[b]
-	elseif type(b) == "function" then
-		for i,v in next, a:GetChildren() do
-			local c, e = pcall(function() return b(vwrap(v)) end)
-			if c and e then
-				return v
-			end
-		end
-		return
-	end
-	return a:FindFirstChild()
-end
-function method.All.findfirstancestor(a,b)
-	if type(b) == "string" then
-		return a:FindFirstAncestor(b)
-	elseif type(b) == "number" then
-		return GetAncestors(a)[b]
-	elseif type(b) == "function" then
-		for i,v in next, GetAncestors(a) do
-			local c, e = pcall(function() return b(vwrap(v)) end)
-			if c and e then
-				return v
-			end
-		end
-		return
-	end
-	return a:FindFirstAncestor()
-end
-function method.All.findfirstdescendant(a,b)
-	if type(b) == "string" then
-		return a:FindFirstDescendant(b)
-	elseif type(b) == "number" then
-		return a:GetDescendants()[b]
-	elseif type(b) == "function" then
-		for i,v in next, a:GetDescendants() do
-			local c, e = pcall(function() return b(vwrap(v)) end)
-			if c and e then
-				return v
-			end
-		end
-		return
-	end
-	return a:FindFirstDescendant()
-end
-method.All.findfirstancestorofclass = false
-method.All.findfirstancestorwhichisa = false
-method.All.findfirstchildofclass = false
-method.All.findfirstchildwhichisa = false
-function method.All.getchildren(a,b)
-	if type(b) == "string" then
-		local c = {}
-		for i,v in next, a:GetChildren() do
-			if v.Name == b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "number" then
-		local c = {}
-		for i,v in next, a:GetChildren() do
-			if i <= b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "function" then
-		local c = {}
-		for i,v in next, a:GetChildren() do
-			local d, e = pcall(function() return b(vwrap(v)) end)
-			if d and e then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	end
-	return a:GetChildren()
-end
-function method.All.getancestors(a,b)
-	if type(b) == "string" then
-		local c = {}
-		for i,v in next, GetAncestors(a) do
-			if v.Name == b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "number" then
-		local c = {}
-		for i,v in next, GetAncestors(a) do
-			if i <= b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "function" then
-		local c = {}
-		for i,v in next, GetAncestors(a) do
-			local d, e = pcall(function() return b(vwrap(v)) end)
-			if d and e then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	end
-	return GetAncestors(a)
-end
-function method.All.getdescendants(a,b)
-	if type(b) == "string" then
-		local c = {}
-		for i,v in next, a:GetDescendants() do
-			if v.Name == b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "number" then
-		local c = {}
-		for i,v in next, a:GetDescendants() do
-			if i <= b then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	elseif type(b) == "function" then
-		local c = {}
-		for i,v in next, a:GetDescendants() do
-			local d, e = pcall(function() return b(vwrap(v)) end)
-			if d and e then
-				c[#c + 1] = v
-			end
-		end
-		return c
-	end
-	return a:GetDescendants()
-end
-function method.All.waitforchild(a,b)
-	local c = method.All.findfirstchild(a,b)
-	if c then return end
-	repeat
-		c = method.All.findfirstchild(a,b)
-		wait()
-	until c
-	return c
-end
-function method.All.waitforancestor(a,b)
-	local c = method.All.findfirstancestor(a,b)
-	if c then return end
-	repeat
-		c = method.All.findfirstancestor(a,b)
-		wait()
-	until c
-	return c
-end
-function method.All.waitfordescendant(a,b)
-	local c = method.All.findfirstdescendant(a,b)
-	if c then return end
-	repeat
-		c = method.All.findfirstdescendant(a,b)
-		wait()
-	until c
-	return c
-end
-local mod = {}
-local stringnum = 0
-local tstring = {}
-setmetatable(tstring, {__mode = "k"})
-function typeof2(a)
-	local b = tstring[a]
-	if b then return b end
-	return typeof(a)
-end
-local wrapped = {}
-setmetatable(wrapped, {__mode = "k"})
-local vwrapped = {}
-setmetatable(vwrapped, {__mode = "k"})
-local fwrapped = {}
-setmetatable(fwrapped, {__mode = "k"})
-function instwrap(ud)
-	for i,v in next, hidden do
-		if ud == v or ud:IsDescendantOf(v) then
-			return
-		end
-	end
-	if typeof(ud) == "Instance" and ud.ClassName == "DataStoreService" then return DSS end
-	for i,v in next, vwrapped do
-		if rawequal(ud,v) then
-			return i
-		end
-	end
-	local tab = {}
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	meta.__index = function(a,b)
-		local e1,c = pcall(function() return ud[b] end)
-		local e2,m1 = pcall(function() return method.All[b:lower()] end)
-		local e3,m2 = pcall(function() return method[ud.ClassName][b:lower()] end)
-		if e2 and m1 ~= nil then
-			if m1 == false then return end
-			return function(...) return unpack(vwrap({m1(unpack(vunwrap({...})))})) end
-		elseif e3 and m2 ~= nil then
-			if m2 == false then return end
-			return function(...) return unpack(vwrap({m2(unpack(vunwrap({...})))})) end
-		end
-		if e1 and type(c) == "function" and not fwrapped[c] then
-			return function(...) return unpack(vwrap({c(unpack(vunwrap({...})))})) end
-		end
-		if not e1 then return end
-		return vwrap(c)
-	end
-	meta.__newindex = function(a,b,c)
-		c = vunwrap(c)
-		ud[b] = c
-	end
-	meta.__call = function(a,...)
-		return ud(...)
-	end
-	meta.__concat = function(a,b)
-		return ud ..b
-	end
-	meta.__unm = function(a,b)
-		return -ud
-	end
-	meta.__add = function(a,b)
-		return ud + b
-	end
-	meta.__sub = function(a,b)
-		return ud - b
-	end
-	meta.__mul = function(a,b)
-		return ud*b
-	end
-	meta.__div = function(a,b)
-		return ud/b
-	end
-	meta.__pow = function(a,b)
-		return ud^b
-	end
-	meta.__tostring = function(a)
-		return tostring(ud)
-	end
-	meta.__tonumber = function(a)
-		return tonumber(ud)
-	end
-	meta.__eq = function(a,b)
-		return ud == b
-	end
-	meta.__it = function(a,b)
-		return ud < b
-	end
-	meta.__le = function(a,b)
-		return ud <= b
-	end
-	meta.__len = function(a)
-		return #ud
-	end
-	tstring[np] = typeof2(ud)
-	vwrapped[np] = ud
-	return np
-end
-function vwrap(a)
-	local d = fwrapped[a]
-	if d then return d end
-	if type(a) == "table" then
-		for i,v in next, a do
-			a[i] = vwrap(v)
-		end
-		return a
-	elseif typeof(a) == "Instance" then
-		return instwrap(a)
-	elseif d then
-		return d
-	else
-		return a
-	end
-end
-function vunwrap(a)
-	local c = vwrapped[a]
-	if type(a) == "table" then
-		local b = {}
-		for i,v in next, a do
-			b[i] = vunwrap(v)
-		end
-		return b
-	elseif c then
-		return c
-	elseif type(a) == "function" then
-		local d = fwrapped[a]
-		if d then return d end
-		local f = function(...) return unpack(vunwrap({a(unpack(vwrap({...})))})) end
-		fwrapped[a] = f
-		return f
-	else
-		return a
-	end
-end
-function wrap(ud)
-	assert(type(ud) == "userdata","Invalide parameter #1, userdata expected.")
-	for i,v in next, wrapped do
-		if rawequal(ud,v) then
-			return i
-		end
-	end
-	local tab = {}
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	meta.__index = function(a,b)
-		local e = tab[b]
-		if e ~= nil then
-			return e
-		end
-		return ud[b]
-	end
-	meta.__newindex = function(a,b,c)
-		if pcall(function() ud[b] = c end) then
-			return
-		end
-		tab[b] = c
-	end
-	meta.__call = function(a,...)
-		return ud(...)
-	end
-	meta.__concat = function(a,b)
-		return ud ..b
-	end
-	meta.__unm = function(a,b)
-		return -ud
-	end
-	meta.__add = function(a,b)
-		return ud + b
-	end
-	meta.__sub = function(a,b)
-		return ud - b
-	end
-	meta.__mul = function(a,b)
-		return ud*b
-	end
-	meta.__div = function(a,b)
-		return ud/b
-	end
-	meta.__pow = function(a,b)
-		return ud^b
-	end
-	meta.__tostring = function(a)
-		return tostring(ud)
-	end
-	meta.__tonumber = function(a)
-		return tonumber(ud)
-	end
-	meta.__eq = function(a,b)
-		return ud == b
-	end
-	meta.__it = function(a,b)
-		return ud < b
-	end
-	meta.__le = function(a,b)
-		return ud <= b
-	end
-	meta.__len = function(a)
-		return #ud
-	end
-	tstring[np] = typeof2(ud)
-	wrapped[np] = ud
-	return np
-end
-mod.Wrapper = {}
-mod.Wrapper.apply = wrap
-mod.Wrapper.undo = function(np) assert(type(np) == "userdata","Invalid parameter #1, value is not a userdata.") if wrapped[np] then return wrapped[np] end return error("Invalid parameter #1, userdata is not wrapped.") end
-mod.Wrapper.remove = function(np) local a = mod.Wrapper.undo(np) wrapped[np] = nil end
-function modify(func,tab,val)
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	meta.__index = function(a,b)
-		if tab[np] == nil then return nil end
-		assert(type(b) == "string","Invalide paramter #1, string expected.")
-		if b:lower() == "remove" then
-			return function() tab[np] = nil func() end
-		end
-		if b:lower() == "value" then
-			return val
-		end
-		if b:lower() == "active" then
-			return tab[np]
-		end
-		return nil
-	end
-	meta.__newindex = function(a,b,c)
-		if tab[np] == nil then return nil end
-		assert(type(b) == "string","Invalide paramter #1, string expected.")
-		if b:lower() == "value" then
-			val = c
-			func()
-		end
-		if b:lower() == "active" then
-			assert(type(c) == "bool","Invalide paramter #2, bool expected.")
-			tab[np] = c
-			func()
-		end
-	end
-	meta.__metatable = "Locked."
-	tab[np] = true
-	func()
-	return np
-end
-local modifiers = {}
-function modifier(tab,prop)
-	assert(tab ~= nil and (type(tab) == "userdata" or type(tab) == "table"),"Invalid parameter #1, table or userdata expected.")
-	assert(prop ~= nil ,"Invalid parameter #2, anything but nil expected.")
-	for i,v in next, modifiers do
-		if rawequal(v[1],tab) and rawequal(v[2],prop) then
-			return i
-		end
-	end
-	local func
-	local mods = {}
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	meta.__change = function()
-		local changes = {}
-		for i,v in next, mods do
-			if v then
-				changes[#changes + 1] = i.Value
-			end
-		end
-		tab[prop] = func(changes)
-	end
-	meta.__index = function(a,b)
-		assert(type(b) == "string","Invalide paramter #1, string expected.")
-		if b:lower() == "function" then
-			return func
-		end
-		if b:lower() == "add" then
-			assert(func,'Function needs to be chosen before a modifier is added.')
-			return function(value)
-				return modify(meta.__change,mods,value)
-			end
-		end
-		if b:lower() == "clear" then
-			return function()
-				for i,v in next, mods do
-					mods[i] = nil
-				end
-			end
-		end
-		if b:lower() == "get" then
-			return function() 
-				local valtab = {}
-				for i,v in next, mods do
-					valtab[#valtab + 1] = i
-				end
-				return valtab
-			end
-		end
-		return nil
-	end
-	meta.__newindex = function(a,b,c)
-		assert(type(b) == "string","Invalide paramter #1, string expected.")
-		if b:lower() == "function" then
-			assert(type(c) == "function","Invalide paramter #2, function expected.")
-			func = c
-		end
-	end
-	meta.__metatable = "Locked."
-	modifiers[np] = {tab,prop}
-	return np
-end
-mod.Modifier = {}
-mod.Modifier.cast = modifier
-if game:GetService("RunService"):IsServer() then
-	mod.ClientRun = function(str,plr)
-		if not str then return end
-		assert(type(str) == "string","Invalide paramter #1, string expected.")
-		assert(plr == nil or (typeof(plr) == "Instance" and plr.ClassName == "Player"),"Invalide paramter #2, client or nil expected.")
-		if plr then
-			stringnum = stringnum + 1
-			return game.ReplicatedStorage.LS:InvokeClient(plr,str)
-		else
-			stringnum = stringnum + 1
-			for i,v in next, game.Players:GetPlayers() do
-				spawn(function() game.ReplicatedStorage.LS:InvokeClient(v,str) end)
-			end
-		end
-	end
-end
-local data = {}
-setmetatable(data, {__mode = "v"})
-function Datastore(str)
-	local ud = game:GetService("DataStoreService"):GetDataStore(str)
-	local np = newproxy(true)
-	local meta = getmetatable(np)
-	meta.__index = function(a,b)
-		assert(type(b) == "string","Invalide paramter #1, string expected.")
-		if b == "Name" then return str end
-		if b == "ClassName" then return "DataStore" end
-		if b == "Parent" then return DSS end
-		return function(c) if c == nil then return ud:GetAsync(b) elseif type(c) == "number" and tostring(c) == "-nan(ind)" then return ud:RemoveAsync(b) end return ud:SetAsync(b,c) end
-	end
-	meta.__newindex = function() error("DataStore:" ..str .." is read-only.") end
-	meta.__metatable = "Locked."
-	data[#data + 1] = np
-	return np
-end
-DSS = (function() local np = wrap(game:GetService("DataStoreService")) local meta = getmetatable(np) meta.__index = function(a,b) if b == "ClassName" or b == "Name" then return "DataStoreService" end if b == "Parent" then return vwrap(game) end assert(type(b) == "string","Invalide paramter #1, string expected.") if data[b] then return data[b] end return Datastore(b) end meta.__newindex = function() error("DataStoreService is read-only.") end meta.__metatable = "Locked." return np end)()
-mod.typeof = function(thing)	
-	local a = tstring[thing]
-	if a then
-		return a
-	end
-	return typeof(thing)
-end
-local dbfuncs = {}
-setmetatable(dbfuncs, {__mode = "k"})
-mod.dbcall = function(func,...)
-	assert(type(func) == "function","Invalide paramter #1, function expected.")
-	if dbfuncs[func] then
-		return false
-	end
-	dbfuncs[func] = true
-	local a = {func(...)}
-	dbfuncs[func] = nil
-	return true, unpack(a)
-end
-
-return function(env)
-	local env = env or getfenv(2)
-	for i,v in next, mod do
-		if v == false then
-			env[i] = nil
-		else
-			env[i] = v
-		end
-	end
-	env.script = vwrap(env.script)
-	env.game = vwrap(env.game)
-	env.workspace = vwrap(env.workspace)
-	env.require = function(...) print(...) return require(unpack(vunwrap({...}))) end
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
 			<Item class="ModuleScript" referent="RBX002834CB30B8471B9A73848BCDE44B8F">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6025,6 +5459,573 @@ end;]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
+			</Item>
+			<Item class="ModuleScript" referent="RBXD410C8F0BBD14E32864E8C487F7E4F0B">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Engine</string>
+					<string name="ScriptGuid">{99C42CDE-130F-451D-841A-D163986F34EA}</string>
+					<ProtectedString name="Source"><![CDATA[local hidden = {game.ReplicatedStorage.LS,game.ReplicatedStorage.Engine,game.ReplicatedStorage.Loadstring}
+function GetAncestors(obj)
+	local a = obj.Parent
+	local b = {}
+	repeat
+		b[#b + 1] = a
+		a = a.Parent
+	until a == nil
+	local i = #b
+	local tab = {}
+	repeat
+		tab[#tab + 1] = b[i]
+		i = i - 1
+	until i == 0
+	return tab
+end
+local method = {}
+method.All = {}
+method.All.findfirstchild = function(a,b)
+	if type(b) == "string" then
+		return a:FindFirstChild(b)
+	elseif type(b) == "number" then
+		return a:GetChildren()[b]
+	elseif type(b) == "function" then
+		for i,v in next, a:GetChildren() do
+			local c, e = pcall(function() return b(vwrap(v)) end)
+			if c and e then
+				return v
+			end
+		end
+		return
+	end
+	return a:FindFirstChild()
+end
+function method.All.findfirstancestor(a,b)
+	if type(b) == "string" then
+		return a:FindFirstAncestor(b)
+	elseif type(b) == "number" then
+		return GetAncestors(a)[b]
+	elseif type(b) == "function" then
+		for i,v in next, GetAncestors(a) do
+			local c, e = pcall(function() return b(vwrap(v)) end)
+			if c and e then
+				return v
+			end
+		end
+		return
+	end
+	return a:FindFirstAncestor()
+end
+function method.All.findfirstdescendant(a,b)
+	if type(b) == "string" then
+		return a:FindFirstDescendant(b)
+	elseif type(b) == "number" then
+		return a:GetDescendants()[b]
+	elseif type(b) == "function" then
+		for i,v in next, a:GetDescendants() do
+			local c, e = pcall(function() return b(vwrap(v)) end)
+			if c and e then
+				return v
+			end
+		end
+		return
+	end
+	return a:FindFirstDescendant()
+end
+method.All.findfirstancestorofclass = false
+method.All.findfirstancestorwhichisa = false
+method.All.findfirstchildofclass = false
+method.All.findfirstchildwhichisa = false
+function method.All.getchildren(a,b)
+	if type(b) == "string" then
+		local c = {}
+		for i,v in next, a:GetChildren() do
+			if v.Name == b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "number" then
+		local c = {}
+		for i,v in next, a:GetChildren() do
+			if i <= b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "function" then
+		local c = {}
+		for i,v in next, a:GetChildren() do
+			local d, e = pcall(function() return b(vwrap(v)) end)
+			if d and e then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	end
+	return a:GetChildren()
+end
+function method.All.getancestors(a,b)
+	if type(b) == "string" then
+		local c = {}
+		for i,v in next, GetAncestors(a) do
+			if v.Name == b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "number" then
+		local c = {}
+		for i,v in next, GetAncestors(a) do
+			if i <= b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "function" then
+		local c = {}
+		for i,v in next, GetAncestors(a) do
+			local d, e = pcall(function() return b(vwrap(v)) end)
+			if d and e then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	end
+	return GetAncestors(a)
+end
+function method.All.getdescendants(a,b)
+	if type(b) == "string" then
+		local c = {}
+		for i,v in next, a:GetDescendants() do
+			if v.Name == b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "number" then
+		local c = {}
+		for i,v in next, a:GetDescendants() do
+			if i <= b then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	elseif type(b) == "function" then
+		local c = {}
+		for i,v in next, a:GetDescendants() do
+			local d, e = pcall(function() return b(vwrap(v)) end)
+			if d and e then
+				c[#c + 1] = v
+			end
+		end
+		return c
+	end
+	return a:GetDescendants()
+end
+function method.All.waitforchild(a,b)
+	local c = method.All.findfirstchild(a,b)
+	if c then return end
+	repeat
+		c = method.All.findfirstchild(a,b)
+		wait()
+	until c
+	return c
+end
+function method.All.waitforancestor(a,b)
+	local c = method.All.findfirstancestor(a,b)
+	if c then return end
+	repeat
+		c = method.All.findfirstancestor(a,b)
+		wait()
+	until c
+	return c
+end
+function method.All.waitfordescendant(a,b)
+	local c = method.All.findfirstdescendant(a,b)
+	if c then return end
+	repeat
+		c = method.All.findfirstdescendant(a,b)
+		wait()
+	until c
+	return c
+end
+local mod = {}
+local stringnum = 0
+local tstring = {}
+setmetatable(tstring, {__mode = "k"})
+function typeof2(a)
+	local b = tstring[a]
+	if b then return b end
+	return typeof(a)
+end
+local wrapped = {}
+setmetatable(wrapped, {__mode = "k"})
+local vwrapped = {}
+setmetatable(vwrapped, {__mode = "k"})
+local fwrapped = {}
+setmetatable(fwrapped, {__mode = "k"})
+function instwrap(ud)
+	for i,v in next, hidden do
+		if ud == v or ud:IsDescendantOf(v) then
+			return
+		end
+	end
+	if typeof(ud) == "Instance" and ud.ClassName == "DataStoreService" then return DSS end
+	for i,v in next, vwrapped do
+		if rawequal(ud,v) then
+			return i
+		end
+	end
+	local tab = {}
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	meta.__index = function(a,b)
+		local e1,c = pcall(function() return ud[b] end)
+		local e2,m1 = pcall(function() return method.All[b:lower()] end)
+		local e3,m2 = pcall(function() return method[ud.ClassName][b:lower()] end)
+		if e2 and m1 ~= nil then
+			if m1 == false then return end
+			return function(...) return unpack(vwrap({m1(unpack(vunwrap({...})))})) end
+		elseif e3 and m2 ~= nil then
+			if m2 == false then return end
+			return function(...) return unpack(vwrap({m2(unpack(vunwrap({...})))})) end
+		end
+		if e1 and type(c) == "function" and not fwrapped[c] then
+			return function(...) return unpack(vwrap({c(unpack(vunwrap({...})))})) end
+		end
+		if not e1 then return end
+		return vwrap(c)
+	end
+	meta.__newindex = function(a,b,c)
+		c = vunwrap(c)
+		ud[b] = c
+	end
+	meta.__call = function(a,...)
+		return ud(...)
+	end
+	meta.__concat = function(a,b)
+		return ud ..b
+	end
+	meta.__unm = function(a,b)
+		return -ud
+	end
+	meta.__add = function(a,b)
+		return ud + b
+	end
+	meta.__sub = function(a,b)
+		return ud - b
+	end
+	meta.__mul = function(a,b)
+		return ud*b
+	end
+	meta.__div = function(a,b)
+		return ud/b
+	end
+	meta.__pow = function(a,b)
+		return ud^b
+	end
+	meta.__tostring = function(a)
+		return tostring(ud)
+	end
+	meta.__tonumber = function(a)
+		return tonumber(ud)
+	end
+	meta.__eq = function(a,b)
+		return ud == b
+	end
+	meta.__it = function(a,b)
+		return ud < b
+	end
+	meta.__le = function(a,b)
+		return ud <= b
+	end
+	meta.__len = function(a)
+		return #ud
+	end
+	tstring[np] = typeof2(ud)
+	vwrapped[np] = ud
+	return np
+end
+function vwrap(a)
+	local d = fwrapped[a]
+	if d then return d end
+	if type(a) == "table" then
+		for i,v in next, a do
+			a[i] = vwrap(v)
+		end
+		return a
+	elseif typeof(a) == "Instance" then
+		return instwrap(a)
+	elseif d then
+		return d
+	else
+		return a
+	end
+end
+function vunwrap(a)
+	local c = vwrapped[a]
+	if type(a) == "table" then
+		local b = {}
+		for i,v in next, a do
+			b[i] = vunwrap(v)
+		end
+		return b
+	elseif c then
+		return c
+	elseif type(a) == "function" then
+		local d = fwrapped[a]
+		if d then return d end
+		local f = function(...) return unpack(vunwrap({a(unpack(vwrap({...})))})) end
+		fwrapped[a] = f
+		return f
+	else
+		return a
+	end
+end
+function wrap(ud)
+	assert(type(ud) == "userdata","Invalide parameter #1, userdata expected.")
+	for i,v in next, wrapped do
+		if rawequal(ud,v) then
+			return i
+		end
+	end
+	local tab = {}
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	meta.__index = function(a,b)
+		local e = tab[b]
+		if e ~= nil then
+			return e
+		end
+		return ud[b]
+	end
+	meta.__newindex = function(a,b,c)
+		if pcall(function() ud[b] = c end) then
+			return
+		end
+		tab[b] = c
+	end
+	meta.__call = function(a,...)
+		return ud(...)
+	end
+	meta.__concat = function(a,b)
+		return ud ..b
+	end
+	meta.__unm = function(a,b)
+		return -ud
+	end
+	meta.__add = function(a,b)
+		return ud + b
+	end
+	meta.__sub = function(a,b)
+		return ud - b
+	end
+	meta.__mul = function(a,b)
+		return ud*b
+	end
+	meta.__div = function(a,b)
+		return ud/b
+	end
+	meta.__pow = function(a,b)
+		return ud^b
+	end
+	meta.__tostring = function(a)
+		return tostring(ud)
+	end
+	meta.__tonumber = function(a)
+		return tonumber(ud)
+	end
+	meta.__eq = function(a,b)
+		return ud == b
+	end
+	meta.__it = function(a,b)
+		return ud < b
+	end
+	meta.__le = function(a,b)
+		return ud <= b
+	end
+	meta.__len = function(a)
+		return #ud
+	end
+	tstring[np] = typeof2(ud)
+	wrapped[np] = ud
+	return np
+end
+mod.Wrapper = {}
+mod.Wrapper.apply = wrap
+mod.Wrapper.undo = function(np) assert(type(np) == "userdata","Invalid parameter #1, value is not a userdata.") if wrapped[np] then return wrapped[np] end return error("Invalid parameter #1, userdata is not wrapped.") end
+mod.Wrapper.remove = function(np) local a = mod.Wrapper.undo(np) wrapped[np] = nil end
+function modify(func,tab,val)
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	meta.__index = function(a,b)
+		if tab[np] == nil then return nil end
+		assert(type(b) == "string","Invalide paramter #1, string expected.")
+		if b:lower() == "remove" then
+			return function() tab[np] = nil func() end
+		end
+		if b:lower() == "value" then
+			return val
+		end
+		if b:lower() == "active" then
+			return tab[np]
+		end
+		return nil
+	end
+	meta.__newindex = function(a,b,c)
+		if tab[np] == nil then return nil end
+		assert(type(b) == "string","Invalide paramter #1, string expected.")
+		if b:lower() == "value" then
+			val = c
+			func()
+		end
+		if b:lower() == "active" then
+			assert(type(c) == "bool","Invalide paramter #2, bool expected.")
+			tab[np] = c
+			func()
+		end
+	end
+	meta.__metatable = "Locked."
+	tab[np] = true
+	tstring[np] = "Modifier"
+	func()
+	return np
+end
+local modifiers = {}
+function modifier(tab,prop)
+	assert(tab ~= nil and (type(tab) == "userdata" or type(tab) == "table"),"Invalid parameter #1, table or userdata expected.")
+	assert(prop ~= nil ,"Invalid parameter #2, anything but nil expected.")
+	for i,v in next, modifiers do
+		if rawequal(v[1],tab) and rawequal(v[2],prop) then
+			return i
+		end
+	end
+	local func
+	local mods = {}
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	meta.__change = function()
+		local changes = {}
+		for i,v in next, mods do
+			if v then
+				changes[#changes + 1] = i.Value
+			end
+		end
+		tab[prop] = func(changes)
+	end
+	meta.__index = function(a,b)
+		assert(type(b) == "string","Invalide paramter #1, string expected.")
+		if b:lower() == "function" then
+			return func
+		end
+		if b:lower() == "add" then
+			assert(func,'Function needs to be chosen before a modifier is added.')
+			return function(value)
+				return modify(meta.__change,mods,value)
+			end
+		end
+		if b:lower() == "clear" then
+			return function()
+				for i,v in next, mods do
+					mods[i] = nil
+				end
+			end
+		end
+		if b:lower() == "get" then
+			return function() 
+				local valtab = {}
+				for i,v in next, mods do
+					valtab[#valtab + 1] = i
+				end
+				return valtab
+			end
+		end
+		return nil
+	end
+	meta.__newindex = function(a,b,c)
+		assert(type(b) == "string","Invalide paramter #1, string expected.")
+		if b:lower() == "function" then
+			assert(type(c) == "function","Invalide paramter #2, function expected.")
+			func = c
+		end
+	end
+	meta.__metatable = "Locked."
+	modifiers[np] = {tab,prop}
+	tstring[np] = "ModifierFramework"
+	return np
+end
+mod.Modifier = {}
+mod.Modifier.cast = modifier
+if game:GetService("RunService"):IsServer() then
+	mod.ClientRun = function(str,plr)
+		if not str then return end
+		assert(type(str) == "string","Invalide paramter #1, string expected.")
+		assert(plr == nil or (typeof(plr) == "Instance" and plr.ClassName == "Player"),"Invalide paramter #2, client or nil expected.")
+		if plr then
+			stringnum = stringnum + 1
+			return game.ReplicatedStorage.LS:InvokeClient(plr,str)
+		else
+			stringnum = stringnum + 1
+			for i,v in next, game.Players:GetPlayers() do
+				spawn(function() game.ReplicatedStorage.LS:InvokeClient(v,str) end)
+			end
+		end
+	end
+end
+local data = {}
+setmetatable(data, {__mode = "v"})
+function Datastore(str)
+	local ud = game:GetService("DataStoreService"):GetDataStore(str)
+	local np = newproxy(true)
+	local meta = getmetatable(np)
+	meta.__index = function(a,b)
+		assert(type(b) == "string","Invalide paramter #1, string expected.")
+		if b == "Name" then return str end
+		if b == "ClassName" then return "DataStore" end
+		if b == "Parent" then return DSS end
+		return function(c) if c == nil then return ud:GetAsync(b) elseif type(c) == "number" and tostring(c) == "-nan(ind)" then return ud:RemoveAsync(b) end return ud:SetAsync(b,c) end
+	end
+	meta.__newindex = function() error("DataStore:" ..str .." is read-only.") end
+	meta.__metatable = "Locked."
+	data[#data + 1] = np
+	return np
+end
+DSS = (function() local np = wrap(game:GetService("DataStoreService")) local meta = getmetatable(np) meta.__index = function(a,b) if b == "ClassName" or b == "Name" then return "DataStoreService" end if b == "Parent" then return vwrap(game) end assert(type(b) == "string","Invalide paramter #1, string expected.") if data[b] then return data[b] end return Datastore(b) end meta.__newindex = function() error("DataStoreService is read-only.") end meta.__metatable = "Locked." return np end)()
+mod.typeof = function(thing)	
+	local a = tstring[thing]
+	if a then
+		return a
+	end
+	return typeof(thing)
+end
+local dbfuncs = {}
+setmetatable(dbfuncs, {__mode = "k"})
+mod.dbcall = function(func,...)
+	assert(type(func) == "function","Invalide paramter #1, function expected.")
+	if dbfuncs[func] then
+		return false
+	end
+	dbfuncs[func] = true
+	local a = {func(...)}
+	dbfuncs[func] = nil
+	return true, unpack(a)
+end
+return function(env)
+	local env = env or getfenv(2)
+	for i,v in next, mod do
+		if v == false then
+			env[i] = nil
+		else
+			env[i] = v
+		end
+	end
+	env.script = vwrap(env.script)
+	env.game = vwrap(env.game)
+	env.workspace = vwrap(env.workspace)
+	env.require = function(...) print(...) return require(unpack(vunwrap({...}))) end
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
 			</Item>
 		</Item>
 		<Item class="Configuration" referent="RBX0858DE1D07CE4162A2CA887450FB78C2">
