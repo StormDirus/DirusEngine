@@ -1,5 +1,5 @@
 ## Description
-A WIP roblox module loader, with features to simplify and raise the baseline of making games.
+A WIP roblox module loader, with features to simplify making games.
 
 
 ## How-to-Install
